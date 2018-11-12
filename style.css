@@ -1,0 +1,207 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div.game-stage {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    margin: 50px calc(50vw - 200px);
+    padding: 0 50px;
+    /* background-color: red; */
+}
+
+div#field {
+    width: 200px;
+    border: 1px solid gray;
+}
+
+div.box-row {
+    display: flex;
+    width: 200px;
+}
+
+div.next-box-row {
+    display: flex;
+    width: 80px;
+}
+
+div.box, div.next-box {
+    width: 20px;
+    height: 20px;
+    /* border: 1px dashed gray; */
+}
+
+div#score {
+    position: absolute;
+    top: 50px;
+    left: 300px;
+}
+
+div#lines {
+    position: absolute;
+    top: 75px;
+    left: 300px;
+}
+
+div#next {
+    position: absolute;
+    top: 150px;
+    left: 300px;
+}
+
+div.empty {
+    background-color: white;
+}
+
+div.i-mino {
+    background-color: aqua;
+}
+
+div.o-mino {
+    background-color: yellow;
+}
+
+div.s-mino {
+    background-color: lime;
+}
+
+div.z-mino {
+    background-color: red;
+}
+
+div.j-mino {
+    background-color: blue;
+}
+
+div.l-mino {
+    background-color: orange;
+}
+
+div.t-mino {
+    background-color: purple;
+}
+
+div.ghost {
+    /* background-color: gray; */
+    background-color: #ccc;
+}
+
+div.btn {
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    /* background-color: teal; */
+    border: solid 20px teal;
+    border-radius: 20px;
+}
+
+div.btn.pushed {
+    border: solid 20px lime;
+    border-radius: 20px;
+}
+
+div.btn.btn-down {
+    top: 475px;
+    left: 125px;
+}
+
+div.btn.btn-down::before {
+    content: "";
+    display: block;
+    position: relative;
+    top: -5px;
+    left: -7px;
+    width: 10px;
+    height: 10px;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+div.btn.btn-right {
+    top: 425px;
+    left: 175px;
+}
+
+div.btn.btn-right::before {
+    content: "";
+    display: block;
+    position: relative;
+    top: -5px;
+    left: -7px;
+    width: 10px;
+    height: 10px;
+    border-top: 5px solid white;
+    border-right: 5px solid white;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+div.btn.btn-left {
+    top: 425px;
+    left: 75px;
+}
+
+div.btn.btn-left::before {
+    content: "";
+    display: block;
+    position: relative;
+    top: -5px;
+    left: -7px;
+    width: 10px;
+    height: 10px;
+    border-bottom: 5px solid white;
+    border-left: 5px solid white;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+div.btn.btn-A {
+    top: 425px;
+    left: 275px;
+}
+
+div.btn.btn-A::before {
+    content: "A";
+    font-size: 24px;
+    color: white;
+    display: block;
+    position: relative;
+    top: -10px;
+    left: -7px;
+}
+
+div.btn.btn-B {
+    top: 475px;
+    left: 300px;
+}
+
+div.btn.btn-B::before {
+    content: "B";
+    font-size: 24px;
+    color: white;
+    display: block;
+    position: relative;
+    top: -10px;
+    left: -7px;
+}
+
+div.btn.btn-HD {
+    top: 375px;
+    left: 275px;
+}
+
+div.btn.btn-HD::before {
+    content: "#";
+    font-size: 24px;
+    color: white;
+    display: block;
+    position: relative;
+    top: -10px;
+    left: -7px;
+}

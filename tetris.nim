@@ -2,11 +2,11 @@ import sequtils
 
 proc alert(st: cstring) {. importc .}
 
-const STEPFLAME = 120
+const STEPFLAME = 180
 
 type
   MinoColor = enum
-    dfColor, iColor, oColor, sColor, zColor, jColor, lColor, tColor
+    dfColor, iColor, oColor, sColor, zColor, jColor, lColor, tColor, gColor
 
   Direction = enum
     north, east, south, west
@@ -39,14 +39,10 @@ type
     board: Board
     frame: int
     am: ActiveMino
-
-  Controller = enum
-    bNon, bA, bB, bHd, bUp, bDwn, bRgt, bLft, bHld
-  
-  Button = ref object
-    kind: Controller
-    isPushed: bool
-    contFlames: int
+    gm: seq[seq[Box]]
+    minos: seq[Mino]
+    score: int
+    clearlines: int
 
 var
   I = Mino(
@@ -115,19 +111,6 @@ var
 
 proc renderBox(m: var ActiveMino) =
 
-  # proc setBox_n(b: var Boxs, m: ActiveMino; i,j,l: int) =
-  #   var itsColor = if m.kind.shape[i][j]: m.kind.color else: dfColor
-  #   b[i][j] = Box(isFilled: m.kind.shape[i][j], color: itsColor)
-  # proc setBox_e(b: var Boxs, m: ActiveMino; i,j,l: int) =
-  #   var itsColor = if m.kind.shape[i][j]: m.kind.color else: dfColor    
-  #   b[j][l-i] = Box(isFilled: m.kind.shape[i][j], color: itsColor)
-  # proc setBox_s(b: var Boxs, m: ActiveMino; i,j,l: int) =
-  #   var itsColor = if m.kind.shape[i][j]: m.kind.color else: dfColor
-  #   b[l-i][l-j] = Box(isFilled: m.kind.shape[i][j], color: itsColor)
-  # proc setBox_w(b: var Boxs, m: ActiveMino; i,j,l: int) =
-  #   var itsColor = if m.kind.shape[i][j]: m.kind.color else: dfColor
-  #   b[l-j][i] = Box(isFilled: m.kind.shape[i][j], color: itsColor)
-
   proc setBox(b: var Boxs, m: ActiveMino; i, j, t, s: int) =
     var itsColor = if m.kind.shape[i][j]: m.kind.color else: dfColor
     b[t][s] = Box(isFilled: m.kind.shape[i][j], color: itsColor)
@@ -145,22 +128,18 @@ proc renderBox(m: var ActiveMino) =
   of north:
     for i in 0..l:
       for j in 0..l:
-        # setBox_n(b, m, i, j, l)
         setBox(b, m, i, j, i, j)
   of east:
     for i in 0..l:
       for j in 0..l:
-        # setBox_e(b, m, i, j, l)
         setBox(b, m, i, j, j, l-i)       
   of south:
     for i in 0..l:
       for j in 0..l:
-        # setBox_s(b, m, i, j, l)
         setBox(b, m, i, j, l-i, l-j)
   of west:
     for i in 0..l:
       for j in 0..l:
-        # setBox_w(b, m, i, j, l)
         setBox(b, m, i, j, l-j, i)
 
   m.boxs = b
@@ -235,6 +214,7 @@ proc move(m: var ActiveMino, board: Board, d: MoveDir): bool =
   return true
 
 proc fixAM(f: var Field)
+# proc fixGhost(f: var Field)
 
 proc dropStep(f: var Field) {. exportc .} =
   if f.frame mod STEPFLAME == 0:
@@ -250,43 +230,59 @@ proc shuffled(arr: seq[Mino]): seq[Mino] =
   result = arr
   result.shuffle()
 
-var minos = @[I, O, S, Z, J, L, T]
-minos.shuffle()
+# var minos = @[I, O, S, Z, J, L, T]
+# minos.shuffle()
 
 proc pop0(ms: var seq[Mino]): Mino =
   result = ms[0]
   ms = ms[1..^1]
 
 proc dropStart(f: var Field) {. exportc .} =
-  var mino: Mino = minos.pop0()
-  if len(minos) < 4:
-    minos.add(shuffled(@[I, O, S, Z, J, L, T]))
+  var mino: Mino = f.minos.pop0()
+  if len(f.minos) < 4:
+    f.minos.add(shuffled(@[I, O, S, Z, J, L, T]))
   f.am = ActiveMino(pos: mino.firstPos, kind: mino, dir: north)
   f.am.renderBox()
   if not f.am.posVerify(f.board): gameOver()
 
-proc lineCheck(f: var Field) =
+proc lineCheck(f: var Field): int =
+  result = 0
   for i, line in f.board[0..^2]:
     if line.all(proc (b: Box): bool = return b.isFilled):
+      result += 1
       for t, line in f.board[0..<i]:
         f.board[t+1][1..^2] = line[1..^2]
       f.board[0][1..^2] = (var ln: seq[Box] = @[]; for _ in 0..9: ln.add(Box(isFilled: false, color: dfColor)); ln)
 
-proc fixAM(f: var Field) {. exportc .} =
+proc fixAM(f: var Field) =
   if not f.am.posVerify(f.board): return
   for i, bs in f.am.boxs:
     for j, b in bs:
       if b.isFilled:
         f.board[f.am.pos.x+i][f.am.pos.y+j] = b
   # echo "dropstart"
-  f.lineCheck()
+  var cllines = f.lineCheck()
+  f.clearlines += cllines
+  f.score += [0, 1, 3, 6, 10][cllines]
   f.dropStart()
 
-# ===
+proc fixGhost(f: var Field) =
+  for i, line in f.board:
+    for j, b in line:
+      if not b.isFilled:
+        f.board[i][j] = Box(isFilled: false, color: dfColor)
+  var x = f.am.pos.x
+  while f.am.move(f.board, down): discard
+  for i, bs in f.am.boxs:
+    for j, b in bs:
+      if b.isFilled:
+        f.board[f.am.pos.x+i][f.am.pos.y+j] = Box(isFilled: false, color: gColor)
+  f.am.pos.x = x
 
-var F: Field
+# ==== ここで切り取れるようにする ====
 
-# ===
+var
+  F: Field
 
 # proc gameInit(): Field {. exportc .} =
 proc gameInit() {. exportc .} =
@@ -305,10 +301,21 @@ proc gameInit() {. exportc .} =
     board[21][i] = Box(isFilled: true, color: dfColor)
 
   # result = Field(board: board, frame: 0)
-  F = Field(board: board, frame: 0)
+  var mns = @[I, O, S, Z, J, L, T]
+  mns.shuffle()
+  F = Field(board: board, frame: 0, minos: mns, score: 0, clearlines: 0)
   F.dropStart()
 
 var gameOverFlag = false
+
+type
+  Controller = enum
+    bNon, bA, bB, bHd, bUp, bDwn, bRgt, bLft, bHld
+  
+  Button = ref object
+    kind: Controller
+    isPushed: bool
+    contFlames: int
 
 var buttons: seq[Button] = @[]
 
@@ -365,11 +372,32 @@ proc getBoard(): Board {. exportc .} =
     board = F.board
     am = F.am
   # echo repr(am.boxs)
+  F.fixGhost()
   for i, bs in am.boxs:
     for j, b in bs:
       if b.isFilled:
         board[am.pos.x+i][am.pos.y+j] = b
   return board
+
+proc getScore(): int {. exportc .} =
+  F.score
+
+proc getClearLines(): int {. exportc .} =
+  F.clearlines
+
+proc getNext(): Boxs {. exportc .} =
+  var
+    m = F.minos[0]
+    p0 = int(len(m.shape)/2) mod 2
+  result = @[]
+  for _ in 0..3:
+    var tmp: seq[Box] = @[]
+    for _ in 0..3:
+      tmp.add(Box(isFilled: false, color: dfColor))
+    result.add(tmp)
+  for i in 0..<len(m.shape):
+    for j in 0..<len(m.shape):
+      result[p0+i][p0+j] = Box(isFilled: m.shape[i][j], color: (if m.shape[i][j]: m.color else: dfColor))
 
 proc gameOver() =
   gameOverFlag = true
