@@ -3,6 +3,7 @@ import strutils, unicode
 
 var
   F: Field
+  pre_F: Field
   pre_score: int
   reward: int
   done: bool
@@ -22,7 +23,9 @@ proc gameInit() =
   var mns = @[I, O, S, Z, J, L, T]
   mns.shuffle()
   F = Field(board: board, frame: 0, minos: mns, score: 0, clearlines: 0)
+  pre_F.deepCopy(F)
   F.dropStart()
+  # echo "check point"
 
 proc observer(): string =
   result = ""
@@ -50,11 +53,12 @@ proc observer(): string =
 #   res &= $(ord(F.am.kind.color)-1) & $(if done: 1 else: 0) & $reward
 #   return parseInt(res)
 
-proc reset(): cstring {.exportc, dynlib.} =
+proc reset(): cstring {.cdecl, exportc, dynlib.} =
   gameInit()
   return observer()
 
-proc step(action: int): cstring {.exportc, dynlib.} =
+proc step(action: int): cstring {.cdecl, exportc, dynlib.} =
+  pre_F.deepCopy(F)
   # if done: return "gameover"
   if (action < 0) or (40 <= action):
     gameOver()
@@ -78,18 +82,8 @@ proc step(action: int): cstring {.exportc, dynlib.} =
   return observer()
   # return observer().toRunes
 
+proc revert() {.cdecl, exportc, dynlib.} =
+  F.deepCopy(pre_F)
+
 proc gameOver() =
   done = true
-
-# while not done:
-#   stdout.write("> ")
-#   var i = readLine(stdin).parseInt
-#   case i:
-#   of 40:
-#     echo reset()
-#   of 0..39:
-#     echo step(i)
-#   else:
-#     break
-
-# stdout.write("> ")

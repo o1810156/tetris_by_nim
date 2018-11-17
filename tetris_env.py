@@ -1,15 +1,21 @@
 from ctypes import cdll, c_char_p, c_int
 import ctypes
 
+# init_flag = False
+# dll = None
+
 class Tetris(object):
     def __init__(self):
+        # global dll
         dll = cdll.LoadLibrary('./tetris_api.dll')
-        # dll = cdll.LoadLibrary('./fuga.dll')
         self._reset = dll.reset
         self._reset.restype = c_char_p
+
         self._step = dll.step
         self._step.restype = c_char_p
         self._step.argtype = c_int
+
+        self._revert = dll.revert
 
     def _str_to_arr(self, st):
         # print(st)
@@ -27,12 +33,58 @@ class Tetris(object):
     #     return (am, field, reward, done)
 
     def reset(self):
-        print(self._reset().decode())
-        raise Exception
+        # global init_flag
+        # if init_flag:
+        #     global dll
+        #     del dll
+        #     dll = cdll.LoadLibrary('./tetris_api.dll')
+        #     self._reset = dll.reset
+        #     self._reset.restype = c_char_p
+
+        #     self._step = dll.step
+        #     self._step.restype = c_char_p
+        #     self._step.argtype = c_int
+
+        #     self._revert = dll.revert
+        
+        # else:
+        #     init_flag = True
+
+        for _ in range(3):
+            try:
+                am, field, _, _ = self._str_to_arr(self._reset().decode())
+                break
+            except OSError:
+                # print("reset retry")
+                continue
+
         return am, field
     
     def step(self, i):
-        am, field, reward, done = self._str_to_arr(self._step(i).decode())
+        for _ in range(3):
+            try:
+                am, field, reward, done = self._str_to_arr(self._step(i).decode())
+                break
+            except OSError:
+                # print("retry")
+                self._revert()
+                continue
+
+        # 密度をスコアに含める
+        blocks_sum = 0
+        line_num = 0
+        for line in field:
+            if all(map(lambda item: item == 0.0, line)):
+                continue
+            line_num += 1
+            for block in line:
+                if block == 1.0:
+                    blocks_sum += 1
+        
+        density = blocks_sum / (line_num * 10)
+        if density >= 1: print("計算式見直せ")
+        reward += density
+
         done = (done == 1.0)
         return am, field, reward, done
 
@@ -69,5 +121,3 @@ Done: {done}
 Field:
 {showField(field)}
 """)
-
-# am, field, _, _ = self._str_to_arr(self._reset().decode())

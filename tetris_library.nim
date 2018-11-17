@@ -37,7 +37,7 @@ type
 
   Board = array[22, array[12, Box]]
 
-  Field = ref object
+  Field = object
     board: Board
     frame: int
     am: ActiveMino
