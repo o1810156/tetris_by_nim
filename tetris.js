@@ -12,37 +12,46 @@ if (typeof Uint16Array === 'undefined') Uint16Array = Array;
 if (typeof Uint32Array === 'undefined') Uint32Array = Array;
 if (typeof Float32Array === 'undefined') Float32Array = Array;
 if (typeof Float64Array === 'undefined') Float64Array = Array;
-var NTI38954 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI38969 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI38944 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI35023 = {size: 0,kind: 16,base: null,node: null,finalizer: null};
-var NTI38107 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI37635 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI35067 = {size: 0,kind: 16,base: null,node: null,finalizer: null};
-var NTI36635 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI35837 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI38488 = {size: 0, kind: 14, base: null, node: null, finalizer: null};
-var NTI38500 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI38490 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NTI38525 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI36261 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI38421 = {size: 0,kind: 16,base: null,node: null,finalizer: null};
-var NTI38422 = {size: 0,kind: 16,base: null,node: null,finalizer: null};
-var NTI35062 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI35021 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI35058 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI35019 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NTI35500 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI35932 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI35017 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI35007 = {size: 0, kind: 14, base: null, node: null, finalizer: null};
-var NTI35045 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI35044 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI35043 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI35013 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NTI35984 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI3660 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI67953 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI67968 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI67943 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI64020 = {size: 0,kind: 16,base: null,node: null,finalizer: null};
+var NTI64825 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI67500 = {size: 0, kind: 14, base: null, node: null, finalizer: null};
+var NTI67512 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI67502 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
+var NTI67537 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI65261 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI67430 = {size: 0,kind: 16,base: null,node: null,finalizer: null};
+var NTI67431 = {size: 0,kind: 16,base: null,node: null,finalizer: null};
+var NTI64059 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI64018 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI64488 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI64947 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI64014 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI64042 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI64041 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI64040 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI64010 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
+var NTI64995 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI67107 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI66635 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI64004 = {size: 0, kind: 14, base: null, node: null, finalizer: null};
+var NTI64055 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI64016 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
+var NTI64063 = {size: 0,kind: 16,base: null,node: null,finalizer: null};
+var NTI65635 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
 var NTI3656 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI64226 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI64261 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI64188 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI64211 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI130 = {size: 0,kind: 1,base: null,node: null,finalizer: null};
+var NTI64126 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI64173 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI40402 = {size: 0,kind: 43,base: null,node: null,finalizer: null};
+var NTI40602 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI3660 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI3644 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI104 = {size: 0,kind: 31,base: null,node: null,finalizer: null};
 var NTI14009 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
@@ -54,19 +63,6 @@ var NTI3706 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
 var NTI3626 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI3640 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI3642 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI35231 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI35266 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI35192 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI35215 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI130 = {size: 0,kind: 1,base: null,node: null,finalizer: null};
-var NTI35130 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI35177 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-NTI35130.base = NTI130;
-NTI35177.base = NTI35130;
-NTI35192.base = NTI130;
-NTI35215.base = NTI35192;
-NTI35231.base = NTI130;
-NTI35266.base = NTI35231;
 var NNI3642 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
 NTI3642.node = NNI3642;
 var NNI3640 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
@@ -90,71 +86,94 @@ NTI14009.node = NNI14009;
 var NNI3644 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
 NTI3644.node = NNI3644;
 NTI3644.base = NTI3640;
-var NNI3656 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
-NTI3656.node = NNI3656;
-NTI3656.base = NTI3626;
 var NNI3660 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
 NTI3660.node = NNI3660;
 NTI3660.base = NTI3626;
-NTI35045.base = NTI130;
-NTI35044.base = NTI35045;
-var NNI35007 = {kind: 2, offset: 0, typ: null, name: null, len: 9, sons: {"0": {kind: 1, offset: 0, typ: NTI35007, name: "dfColor", len: 0, sons: null}, 
-"1": {kind: 1, offset: 1, typ: NTI35007, name: "iColor", len: 0, sons: null}, 
-"2": {kind: 1, offset: 2, typ: NTI35007, name: "oColor", len: 0, sons: null}, 
-"3": {kind: 1, offset: 3, typ: NTI35007, name: "sColor", len: 0, sons: null}, 
-"4": {kind: 1, offset: 4, typ: NTI35007, name: "zColor", len: 0, sons: null}, 
-"5": {kind: 1, offset: 5, typ: NTI35007, name: "jColor", len: 0, sons: null}, 
-"6": {kind: 1, offset: 6, typ: NTI35007, name: "lColor", len: 0, sons: null}, 
-"7": {kind: 1, offset: 7, typ: NTI35007, name: "tColor", len: 0, sons: null}, 
-"8": {kind: 1, offset: 8, typ: NTI35007, name: "gColor", len: 0, sons: null}}};
-NTI35007.node = NNI35007;
-var NNI35017 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "Field0", len: 0, typ: NTI104, name: "Field0", sons: null}, 
+var NNI40602 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "a0", len: 0, typ: NTI40402, name: "a0", sons: null}, 
+{kind: 1, offset: "a1", len: 0, typ: NTI40402, name: "a1", sons: null}]};
+NTI40602.node = NNI40602;
+NTI64126.base = NTI130;
+NTI64173.base = NTI64126;
+NTI64188.base = NTI130;
+NTI64211.base = NTI64188;
+NTI64226.base = NTI130;
+NTI64261.base = NTI64226;
+var NNI3656 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI3656.node = NNI3656;
+NTI3656.base = NTI3626;
+var NNI64004 = {kind: 2, offset: 0, typ: null, name: null, len: 9, sons: {"0": {kind: 1, offset: 0, typ: NTI64004, name: "dfColor", len: 0, sons: null}, 
+"1": {kind: 1, offset: 1, typ: NTI64004, name: "iColor", len: 0, sons: null}, 
+"2": {kind: 1, offset: 2, typ: NTI64004, name: "oColor", len: 0, sons: null}, 
+"3": {kind: 1, offset: 3, typ: NTI64004, name: "sColor", len: 0, sons: null}, 
+"4": {kind: 1, offset: 4, typ: NTI64004, name: "zColor", len: 0, sons: null}, 
+"5": {kind: 1, offset: 5, typ: NTI64004, name: "jColor", len: 0, sons: null}, 
+"6": {kind: 1, offset: 6, typ: NTI64004, name: "lColor", len: 0, sons: null}, 
+"7": {kind: 1, offset: 7, typ: NTI64004, name: "tColor", len: 0, sons: null}, 
+"8": {kind: 1, offset: 8, typ: NTI64004, name: "gColor", len: 0, sons: null}}};
+NTI64004.node = NNI64004;
+var NNI64055 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "isFilled", len: 0, typ: NTI130, name: "isFilled", sons: null}, 
+{kind: 1, offset: "color", len: 0, typ: NTI64004, name: "color", sons: null}]};
+NTI64055.node = NNI64055;
+NTI64016.base = NTI64055;
+NTI64063.base = NTI64016;
+NTI65635.base = NTI64063;
+NTI66635.base = NTI64016;
+NTI67107.base = NTI64016;
+NTI64042.base = NTI130;
+NTI64041.base = NTI64042;
+var NNI64014 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "Field0", len: 0, typ: NTI104, name: "Field0", sons: null}, 
 {kind: 1, offset: "Field1", len: 0, typ: NTI104, name: "Field1", sons: null}]};
-NTI35017.node = NNI35017;
-var NNI35043 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "shape", len: 0, typ: NTI35044, name: "shape", sons: null}, 
-{kind: 1, offset: "color", len: 0, typ: NTI35007, name: "color", sons: null}, 
-{kind: 1, offset: "firstPos", len: 0, typ: NTI35017, name: "firstPos", sons: null}]};
-NTI35043.node = NNI35043;
-NTI35013.base = NTI35043;
-NTI35984.base = NTI35013;
-NTI35932.base = NTI35013;
-var NNI35058 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "isFilled", len: 0, typ: NTI130, name: "isFilled", sons: null}, 
-{kind: 1, offset: "color", len: 0, typ: NTI35007, name: "color", sons: null}]};
-NTI35058.node = NNI35058;
-NTI35019.base = NTI35058;
-NTI35500.base = NTI35019;
-NTI35062.base = NTI35019;
-NTI35021.base = NTI35062;
-NTI38421.base = NTI35019;
-NTI38422.base = NTI38421;
-NTI36261.base = NTI35013;
-var NNI38488 = {kind: 2, offset: 0, typ: null, name: null, len: 9, sons: {"0": {kind: 1, offset: 0, typ: NTI38488, name: "bNon", len: 0, sons: null}, 
-"1": {kind: 1, offset: 1, typ: NTI38488, name: "bA", len: 0, sons: null}, 
-"2": {kind: 1, offset: 2, typ: NTI38488, name: "bB", len: 0, sons: null}, 
-"3": {kind: 1, offset: 3, typ: NTI38488, name: "bHd", len: 0, sons: null}, 
-"4": {kind: 1, offset: 4, typ: NTI38488, name: "bUp", len: 0, sons: null}, 
-"5": {kind: 1, offset: 5, typ: NTI38488, name: "bDwn", len: 0, sons: null}, 
-"6": {kind: 1, offset: 6, typ: NTI38488, name: "bRgt", len: 0, sons: null}, 
-"7": {kind: 1, offset: 7, typ: NTI38488, name: "bLft", len: 0, sons: null}, 
-"8": {kind: 1, offset: 8, typ: NTI38488, name: "bHld", len: 0, sons: null}}};
-NTI38488.node = NNI38488;
-var NNI38500 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "kind", len: 0, typ: NTI38488, name: "kind", sons: null}, 
+NTI64014.node = NNI64014;
+var NNI64040 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "shape", len: 0, typ: NTI64041, name: "shape", sons: null}, 
+{kind: 1, offset: "color", len: 0, typ: NTI64004, name: "color", sons: null}, 
+{kind: 1, offset: "firstPos", len: 0, typ: NTI64014, name: "firstPos", sons: null}]};
+NTI64040.node = NNI64040;
+NTI64010.base = NTI64040;
+NTI64995.base = NTI64010;
+NTI64947.base = NTI64010;
+NTI64488.base = NTI64016;
+NTI64059.base = NTI64016;
+NTI64018.base = NTI64059;
+NTI67430.base = NTI64016;
+NTI67431.base = NTI67430;
+NTI65261.base = NTI64010;
+var NNI67500 = {kind: 2, offset: 0, typ: null, name: null, len: 9, sons: {"0": {kind: 1, offset: 0, typ: NTI67500, name: "bNon", len: 0, sons: null}, 
+"1": {kind: 1, offset: 1, typ: NTI67500, name: "bA", len: 0, sons: null}, 
+"2": {kind: 1, offset: 2, typ: NTI67500, name: "bB", len: 0, sons: null}, 
+"3": {kind: 1, offset: 3, typ: NTI67500, name: "bHd", len: 0, sons: null}, 
+"4": {kind: 1, offset: 4, typ: NTI67500, name: "bUp", len: 0, sons: null}, 
+"5": {kind: 1, offset: 5, typ: NTI67500, name: "bDwn", len: 0, sons: null}, 
+"6": {kind: 1, offset: 6, typ: NTI67500, name: "bRgt", len: 0, sons: null}, 
+"7": {kind: 1, offset: 7, typ: NTI67500, name: "bLft", len: 0, sons: null}, 
+"8": {kind: 1, offset: 8, typ: NTI67500, name: "bHld", len: 0, sons: null}}};
+NTI67500.node = NNI67500;
+var NNI67512 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "kind", len: 0, typ: NTI67500, name: "kind", sons: null}, 
 {kind: 1, offset: "isPushed", len: 0, typ: NTI130, name: "isPushed", sons: null}, 
 {kind: 1, offset: "contFlames", len: 0, typ: NTI104, name: "contFlames", sons: null}]};
-NTI38500.node = NNI38500;
-NTI38490.base = NTI38500;
-NTI38525.base = NTI38490;
-var NNI35837 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "Field0", len: 0, typ: NTI104, name: "Field0", sons: null}, 
+NTI67512.node = NNI67512;
+NTI67502.base = NTI67512;
+NTI67537.base = NTI67502;
+var NNI64825 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "Field0", len: 0, typ: NTI104, name: "Field0", sons: null}, 
 {kind: 1, offset: "Field1", len: 0, typ: NTI104, name: "Field1", sons: null}]};
-NTI35837.node = NNI35837;
-NTI35067.base = NTI35019;
-NTI36635.base = NTI35067;
-NTI37635.base = NTI35019;
-NTI38107.base = NTI35019;
-NTI35023.base = NTI35067;
-NTI38944.base = NTI35062;
-NTI38969.base = NTI35019;
-NTI38954.base = NTI35019;
+NTI64825.node = NNI64825;
+NTI64020.base = NTI64063;
+NTI67943.base = NTI64059;
+NTI67968.base = NTI64016;
+NTI67953.base = NTI64016;
+
+function makeNimstrLit(c_15003) {
+		    var ln = c_15003.length;
+    var result = new Array(ln + 1);
+    var i = 0;
+    for (; i < ln; ++i) {
+      result[i] = c_15003.charCodeAt(i);
+    }
+    result[i] = 0; // terminating zero
+    return result;
+    
+
+	
+}
 
 function setConstr() {
 		      var result = {};
@@ -251,20 +270,6 @@ function nimCopy(dest_20217, src_20218, ti_20219) {
 
 	return result_20629;
 
-}
-
-function makeNimstrLit(c_15003) {
-		    var ln = c_15003.length;
-    var result = new Array(ln + 1);
-    var i = 0;
-    for (; i < ln; ++i) {
-      result[i] = c_15003.charCodeAt(i);
-    }
-    result[i] = 0; // terminating zero
-    return result;
-    
-
-	
 }
 
 function eqStrings(a_17603, b_17604) {
@@ -374,6 +379,35 @@ function raiseException(e_14406, ename_14407) {
 	
 }
 
+function divInt(a_18403, b_18404) {
+		      if (b_18404 == 0) raiseDivByZero();
+      if (b_18404 == -1 && a_18403 == 2147483647) raiseOverflow();
+      return Math.trunc(a_18403 / b_18404);
+    
+
+	
+}
+
+function chckRange(i_20809, a_20810, b_20811) {
+			var Tmp1;
+
+	var result_20812 = 0;
+
+	BeforeRet: do {
+			if (!(a_20810 <= i_20809)) Tmp1 = false; else {				Tmp1 = (i_20809 <= b_20811);			}		if (Tmp1) {
+		result_20812 = i_20809;
+		break BeforeRet;
+		}
+		else {
+		raiseRangeError();
+		}
+		
+	} while (false);
+
+	return result_20812;
+
+}
+
 function modInt(a_18603, b_18604) {
 		      if (b_18604 == 0) raiseDivByZero();
       if (b_18604 == -1 && a_18603 == 2147483647) raiseOverflow();
@@ -421,26 +455,6 @@ function subInt(a_18003, b_18004) {
 	
 }
 
-function chckRange(i_20809, a_20810, b_20811) {
-			var Tmp1;
-
-	var result_20812 = 0;
-
-	BeforeRet: do {
-			if (!(a_20810 <= i_20809)) Tmp1 = false; else {				Tmp1 = (i_20809 <= b_20811);			}		if (Tmp1) {
-		result_20812 = i_20809;
-		break BeforeRet;
-		}
-		else {
-		raiseRangeError();
-		}
-		
-	} while (false);
-
-	return result_20812;
-
-}
-
 function mulInt(a_18203, b_18204) {
 		      var result = a_18203 * b_18204;
       if (result > 2147483647 || result < -2147483648) raiseOverflow();
@@ -454,6 +468,7 @@ var nim_program_result = 0;
 var globalRaiseHook_12005 = [null];
 var localRaiseHook_12010 = [null];
 var outOfMemHook_12013 = [null];
+var state_40605 = [{a0: 1773455756, a1: 4275166512}];
 
 function isFatPointer_20201(ti_20203) {
 	var result_20204 = false;
@@ -502,13 +517,6 @@ function nimCopyAux(dest_20222, src_20223, n_20225) {
 
 	
 }
-var I_35179 = [{shape: nimCopy(null, [[false, false, false, false], [true, true, true, true], [false, false, false, false], [false, false, false, false]], NTI35177), color: 1, firstPos: {Field0: 0, Field1: 4}}];
-var O_35218 = [{shape: nimCopy(null, [[true, true], [true, true]], NTI35215), color: 2, firstPos: {Field0: 0, Field1: 5}}];
-var S_35268 = [{shape: nimCopy(null, [[false, true, true], [true, true, false], [false, false, false]], NTI35266), color: 3, firstPos: {Field0: 0, Field1: 4}}];
-var Z_35318 = [{shape: nimCopy(null, [[true, true, false], [false, true, true], [false, false, false]], NTI35266), color: 4, firstPos: {Field0: 0, Field1: 4}}];
-var J_35368 = [{shape: nimCopy(null, [[true, false, false], [true, true, true], [false, false, false]], NTI35266), color: 5, firstPos: {Field0: 0, Field1: 4}}];
-var L_35418 = [{shape: nimCopy(null, [[false, false, true], [true, true, true], [false, false, false]], NTI35266), color: 6, firstPos: {Field0: 0, Field1: 4}}];
-var T_35468 = [{shape: nimCopy(null, [[false, true, false], [true, true, true], [false, false, false]], NTI35266), color: 7, firstPos: {Field0: 0, Field1: 4}}];
 
 function add_12029(x_12032, x_12032_Idx, y_12033) {
 		        var len = x_12032[0].length-1;
@@ -644,1516 +652,19 @@ function raiseOverflow() {
 	
 }
 
-function raiseIndexError() {
-		var e_14894 = null;
-		e_14894 = {m_type: NTI3656, parent: null, name: null, message: null, trace: null, up: null};
-		e_14894.message = nimCopy(null, makeNimstrLit("index out of bounds"), NTI138);
-		e_14894.parent = null;
-		raiseException(e_14894, "IndexError");
+function getTime_58433() {
+	var result_62003 = 0;
 
-	
-}
-
-function posVerify_35689(m_35692, m_35692_Idx, board_35693) {
-	var result_35694 = false;
-
-	var F={procname:"tetris.posVerify",prev:framePtr,filename:"tetris.nim",line:0};
+	var F={procname:"times.getTime",prev:framePtr,filename:"lib\\pure\\times.nim",line:0};
 	framePtr = F;
-	BeforeRet: do {
-		L1: do {
-			F.line = 148;
-			var i_35727 = 0;
-			F.line = 148;
-			var bs_35728 = null;
-			F.line = 2283;
-			var colontmp__35772 = null;
-			F.line = 148;
-			colontmp__35772 = m_35692[m_35692_Idx].boxs;
-			F.line = 2285;
-			var i_35775 = 0;
-			L2: do {
-				F.line = 2286;
-					L3: while (true) {
-					if (!(i_35775 < (colontmp__35772 != null ? colontmp__35772.length : 0))) break L3;
-						F.line = 2287;
-						i_35727 = i_35775;
-						F.line = 2287;
-						bs_35728 = colontmp__35772[chckIndx(i_35775, 0, colontmp__35772.length+0-1)-0];
-						L4: do {
-							F.line = 149;
-							var j_35761 = 0;
-							F.line = 149;
-							var b_35762 = null;
-							F.line = 2285;
-							var i_35771 = 0;
-							L5: do {
-								F.line = 2286;
-									L6: while (true) {
-									if (!(i_35771 < (bs_35728 != null ? bs_35728.length : 0))) break L6;
-										F.line = 2287;
-										j_35761 = i_35771;
-										F.line = 2287;
-										b_35762 = bs_35728[chckIndx(i_35771, 0, bs_35728.length+0-1)-0];
-										if (b_35762.isFilled) {
-										F.line = 152;
-										var xp_35763 = addInt(m_35692[m_35692_Idx].pos.Field0, i_35727);
-										F.line = 153;
-										var yp_35764 = addInt(m_35692[m_35692_Idx].pos.Field1, j_35761);
-										if (((((xp_35763 < 0) || (21 <= xp_35763)) || (yp_35764 <= 0)) || (11 <= yp_35764))) {
-										F.line = 156;
-										result_35694 = false;
-										break BeforeRet;
-										}
-										
-										if (board_35693[chckIndx(xp_35763, 0, board_35693.length+0-1)-0][chckIndx(yp_35764, 0, board_35693[chckIndx(xp_35763, 0, board_35693.length+0-1)-0].length+0-1)-0].isFilled) {
-										F.line = 158;
-										result_35694 = false;
-										break BeforeRet;
-										}
-										
-										}
-										
-										F.line = 2288;
-										i_35771 = addInt(i_35771, 1);
-									}
-							} while(false);
-						} while(false);
-						F.line = 2288;
-						i_35775 = addInt(i_35775, 1);
-					}
-			} while(false);
-		} while(false);
-		F.line = 159;
-		result_35694 = true;
-		break BeforeRet;
-	} while (false);
+		F.line = 1307;
+		result_62003 = divInt(new Date().getTime(), 1000);
 	framePtr = F.prev;
 
-	return result_35694;
+	return result_62003;
 
 }
-
-function move_35854(m_35857, m_35857_Idx, board_35858, d_35859) {
-	var result_35860 = false;
-
-	var F={procname:"tetris.move",prev:framePtr,filename:"tetris.nim",line:0};
-	framePtr = F;
-	BeforeRet: do {
-		F.line = 196;
-		switch (d_35859) {
-		case 2:
-			F.line = 198;
-			m_35857[m_35857_Idx].pos.Field1 = addInt(m_35857[m_35857_Idx].pos.Field1, 1);
-			if (!(posVerify_35689(m_35857, m_35857_Idx, board_35858))) {
-			F.line = 200;
-			m_35857[m_35857_Idx].pos.Field1 = subInt(m_35857[m_35857_Idx].pos.Field1, 1);
-			F.line = 201;
-			result_35860 = false;
-			break BeforeRet;
-			}
-			
-			break;
-		case 3:
-			F.line = 203;
-			m_35857[m_35857_Idx].pos.Field1 = subInt(m_35857[m_35857_Idx].pos.Field1, 1);
-			if (!(posVerify_35689(m_35857, m_35857_Idx, board_35858))) {
-			F.line = 205;
-			m_35857[m_35857_Idx].pos.Field1 = addInt(m_35857[m_35857_Idx].pos.Field1, 1);
-			F.line = 206;
-			result_35860 = false;
-			break BeforeRet;
-			}
-			
-			break;
-		case 1:
-			F.line = 208;
-			m_35857[m_35857_Idx].pos.Field0 = addInt(m_35857[m_35857_Idx].pos.Field0, 1);
-			if (!(posVerify_35689(m_35857, m_35857_Idx, board_35858))) {
-			F.line = 210;
-			m_35857[m_35857_Idx].pos.Field0 = subInt(m_35857[m_35857_Idx].pos.Field0, 1);
-			F.line = 211;
-			result_35860 = false;
-			break BeforeRet;
-			}
-			
-			break;
-		case 0:
-			F.line = 213;
-			result_35860 = false;
-			break BeforeRet;
-			break;
-		}
-		F.line = 214;
-		result_35860 = true;
-		break BeforeRet;
-	} while (false);
-	framePtr = F.prev;
-
-	return result_35860;
-
-}
-
-function dropStep(f_35922, f_35922_Idx) {
-	var F={procname:"tetris.dropStep",prev:framePtr,filename:"tetris.nim",line:0};
-	framePtr = F;
-		if ((modInt(f_35922[f_35922_Idx].frame, 180) == 0)) {
-		if (!(move_35854(f_35922[f_35922_Idx], "am", f_35922[f_35922_Idx].board, 1))) {
-		F.line = 223;
-		fixAM_35915(f_35922, f_35922_Idx);
-		}
-		
-		}
-		
-	framePtr = F.prev;
-
-	
-}
-
-function raiseRangeError() {
-		var e_14876 = null;
-		e_14876 = {m_type: NTI3660, parent: null, name: null, message: null, trace: null, up: null};
-		e_14876.message = nimCopy(null, makeNimstrLit("value out of range"), NTI138);
-		e_14876.parent = null;
-		raiseException(e_14876, "RangeError");
-
-	
-}
-
-function X5BX5D__35973(s_35980, x_35983) {
-	var result_35985 = null;
-
-	var F={procname:"[].[]",prev:framePtr,filename:"lib\\system.nim",line:0};
-	framePtr = F;
-		F.line = 3605;
-		var a_36001 = x_35983.a;
-		F.line = 3606;
-		var L_36207 = addInt(subInt(subInt((s_35980 != null ? s_35980.length : 0), x_35983.b), a_36001), 1);
-		F.line = 3607;
-		result_35985 = new Array(chckRange(L_36207, 0, 2147483647)); for (var i=0;i<chckRange(L_36207, 0, 2147483647);++i) {result_35985[i]=null;}		L1: do {
-			F.line = 3608;
-			var i_36226 = 0;
-			F.line = 3519;
-			var i_36234 = 0;
-			L2: do {
-				F.line = 3520;
-					L3: while (true) {
-					if (!(i_36234 < L_36207)) break L3;
-						F.line = 3521;
-						i_36226 = i_36234;
-						F.line = 3608;
-						result_35985[chckIndx(i_36226, 0, result_35985.length+0-1)-0] = s_35980[chckIndx(addInt(i_36226, a_36001), 0, s_35980.length+0-1)-0];
-						F.line = 3522;
-						i_36234 = addInt(i_36234, 1);
-					}
-			} while(false);
-		} while(false);
-	framePtr = F.prev;
-
-	return result_35985;
-
-}
-
-function dotdot__35943(a_35948, b_35950) {
-	var result_35958 = {a: 0, b: 0};
-
-	var F={procname:".....",prev:framePtr,filename:"lib\\system.nim",line:0};
-	framePtr = F;
-		F.line = 325;
-		result_35958.a = a_35948;
-		F.line = 326;
-		result_35958.b = b_35950;
-	framePtr = F.prev;
-
-	return result_35958;
-
-}
-
-function pop0_35936(ms_35940, ms_35940_Idx) {
-	var result_35941 = null;
-
-	var F={procname:"tetris.pop0",prev:framePtr,filename:"tetris.nim",line:0};
-	framePtr = F;
-		F.line = 237;
-		result_35941 = ms_35940[ms_35940_Idx][chckIndx(0, 0, ms_35940[ms_35940_Idx].length+0-1)-0];
-		F.line = 238;
-		ms_35940[ms_35940_Idx] = nimCopy(null, X5BX5D__35973(ms_35940[ms_35940_Idx], dotdot__35943(1, 1)), NTI35984);
-	framePtr = F.prev;
-
-	return result_35941;
-
-}
-
-function add_36264(x_36270, x_36270_Idx, y_36273) {
-	var F={procname:"add.add",prev:framePtr,filename:"lib\\system.nim",line:0};
-	framePtr = F;
-		F.line = 1528;
-		var xl_36281 = (x_36270[x_36270_Idx] != null ? x_36270[x_36270_Idx].length : 0);
-		F.line = 1529;
-		if (x_36270[x_36270_Idx].length < chckRange(addInt(xl_36281, (y_36273 != null ? y_36273.length : 0)), 0, 2147483647)) { for (var i=x_36270[x_36270_Idx].length;i<chckRange(addInt(xl_36281, (y_36273 != null ? y_36273.length : 0)), 0, 2147483647);++i) x_36270[x_36270_Idx].push(null); }
-               else { x_36270[x_36270_Idx].length = chckRange(addInt(xl_36281, (y_36273 != null ? y_36273.length : 0)), 0, 2147483647); };
-		L1: do {
-			F.line = 1530;
-			var i_36313 = 0;
-			F.line = 2042;
-			var colontmp__36315 = 0;
-			F.line = 1530;
-			colontmp__36315 = (y_36273 != null ? (y_36273.length-1) : -1);
-			F.line = 2045;
-			var res_36318 = 0;
-			L2: do {
-				F.line = 2046;
-					L3: while (true) {
-					if (!(res_36318 <= colontmp__36315)) break L3;
-						F.line = 2047;
-						i_36313 = res_36318;
-						F.line = 1530;
-						x_36270[x_36270_Idx][chckIndx(addInt(xl_36281, i_36313), 0, x_36270[x_36270_Idx].length+0-1)-0] = y_36273[chckIndx(i_36313, 0, y_36273.length+0-1)-0];
-						F.line = 2048;
-						res_36318 = addInt(res_36318, 1);
-					}
-			} while(false);
-		} while(false);
-	framePtr = F.prev;
-
-	
-}
-
-function shuffled_35930(arr_35933) {
-	var result_35935 = null;
-
-	var F={procname:"tetris.shuffled",prev:framePtr,filename:"tetris.nim",line:0};
-	framePtr = F;
-		F.line = 230;
-		result_35935 = nimCopy(null, arr_35933, NTI35932);
-		F.line = 231;
-		shuffle(result_35935);
-	framePtr = F.prev;
-
-	return result_35935;
-
-}
-
-function renderBox_35476(m_35479, m_35479_Idx) {
-
-											function setBox_35480(b_35483, b_35483_Idx, m_35484, i_35485, j_35486, t_35487, s_35488) {
-													var Tmp1;
-
-												var F={procname:"renderBox.setBox",prev:framePtr,filename:"tetris.nim",line:0};
-												framePtr = F;
-													F.line = 115;
-													if (m_35484.kind.shape[chckIndx(i_35485, 0, m_35484.kind.shape.length+0-1)-0][chckIndx(j_35486, 0, m_35484.kind.shape[chckIndx(i_35485, 0, m_35484.kind.shape.length+0-1)-0].length+0-1)-0]) {
-													Tmp1 = m_35484.kind.color;
-													}
-													else {
-													Tmp1 = 0;
-													}
-													
-													var itsColor_35489 = Tmp1;
-													F.line = 116;
-													b_35483[b_35483_Idx][chckIndx(t_35487, 0, b_35483[b_35483_Idx].length+0-1)-0][chckIndx(s_35488, 0, b_35483[b_35483_Idx][chckIndx(t_35487, 0, b_35483[b_35483_Idx].length+0-1)-0].length+0-1)-0] = {isFilled: m_35484.kind.shape[chckIndx(i_35485, 0, m_35484.kind.shape.length+0-1)-0][chckIndx(j_35486, 0, m_35484.kind.shape[chckIndx(i_35485, 0, m_35484.kind.shape.length+0-1)-0].length+0-1)-0], color: itsColor_35489};
-												framePtr = F.prev;
-
-												
-											}
-
-	var F={procname:"tetris.renderBox",prev:framePtr,filename:"tetris.nim",line:0};
-	framePtr = F;
-		F.line = 118;
-		var l_35498 = subInt((m_35479[m_35479_Idx].kind.shape != null ? m_35479[m_35479_Idx].kind.shape.length : 0), 1);
-		F.line = 120;
-		var b_35499 = [null];
-		F.line = 121;
-		var bb_35501 = null;
-		L1: do {
-			F.line = 122;
-			var i_35510 = 0;
-			F.line = 2045;
-			var res_35629 = 0;
-			L2: do {
-				F.line = 2046;
-					L3: while (true) {
-					if (!(res_35629 <= l_35498)) break L3;
-						F.line = 2047;
-						i_35510 = res_35629;
-						L4: do {
-							F.line = 123;
-							var j_35519 = 0;
-							F.line = 2045;
-							var res_35623 = 0;
-							L5: do {
-								F.line = 2046;
-									L6: while (true) {
-									if (!(res_35623 <= l_35498)) break L6;
-										F.line = 2047;
-										j_35519 = res_35623;
-										F.line = 124;
-										if (bb_35501 != null) { bb_35501.push({isFilled: false, color: 0}); } else { bb_35501 = [{isFilled: false, color: 0}]; };
-										F.line = 2048;
-										res_35623 = addInt(res_35623, 1);
-									}
-							} while(false);
-						} while(false);
-						F.line = 125;
-						var Tmp7 = nimCopy(null, bb_35501, NTI35500);
-						if (b_35499[0] != null) { b_35499[0].push(Tmp7); } else { b_35499[0] = [Tmp7]; };
-						F.line = 2048;
-						res_35629 = addInt(res_35629, 1);
-					}
-			} while(false);
-		} while(false);
-		F.line = 127;
-		switch (m_35479[m_35479_Idx].dir) {
-		case 0:
-			L8: do {
-				F.line = 129;
-				var i_35548 = 0;
-				F.line = 2045;
-				var res_35643 = 0;
-				L9: do {
-					F.line = 2046;
-						L10: while (true) {
-						if (!(res_35643 <= l_35498)) break L10;
-							F.line = 2047;
-							i_35548 = res_35643;
-							L11: do {
-								F.line = 130;
-								var j_35557 = 0;
-								F.line = 2045;
-								var res_35637 = 0;
-								L12: do {
-									F.line = 2046;
-										L13: while (true) {
-										if (!(res_35637 <= l_35498)) break L13;
-											F.line = 2047;
-											j_35557 = res_35637;
-											F.line = 131;
-											setBox_35480(b_35499, 0, m_35479[m_35479_Idx], i_35548, j_35557, i_35548, j_35557);
-											F.line = 2048;
-											res_35637 = addInt(res_35637, 1);
-										}
-								} while(false);
-							} while(false);
-							F.line = 2048;
-							res_35643 = addInt(res_35643, 1);
-						}
-				} while(false);
-			} while(false);
-			break;
-		case 1:
-			L14: do {
-				F.line = 133;
-				var i_35567 = 0;
-				F.line = 2045;
-				var res_35657 = 0;
-				L15: do {
-					F.line = 2046;
-						L16: while (true) {
-						if (!(res_35657 <= l_35498)) break L16;
-							F.line = 2047;
-							i_35567 = res_35657;
-							L17: do {
-								F.line = 134;
-								var j_35576 = 0;
-								F.line = 2045;
-								var res_35651 = 0;
-								L18: do {
-									F.line = 2046;
-										L19: while (true) {
-										if (!(res_35651 <= l_35498)) break L19;
-											F.line = 2047;
-											j_35576 = res_35651;
-											F.line = 135;
-											setBox_35480(b_35499, 0, m_35479[m_35479_Idx], i_35567, j_35576, j_35576, subInt(l_35498, i_35567));
-											F.line = 2048;
-											res_35651 = addInt(res_35651, 1);
-										}
-								} while(false);
-							} while(false);
-							F.line = 2048;
-							res_35657 = addInt(res_35657, 1);
-						}
-				} while(false);
-			} while(false);
-			break;
-		case 2:
-			L20: do {
-				F.line = 137;
-				var i_35586 = 0;
-				F.line = 2045;
-				var res_35671 = 0;
-				L21: do {
-					F.line = 2046;
-						L22: while (true) {
-						if (!(res_35671 <= l_35498)) break L22;
-							F.line = 2047;
-							i_35586 = res_35671;
-							L23: do {
-								F.line = 138;
-								var j_35595 = 0;
-								F.line = 2045;
-								var res_35665 = 0;
-								L24: do {
-									F.line = 2046;
-										L25: while (true) {
-										if (!(res_35665 <= l_35498)) break L25;
-											F.line = 2047;
-											j_35595 = res_35665;
-											F.line = 139;
-											setBox_35480(b_35499, 0, m_35479[m_35479_Idx], i_35586, j_35595, subInt(l_35498, i_35586), subInt(l_35498, j_35595));
-											F.line = 2048;
-											res_35665 = addInt(res_35665, 1);
-										}
-								} while(false);
-							} while(false);
-							F.line = 2048;
-							res_35671 = addInt(res_35671, 1);
-						}
-				} while(false);
-			} while(false);
-			break;
-		case 3:
-			L26: do {
-				F.line = 141;
-				var i_35605 = 0;
-				F.line = 2045;
-				var res_35685 = 0;
-				L27: do {
-					F.line = 2046;
-						L28: while (true) {
-						if (!(res_35685 <= l_35498)) break L28;
-							F.line = 2047;
-							i_35605 = res_35685;
-							L29: do {
-								F.line = 142;
-								var j_35614 = 0;
-								F.line = 2045;
-								var res_35679 = 0;
-								L30: do {
-									F.line = 2046;
-										L31: while (true) {
-										if (!(res_35679 <= l_35498)) break L31;
-											F.line = 2047;
-											j_35614 = res_35679;
-											F.line = 143;
-											setBox_35480(b_35499, 0, m_35479[m_35479_Idx], i_35605, j_35614, subInt(l_35498, j_35614), i_35605);
-											F.line = 2048;
-											res_35679 = addInt(res_35679, 1);
-										}
-								} while(false);
-							} while(false);
-							F.line = 2048;
-							res_35685 = addInt(res_35685, 1);
-						}
-				} while(false);
-			} while(false);
-			break;
-		}
-		F.line = 145;
-		m_35479[m_35479_Idx].boxs = nimCopy(null, b_35499[0], NTI35021);
-	framePtr = F.prev;
-
-	
-}
-
-function dropStart(f_36240, f_36240_Idx) {
-	var F={procname:"tetris.dropStart",prev:framePtr,filename:"tetris.nim",line:0};
-	framePtr = F;
-		F.line = 241;
-		var mino_36242 = pop0_35936(f_36240[f_36240_Idx], "minos");
-		if (((f_36240[f_36240_Idx].minos != null ? f_36240[f_36240_Idx].minos.length : 0) < 4)) {
-		F.line = 243;
-		add_36264(f_36240[f_36240_Idx], "minos", shuffled_35930([I_35179[0], O_35218[0], S_35268[0], Z_35318[0], J_35368[0], L_35418[0], T_35468[0]]));
-		}
-		
-		F.line = 244;
-		f_36240[f_36240_Idx].am = {pos: nimCopy(null, mino_36242.firstPos, NTI35017), kind: mino_36242, dir: 0, boxs: null};
-		F.line = 245;
-		renderBox_35476(f_36240[f_36240_Idx], "am");
-		if (!(posVerify_35689(f_36240[f_36240_Idx], "am", f_36240[f_36240_Idx].board))) {
-		F.line = 246;
-		gameOver_35924();
-		}
-		
-	framePtr = F.prev;
-
-	
-}
-var F_38415 = [null];
-
-function gameInit() {
-	var F={procname:"tetris.gameInit",prev:framePtr,filename:"tetris.nim",line:0};
-	framePtr = F;
-		F.line = 289;
-		var board_38423 = [[null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null]];
-		L1: do {
-			F.line = 291;
-			var i_38432 = 0;
-			F.line = 3519;
-			var i_38477 = 0;
-			L2: do {
-				F.line = 3520;
-					L3: while (true) {
-					if (!(i_38477 < 21)) break L3;
-						F.line = 3521;
-						i_38432 = i_38477;
-						F.line = 292;
-						board_38423[chckIndx(i_38432, 0, board_38423.length+0-1)-0][chckIndx(0, 0, board_38423[chckIndx(i_38432, 0, board_38423.length+0-1)-0].length+0-1)-0] = {isFilled: true, color: 0};
-						F.line = 294;
-						board_38423[chckIndx(i_38432, 0, board_38423.length+0-1)-0][chckIndx(11, 0, board_38423[chckIndx(i_38432, 0, board_38423.length+0-1)-0].length+0-1)-0] = {isFilled: true, color: 0};
-						L4: do {
-							F.line = 296;
-							var j_38441 = 0;
-							F.line = 3519;
-							var i_38473 = 1;
-							L5: do {
-								F.line = 3520;
-									L6: while (true) {
-									if (!(i_38473 < 11)) break L6;
-										F.line = 3521;
-										j_38441 = i_38473;
-										F.line = 297;
-										board_38423[chckIndx(i_38432, 0, board_38423.length+0-1)-0][chckIndx(j_38441, 0, board_38423[chckIndx(i_38432, 0, board_38423.length+0-1)-0].length+0-1)-0] = {isFilled: false, color: 0};
-										F.line = 3522;
-										i_38473 = addInt(i_38473, 1);
-									}
-							} while(false);
-						} while(false);
-						F.line = 3522;
-						i_38477 = addInt(i_38477, 1);
-					}
-			} while(false);
-		} while(false);
-		L7: do {
-			F.line = 299;
-			var i_38450 = 0;
-			F.line = 3519;
-			var i_38483 = 0;
-			L8: do {
-				F.line = 3520;
-					L9: while (true) {
-					if (!(i_38483 < 12)) break L9;
-						F.line = 3521;
-						i_38450 = i_38483;
-						F.line = 301;
-						board_38423[chckIndx(21, 0, board_38423.length+0-1)-0][chckIndx(i_38450, 0, board_38423[chckIndx(21, 0, board_38423.length+0-1)-0].length+0-1)-0] = {isFilled: true, color: 0};
-						F.line = 3522;
-						i_38483 = addInt(i_38483, 1);
-					}
-			} while(false);
-		} while(false);
-		F.line = 304;
-		var mns_38463 = [I_35179[0], O_35218[0], S_35268[0], Z_35318[0], J_35368[0], L_35418[0], T_35468[0]];
-		F.line = 305;
-		shuffle(mns_38463);
-		F.line = 306;
-		F_38415[0] = {board: nimCopy(null, board_38423, NTI38422), frame: 0, minos: nimCopy(null, mns_38463, NTI36261), score: 0, clearlines: 0, am: null, gm: null};
-		F.line = 307;
-		dropStart(F_38415, 0);
-	framePtr = F.prev;
-
-	
-}
-var gameOverFlag_38486 = [false];
-var buttons_38526 = [nimCopy(null, [], NTI38525)];
-L2: do {
-	var b_38621 = [0];
-	L3: do {
-		var v_38638 = 0;
-		var res_38640 = 0;
-		L4: do {
-				L5: while (true) {
-				if (!(res_38640 <= 8)) break L5;
-					v_38638 = res_38640;
-					b_38621[0] = v_38638;
-					if (buttons_38526[0] != null) { buttons_38526[0].push({kind: b_38621[0], isPushed: false, contFlames: 0}); } else { buttons_38526[0] = [{kind: b_38621[0], isPushed: false, contFlames: 0}]; };
-					res_38640 += 1;
-				}
-		} while(false);
-	} while(false);
-} while(false);
-
-function posCorrect_35776(m_35779, m_35779_Idx, board_35780) {
-	var result_35781 = false;
-
-	var F={procname:"tetris.posCorrect",prev:framePtr,filename:"tetris.nim",line:0};
-	framePtr = F;
-	BeforeRet: do {
-		L1: do {
-			F.line = 162;
-			var i_35797 = 0;
-			F.line = 3518;
-			var colontmp__35817 = 0;
-			F.line = 162;
-			colontmp__35817 = (m_35779[m_35779_Idx].boxs != null ? m_35779[m_35779_Idx].boxs.length : 0);
-			F.line = 3519;
-			var i_35820 = 0;
-			L2: do {
-				F.line = 3520;
-					L3: while (true) {
-					if (!(i_35820 < colontmp__35817)) break L3;
-						F.line = 3521;
-						i_35797 = i_35820;
-						F.line = 163;
-						m_35779[m_35779_Idx].pos.Field1 = addInt(m_35779[m_35779_Idx].pos.Field1, i_35797);
-						if (posVerify_35689(m_35779, m_35779_Idx, board_35780)) {
-						F.line = 165;
-						result_35781 = true;
-						break BeforeRet;
-						}
-						
-						F.line = 166;
-						m_35779[m_35779_Idx].pos.Field1 = subInt(m_35779[m_35779_Idx].pos.Field1, mulInt(2, i_35797));
-						if (posVerify_35689(m_35779, m_35779_Idx, board_35780)) {
-						F.line = 168;
-						result_35781 = true;
-						break BeforeRet;
-						}
-						
-						F.line = 3522;
-						i_35820 = addInt(i_35820, 1);
-					}
-			} while(false);
-		} while(false);
-		F.line = 175;
-		result_35781 = false;
-		break BeforeRet;
-	} while (false);
-	framePtr = F.prev;
-
-	return result_35781;
-
-}
-
-function spin_35822(m_35825, m_35825_Idx, a_35828, board_35829) {
-	var F={procname:"tetris.spin",prev:framePtr,filename:"tetris.nim",line:0};
-	framePtr = F;
-		F.line = 178;
-		var pre_dir_35830 = m_35825[m_35825_Idx].dir;
-		F.line = 179;
-		m_35825[m_35825_Idx].dir = a_35828[chckIndx(m_35825[m_35825_Idx].dir, 0, a_35828.length+0-1)-0];
-		F.line = 180;
-		renderBox_35476(m_35825, m_35825_Idx);
-		if (!(posVerify_35689(m_35825, m_35825_Idx, board_35829))) {
-		F.line = 183;
-		var pre_pos_35838 = {Field0: m_35825[m_35825_Idx].pos.Field0, Field1: m_35825[m_35825_Idx].pos.Field1};
-		if (!(posCorrect_35776(m_35825, m_35825_Idx, board_35829))) {
-		F.line = 185;
-		var __35839 = nimCopy(null, pre_pos_35838, NTI35837);
-		F.line = 185;
-		m_35825[m_35825_Idx].pos.Field0 = __35839["Field0"];
-		F.line = 185;
-		m_35825[m_35825_Idx].pos.Field1 = __35839["Field1"];
-		F.line = 186;
-		m_35825[m_35825_Idx].dir = pre_dir_35830;
-		}
-		
-		F.line = 187;
-		renderBox_35476(m_35825, m_35825_Idx);
-		}
-		
-	framePtr = F.prev;
-
-	
-}
-
-function rightSpin_35840(m_35843, m_35843_Idx, board_35844) {
-	var F={procname:"tetris.rightSpin",prev:framePtr,filename:"tetris.nim",line:0};
-	framePtr = F;
-		F.line = 190;
-		spin_35822(m_35843, m_35843_Idx, [1, 2, 3, 0], board_35844);
-	framePtr = F.prev;
-
-	
-}
-
-function leftSpin_35847(m_35850, m_35850_Idx, board_35851) {
-	var F={procname:"tetris.leftSpin",prev:framePtr,filename:"tetris.nim",line:0};
-	framePtr = F;
-		F.line = 193;
-		spin_35822(m_35850, m_35850_Idx, [3, 0, 1, 2], board_35851);
-	framePtr = F.prev;
-
-	
-}
-
-function newSeq_36630(len_36634) {
-	var result_36636 = null;
-
-	var F={procname:"newSeq.newSeq",prev:framePtr,filename:"lib\\system.nim",line:0};
-	framePtr = F;
-		F.line = 742;
-		result_36636 = new Array(len_36634); for (var i=0;i<len_36634;++i) {result_36636[i]=[null, null, null, null, null, null, null, null, null, null, null, null];}	framePtr = F.prev;
-
-	return result_36636;
-
-}
-
-function X5BX5D__36365(a_36373, x_36376) {
-	var result_36378 = null;
-
-	var F={procname:"[].[]",prev:framePtr,filename:"lib\\system.nim",line:0};
-	framePtr = F;
-		F.line = 3584;
-		var xa_36401 = x_36376.a;
-		F.line = 3585;
-		var L_36628 = addInt(subInt(subInt(22, x_36376.b), xa_36401), 1);
-		F.line = 3586;
-		result_36378 = nimCopy(null, newSeq_36630(chckRange(L_36628, 0, 2147483647)), NTI36635);
-		L1: do {
-			F.line = 3587;
-			var i_36655 = 0;
-			F.line = 3519;
-			var i_36667 = 0;
-			L2: do {
-				F.line = 3520;
-					L3: while (true) {
-					if (!(i_36667 < L_36628)) break L3;
-						F.line = 3521;
-						i_36655 = i_36667;
-						F.line = 3587;
-						nimCopy(result_36378[chckIndx(i_36655, 0, result_36378.length+0-1)-0], a_36373[chckIndx(addInt(i_36655, xa_36401), 0, a_36373.length+0-1)-0], NTI35067);
-						F.line = 3522;
-						i_36667 = addInt(i_36667, 1);
-					}
-			} while(false);
-		} while(false);
-	framePtr = F.prev;
-
-	return result_36378;
-
-}
-
-function all_36712(s_36717, pred_36722) {
-	var result_36723 = false;
-
-	var F={procname:"all.all",prev:framePtr,filename:"lib\\pure\\collections\\sequtils.nim",line:0};
-	framePtr = F;
-	BeforeRet: do {
-		L1: do {
-			F.line = 434;
-			var i_36748 = null;
-			F.line = 2185;
-			var i_36752 = 0;
-			L2: do {
-				F.line = 2186;
-					L3: while (true) {
-					if (!(i_36752 < (s_36717 != null ? s_36717.length : 0))) break L3;
-						F.line = 2187;
-						i_36748 = s_36717[chckIndx(i_36752, 0, s_36717.length+0-1)-0];
-						if (!(pred_36722(i_36748))) {
-						F.line = 436;
-						result_36723 = false;
-						break BeforeRet;
-						}
-						
-						F.line = 2188;
-						i_36752 = addInt(i_36752, 1);
-					}
-			} while(false);
-		} while(false);
-		F.line = 437;
-		result_36723 = true;
-		break BeforeRet;
-	} while (false);
-	framePtr = F.prev;
-
-	return result_36723;
-
-}
-
-function X5BX5D__36849(a_36857, x_36860) {
-	var result_36862 = null;
-
-	var F={procname:"[].[]",prev:framePtr,filename:"lib\\system.nim",line:0};
-	framePtr = F;
-		F.line = 3584;
-		var xa_37001 = x_36860.a;
-		F.line = 3585;
-		var L_37201 = addInt(subInt(x_36860.b, xa_37001), 1);
-		F.line = 3586;
-		result_36862 = nimCopy(null, newSeq_36630(chckRange(L_37201, 0, 2147483647)), NTI36635);
-		L1: do {
-			F.line = 3587;
-			var i_37217 = 0;
-			F.line = 3519;
-			var i_37229 = 0;
-			L2: do {
-				F.line = 3520;
-					L3: while (true) {
-					if (!(i_37229 < L_37201)) break L3;
-						F.line = 3521;
-						i_37217 = i_37229;
-						F.line = 3587;
-						nimCopy(result_36862[chckIndx(i_37217, 0, result_36862.length+0-1)-0], a_36857[chckIndx(addInt(i_37217, xa_37001), 0, a_36857.length+0-1)-0], NTI35067);
-						F.line = 3522;
-						i_37229 = addInt(i_37229, 1);
-					}
-			} while(false);
-		} while(false);
-	framePtr = F.prev;
-
-	return result_36862;
-
-}
-
-function dotdot__36810(a_36815, b_36817) {
-	var result_36825 = {a: 0, b: 0};
-
-	var F={procname:".....",prev:framePtr,filename:"lib\\system.nim",line:0};
-	framePtr = F;
-		F.line = 325;
-		result_36825.a = a_36815;
-		F.line = 326;
-		result_36825.b = b_36817;
-	framePtr = F.prev;
-
-	return result_36825;
-
-}
-
-function sysFatal_38047(message_38053) {
-	var F={procname:"sysFatal.sysFatal",prev:framePtr,filename:"lib\\system.nim",line:0};
-	framePtr = F;
-		F.line = 2830;
-		var e_38055 = null;
-		F.line = 2831;
-		e_38055 = {m_type: NTI3660, parent: null, name: null, message: null, trace: null, up: null};
-		F.line = 2832;
-		e_38055.message = nimCopy(null, message_38053, NTI138);
-		F.line = 2833;
-		raiseException(e_38055, "RangeError");
-	framePtr = F.prev;
-
-	
-}
-
-function X5BX5Deq__37673(a_37682, x_37685, b_37688) {
-	var F={procname:"[]=.[]=",prev:framePtr,filename:"lib\\system.nim",line:0};
-	framePtr = F;
-		F.line = 3591;
-		var xa_37801 = x_37685.a;
-		F.line = 3592;
-		var L_38028 = addInt(subInt(subInt(12, x_37685.b), xa_37801), 1);
-		if ((L_38028 == (b_37688 != null ? b_37688.length : 0))) {
-		L1: do {
-			F.line = 3594;
-			var i_38043 = 0;
-			F.line = 3519;
-			var i_38069 = 0;
-			L2: do {
-				F.line = 3520;
-					L3: while (true) {
-					if (!(i_38069 < L_38028)) break L3;
-						F.line = 3521;
-						i_38043 = i_38069;
-						F.line = 3594;
-						a_37682[chckIndx(addInt(i_38043, xa_37801), 0, a_37682.length+0-1)-0] = b_37688[chckIndx(i_38043, 0, b_37688.length+0-1)-0];
-						F.line = 3522;
-						i_38069 = addInt(i_38069, 1);
-					}
-			} while(false);
-		} while(false);
-		}
-		else {
-			F.line = 3596;
-		sysFatal_38047(makeNimstrLit("different lengths for slice assignment"));
-		}
-		
-	framePtr = F.prev;
-
-	
-}
-
-function newSeq_37630(len_37634) {
-	var result_37636 = null;
-
-	var F={procname:"newSeq.newSeq",prev:framePtr,filename:"lib\\system.nim",line:0};
-	framePtr = F;
-		F.line = 742;
-		result_37636 = new Array(len_37634); for (var i=0;i<len_37634;++i) {result_37636[i]=null;}	framePtr = F.prev;
-
-	return result_37636;
-
-}
-
-function X5BX5D__37298(a_37306, x_37309) {
-	var result_37311 = null;
-
-	var F={procname:"[].[]",prev:framePtr,filename:"lib\\system.nim",line:0};
-	framePtr = F;
-		F.line = 3584;
-		var xa_37401 = x_37309.a;
-		F.line = 3585;
-		var L_37628 = addInt(subInt(subInt(12, x_37309.b), xa_37401), 1);
-		F.line = 3586;
-		result_37311 = nimCopy(null, newSeq_37630(chckRange(L_37628, 0, 2147483647)), NTI37635);
-		L1: do {
-			F.line = 3587;
-			var i_37655 = 0;
-			F.line = 3519;
-			var i_37667 = 0;
-			L2: do {
-				F.line = 3520;
-					L3: while (true) {
-					if (!(i_37667 < L_37628)) break L3;
-						F.line = 3521;
-						i_37655 = i_37667;
-						F.line = 3587;
-						result_37311[chckIndx(i_37655, 0, result_37311.length+0-1)-0] = a_37306[chckIndx(addInt(i_37655, xa_37401), 0, a_37306.length+0-1)-0];
-						F.line = 3522;
-						i_37667 = addInt(i_37667, 1);
-					}
-			} while(false);
-		} while(false);
-	framePtr = F.prev;
-
-	return result_37311;
-
-}
-
-function lineCheck_36327(f_36330, f_36330_Idx) {
-
-							function colonanonymous__36704(b_36706) {
-								var result_36707 = false;
-
-								var F={procname:"lineCheck.:anonymous",prev:framePtr,filename:"tetris.nim",line:0};
-								framePtr = F;
-								BeforeRet: do {
-									F.line = 251;
-									result_36707 = b_36706.isFilled;
-									break BeforeRet;
-								} while (false);
-								framePtr = F.prev;
-
-								return result_36707;
-
-							}
-
-	var result_36331 = 0;
-
-	var F={procname:"tetris.lineCheck",prev:framePtr,filename:"tetris.nim",line:0};
-	framePtr = F;
-		F.line = 249;
-		result_36331 = 0;
-		L1: do {
-			F.line = 250;
-			var i_36701 = 0;
-			F.line = 250;
-			var line_36702 = [null, null, null, null, null, null, null, null, null, null, null, null];
-			F.line = 2283;
-			var colontmp__38179 = null;
-			F.line = 250;
-			colontmp__38179 = X5BX5D__36365(f_36330[f_36330_Idx].board, dotdot__35943(0, 2));
-			F.line = 2285;
-			var i_38182 = 0;
-			L2: do {
-				F.line = 2286;
-					L3: while (true) {
-					if (!(i_38182 < (colontmp__38179 != null ? colontmp__38179.length : 0))) break L3;
-						F.line = 2287;
-						i_36701 = i_38182;
-						F.line = 2287;
-						nimCopy(line_36702, colontmp__38179[chckIndx(i_38182, 0, colontmp__38179.length+0-1)-0], NTI35067);
-						if (all_36712(line_36702, colonanonymous__36704)) {
-						F.line = 252;
-						result_36331 = addInt(result_36331, 1);
-						L4: do {
-							F.line = 253;
-							var t_37244 = 0;
-							F.line = 253;
-							var line_37245 = [null, null, null, null, null, null, null, null, null, null, null, null];
-							F.line = 2283;
-							var colontmp__38164 = null;
-							F.line = 253;
-							colontmp__38164 = X5BX5D__36849(f_36330[f_36330_Idx].board, dotdot__36810(0, subInt(i_36701, 1)));
-							F.line = 2285;
-							var i_38167 = 0;
-							L5: do {
-								F.line = 2286;
-									L6: while (true) {
-									if (!(i_38167 < (colontmp__38164 != null ? colontmp__38164.length : 0))) break L6;
-										F.line = 2287;
-										t_37244 = i_38167;
-										F.line = 2287;
-										nimCopy(line_37245, colontmp__38164[chckIndx(i_38167, 0, colontmp__38164.length+0-1)-0], NTI35067);
-										F.line = 254;
-										X5BX5Deq__37673(f_36330[f_36330_Idx].board[chckIndx(addInt(t_37244, 1), 0, f_36330[f_36330_Idx].board.length+0-1)-0], dotdot__35943(1, 2), X5BX5D__37298(line_37245, dotdot__35943(1, 2)));
-										F.line = 2288;
-										i_38167 = addInt(i_38167, 1);
-									}
-							} while(false);
-						} while(false);
-						F.line = 255;
-						F.line = 255;
-						var ln_38108 = nimCopy(null, [], NTI38107);
-						L7: do {
-							F.line = 255;
-							var __38118 = 0;
-							F.line = 2045;
-							var res_38174 = 0;
-							L8: do {
-								F.line = 2046;
-									L9: while (true) {
-									if (!(res_38174 <= 9)) break L9;
-										F.line = 2047;
-										__38118 = res_38174;
-										F.line = 255;
-										if (ln_38108 != null) { ln_38108.push({isFilled: false, color: 0}); } else { ln_38108 = [{isFilled: false, color: 0}]; };
-										F.line = 2048;
-										res_38174 = addInt(res_38174, 1);
-									}
-							} while(false);
-						} while(false);
-						X5BX5Deq__37673(f_36330[f_36330_Idx].board[chckIndx(0, 0, f_36330[f_36330_Idx].board.length+0-1)-0], dotdot__35943(1, 2), ln_38108);
-						}
-						
-						F.line = 2288;
-						i_38182 = addInt(i_38182, 1);
-					}
-			} while(false);
-		} while(false);
-	framePtr = F.prev;
-
-	return result_36331;
-
-}
-
-function fixAM_35915(f_35918, f_35918_Idx) {
-	var F={procname:"tetris.fixAM",prev:framePtr,filename:"tetris.nim",line:0};
-	framePtr = F;
-	BeforeRet: do {
-		if (!(posVerify_35689(f_35918[f_35918_Idx], "am", f_35918[f_35918_Idx].board))) {
-		F.line = 258;
-		break BeforeRet;
-		}
-		
-		L1: do {
-			F.line = 259;
-			var i_38201 = 0;
-			F.line = 259;
-			var bs_38202 = null;
-			F.line = 2283;
-			var colontmp__38244 = null;
-			F.line = 259;
-			colontmp__38244 = f_35918[f_35918_Idx].am.boxs;
-			F.line = 2285;
-			var i_38247 = 0;
-			L2: do {
-				F.line = 2286;
-					L3: while (true) {
-					if (!(i_38247 < (colontmp__38244 != null ? colontmp__38244.length : 0))) break L3;
-						F.line = 2287;
-						i_38201 = i_38247;
-						F.line = 2287;
-						bs_38202 = colontmp__38244[chckIndx(i_38247, 0, colontmp__38244.length+0-1)-0];
-						L4: do {
-							F.line = 260;
-							var j_38216 = 0;
-							F.line = 260;
-							var b_38217 = null;
-							F.line = 2285;
-							var i_38243 = 0;
-							L5: do {
-								F.line = 2286;
-									L6: while (true) {
-									if (!(i_38243 < (bs_38202 != null ? bs_38202.length : 0))) break L6;
-										F.line = 2287;
-										j_38216 = i_38243;
-										F.line = 2287;
-										b_38217 = bs_38202[chckIndx(i_38243, 0, bs_38202.length+0-1)-0];
-										if (b_38217.isFilled) {
-										F.line = 262;
-										f_35918[f_35918_Idx].board[chckIndx(addInt(f_35918[f_35918_Idx].am.pos.Field0, i_38201), 0, f_35918[f_35918_Idx].board.length+0-1)-0][chckIndx(addInt(f_35918[f_35918_Idx].am.pos.Field1, j_38216), 0, f_35918[f_35918_Idx].board[chckIndx(addInt(f_35918[f_35918_Idx].am.pos.Field0, i_38201), 0, f_35918[f_35918_Idx].board.length+0-1)-0].length+0-1)-0] = b_38217;
-										}
-										
-										F.line = 2288;
-										i_38243 = addInt(i_38243, 1);
-									}
-							} while(false);
-						} while(false);
-						F.line = 2288;
-						i_38247 = addInt(i_38247, 1);
-					}
-			} while(false);
-		} while(false);
-		F.line = 264;
-		var cllines_38218 = lineCheck_36327(f_35918, f_35918_Idx);
-		F.line = 265;
-		f_35918[f_35918_Idx].clearlines = addInt(f_35918[f_35918_Idx].clearlines, cllines_38218);
-		F.line = 266;
-		f_35918[f_35918_Idx].score = addInt(f_35918[f_35918_Idx].score, [0, 1, 3, 6, 10][chckIndx(cllines_38218, 0, [0, 1, 3, 6, 10].length+0-1)-0]);
-		F.line = 267;
-		dropStart(f_35918, f_35918_Idx);
-	} while (false);
-	framePtr = F.prev;
-
-	
-}
-
-function buttonCheck_38641(c_38645) {
-			var Tmp4;
-			var Tmp5;
-
-	var F={procname:"tetris.buttonCheck",prev:framePtr,filename:"tetris.nim",line:0};
-	framePtr = F;
-		L1: do {
-			F.line = 327;
-			var i_38699 = 0;
-			F.line = 327;
-			var b_38700 = false;
-			F.line = 2266;
-			var i_38850 = 0;
-			if ((i_38850 <= 7)) {
-			L2: do {
-				F.line = 2268;
-					L3: while (true) {
-					if (!true) break L3;
-						F.line = 2269;
-						i_38699 = i_38850;
-						F.line = 2269;
-						b_38700 = c_38645[chckIndx(i_38850, 0, c_38645.length+0-1)-0];
-						if (!(b_38700)) {
-						F.line = 329;
-						buttons_38526[0][chckIndx(i_38699, 0, buttons_38526[0].length+0-1)-0].isPushed = false;
-						F.line = 330;
-						buttons_38526[0][chckIndx(i_38699, 0, buttons_38526[0].length+0-1)-0].contFlames = 0;
-						}
-						
-						if ((7 <= i_38850)) {
-						F.line = 2270;
-						break L2;
-						}
-						
-						F.line = 2271;
-						i_38850 = addInt(i_38850, 1);
-					}
-			} while(false);
-			}
-			
-		} while(false);
-		if (c_38645[chckIndx(1, 0, c_38645.length+0-1)-0]) {
-		if (!(buttons_38526[0][chckIndx(1, 0, buttons_38526[0].length+0-1)-0].isPushed)) {
-		F.line = 334;
-		rightSpin_35840(F_38415[0], "am", F_38415[0].board);
-		F.line = 335;
-		buttons_38526[0][chckIndx(1, 0, buttons_38526[0].length+0-1)-0].isPushed = true;
-		}
-		
-		}
-		else {
-		if (c_38645[chckIndx(2, 0, c_38645.length+0-1)-0]) {
-		if (!(buttons_38526[0][chckIndx(2, 0, buttons_38526[0].length+0-1)-0].isPushed)) {
-		F.line = 338;
-		leftSpin_35847(F_38415[0], "am", F_38415[0].board);
-		F.line = 339;
-		buttons_38526[0][chckIndx(2, 0, buttons_38526[0].length+0-1)-0].isPushed = true;
-		}
-		
-		}
-		}
-		if (c_38645[chckIndx(6, 0, c_38645.length+0-1)-0]) {
-			if (!(buttons_38526[0][chckIndx(6, 0, buttons_38526[0].length+0-1)-0].isPushed)) Tmp4 = true; else {				Tmp4 = (30 < buttons_38526[0][chckIndx(6, 0, buttons_38526[0].length+0-1)-0].contFlames);			}		if (Tmp4) {
-		F.line = 343;
-		move_35854(F_38415[0], "am", F_38415[0].board, 2);
-		F.line = 344;
-		buttons_38526[0][chckIndx(6, 0, buttons_38526[0].length+0-1)-0].isPushed = true;
-		}
-		else {
-			F.line = 346;
-		buttons_38526[0][chckIndx(6, 0, buttons_38526[0].length+0-1)-0].contFlames = addInt(buttons_38526[0][chckIndx(6, 0, buttons_38526[0].length+0-1)-0].contFlames, 1);
-		}
-		
-		}
-		else {
-		if (c_38645[chckIndx(7, 0, c_38645.length+0-1)-0]) {
-			if (!(buttons_38526[0][chckIndx(7, 0, buttons_38526[0].length+0-1)-0].isPushed)) Tmp5 = true; else {				Tmp5 = (30 < buttons_38526[0][chckIndx(7, 0, buttons_38526[0].length+0-1)-0].contFlames);			}		if (Tmp5) {
-		F.line = 349;
-		move_35854(F_38415[0], "am", F_38415[0].board, 3);
-		F.line = 350;
-		buttons_38526[0][chckIndx(7, 0, buttons_38526[0].length+0-1)-0].isPushed = true;
-		}
-		else {
-			F.line = 352;
-		buttons_38526[0][chckIndx(7, 0, buttons_38526[0].length+0-1)-0].contFlames = addInt(buttons_38526[0][chckIndx(7, 0, buttons_38526[0].length+0-1)-0].contFlames, 1);
-		}
-		
-		}
-		}
-		if (c_38645[chckIndx(5, 0, c_38645.length+0-1)-0]) {
-		F.line = 355;
-		move_35854(F_38415[0], "am", F_38415[0].board, 1);
-		}
-		
-		if (c_38645[chckIndx(3, 0, c_38645.length+0-1)-0]) {
-		if (!(buttons_38526[0][chckIndx(3, 0, buttons_38526[0].length+0-1)-0].isPushed)) {
-		L6: do {
-			F.line = 359;
-				L7: while (true) {
-				if (!move_35854(F_38415[0], "am", F_38415[0].board, 1)) break L7;
-				}
-		} while(false);
-		F.line = 360;
-		fixAM_35915(F_38415, 0);
-		F.line = 361;
-		buttons_38526[0][chckIndx(3, 0, buttons_38526[0].length+0-1)-0].isPushed = true;
-		}
-		
-		}
-		
-	framePtr = F.prev;
-
-	
-}
-
-function gameStep(c_38856) {
-	var F={procname:"tetris.gameStep",prev:framePtr,filename:"tetris.nim",line:0};
-	framePtr = F;
-	BeforeRet: do {
-		if (gameOverFlag_38486[0]) {
-		F.line = 364;
-		break BeforeRet;
-		}
-		
-		F.line = 366;
-		buttonCheck_38641(c_38856);
-		F.line = 367;
-		F_38415[0].frame = addInt(F_38415[0].frame, 1);
-		F.line = 368;
-		dropStep(F_38415, 0);
-	} while (false);
-	framePtr = F.prev;
-
-	
-}
-
-function fixGhost_38248(f_38251, f_38251_Idx) {
-	var F={procname:"tetris.fixGhost",prev:framePtr,filename:"tetris.nim",line:0};
-	framePtr = F;
-		L1: do {
-			F.line = 270;
-			var i_38305 = 0;
-			F.line = 270;
-			var line_38306 = [null, null, null, null, null, null, null, null, null, null, null, null];
-			F.line = 2264;
-			var colontmp__38400 = [[null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null]];
-			F.line = 270;
-			nimCopy(colontmp__38400, f_38251[f_38251_Idx].board, NTI35023);
-			F.line = 2266;
-			var i_38403 = 0;
-			if ((i_38403 <= 21)) {
-			L2: do {
-				F.line = 2268;
-					L3: while (true) {
-					if (!true) break L3;
-						F.line = 2269;
-						i_38305 = i_38403;
-						F.line = 2269;
-						nimCopy(line_38306, colontmp__38400[chckIndx(i_38403, 0, colontmp__38400.length+0-1)-0], NTI35067);
-						L4: do {
-							F.line = 271;
-							var j_38360 = 0;
-							F.line = 271;
-							var b_38361 = null;
-							F.line = 2266;
-							var i_38399 = 0;
-							if ((i_38399 <= 11)) {
-							L5: do {
-								F.line = 2268;
-									L6: while (true) {
-									if (!true) break L6;
-										F.line = 2269;
-										j_38360 = i_38399;
-										F.line = 2269;
-										b_38361 = line_38306[chckIndx(i_38399, 0, line_38306.length+0-1)-0];
-										if (!(b_38361.isFilled)) {
-										F.line = 273;
-										f_38251[f_38251_Idx].board[chckIndx(i_38305, 0, f_38251[f_38251_Idx].board.length+0-1)-0][chckIndx(j_38360, 0, f_38251[f_38251_Idx].board[chckIndx(i_38305, 0, f_38251[f_38251_Idx].board.length+0-1)-0].length+0-1)-0] = {isFilled: false, color: 0};
-										}
-										
-										if ((11 <= i_38399)) {
-										F.line = 2270;
-										break L5;
-										}
-										
-										F.line = 2271;
-										i_38399 = addInt(i_38399, 1);
-									}
-							} while(false);
-							}
-							
-						} while(false);
-						if ((21 <= i_38403)) {
-						F.line = 2270;
-						break L2;
-						}
-						
-						F.line = 2271;
-						i_38403 = addInt(i_38403, 1);
-					}
-			} while(false);
-			}
-			
-		} while(false);
-		F.line = 274;
-		var x_38362 = f_38251[f_38251_Idx].am.pos.Field0;
-		L7: do {
-			F.line = 275;
-				L8: while (true) {
-				if (!move_35854(f_38251[f_38251_Idx], "am", f_38251[f_38251_Idx].board, 1)) break L8;
-				}
-		} while(false);
-		L9: do {
-			F.line = 276;
-			var i_38377 = 0;
-			F.line = 276;
-			var bs_38378 = null;
-			F.line = 2283;
-			var colontmp__38411 = null;
-			F.line = 276;
-			colontmp__38411 = f_38251[f_38251_Idx].am.boxs;
-			F.line = 2285;
-			var i_38414 = 0;
-			L10: do {
-				F.line = 2286;
-					L11: while (true) {
-					if (!(i_38414 < (colontmp__38411 != null ? colontmp__38411.length : 0))) break L11;
-						F.line = 2287;
-						i_38377 = i_38414;
-						F.line = 2287;
-						bs_38378 = colontmp__38411[chckIndx(i_38414, 0, colontmp__38411.length+0-1)-0];
-						L12: do {
-							F.line = 277;
-							var j_38392 = 0;
-							F.line = 277;
-							var b_38393 = null;
-							F.line = 2285;
-							var i_38410 = 0;
-							L13: do {
-								F.line = 2286;
-									L14: while (true) {
-									if (!(i_38410 < (bs_38378 != null ? bs_38378.length : 0))) break L14;
-										F.line = 2287;
-										j_38392 = i_38410;
-										F.line = 2287;
-										b_38393 = bs_38378[chckIndx(i_38410, 0, bs_38378.length+0-1)-0];
-										if (b_38393.isFilled) {
-										F.line = 279;
-										f_38251[f_38251_Idx].board[chckIndx(addInt(f_38251[f_38251_Idx].am.pos.Field0, i_38377), 0, f_38251[f_38251_Idx].board.length+0-1)-0][chckIndx(addInt(f_38251[f_38251_Idx].am.pos.Field1, j_38392), 0, f_38251[f_38251_Idx].board[chckIndx(addInt(f_38251[f_38251_Idx].am.pos.Field0, i_38377), 0, f_38251[f_38251_Idx].board.length+0-1)-0].length+0-1)-0] = {isFilled: false, color: 8};
-										}
-										
-										F.line = 2288;
-										i_38410 = addInt(i_38410, 1);
-									}
-							} while(false);
-						} while(false);
-						F.line = 2288;
-						i_38414 = addInt(i_38414, 1);
-					}
-			} while(false);
-		} while(false);
-		F.line = 280;
-		f_38251[f_38251_Idx].am.pos.Field0 = x_38362;
-	framePtr = F.prev;
-
-	
-}
-
-function getBoard() {
-	var result_38869 = [[null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null]];
-
-	var F={procname:"tetris.getBoard",prev:framePtr,filename:"tetris.nim",line:0};
-	framePtr = F;
-	BeforeRet: do {
-		F.line = 372;
-		var board_38870 = nimCopy(null, F_38415[0].board, NTI35023);
-		F.line = 373;
-		var am_38871 = F_38415[0].am;
-		F.line = 375;
-		fixGhost_38248(F_38415, 0);
-		L1: do {
-			F.line = 376;
-			var i_38886 = 0;
-			F.line = 376;
-			var bs_38887 = null;
-			F.line = 2283;
-			var colontmp__38908 = null;
-			F.line = 376;
-			colontmp__38908 = am_38871.boxs;
-			F.line = 2285;
-			var i_38911 = 0;
-			L2: do {
-				F.line = 2286;
-					L3: while (true) {
-					if (!(i_38911 < (colontmp__38908 != null ? colontmp__38908.length : 0))) break L3;
-						F.line = 2287;
-						i_38886 = i_38911;
-						F.line = 2287;
-						bs_38887 = colontmp__38908[chckIndx(i_38911, 0, colontmp__38908.length+0-1)-0];
-						L4: do {
-							F.line = 377;
-							var j_38901 = 0;
-							F.line = 377;
-							var b_38902 = null;
-							F.line = 2285;
-							var i_38907 = 0;
-							L5: do {
-								F.line = 2286;
-									L6: while (true) {
-									if (!(i_38907 < (bs_38887 != null ? bs_38887.length : 0))) break L6;
-										F.line = 2287;
-										j_38901 = i_38907;
-										F.line = 2287;
-										b_38902 = bs_38887[chckIndx(i_38907, 0, bs_38887.length+0-1)-0];
-										if (b_38902.isFilled) {
-										F.line = 379;
-										board_38870[chckIndx(addInt(am_38871.pos.Field0, i_38886), 0, board_38870.length+0-1)-0][chckIndx(addInt(am_38871.pos.Field1, j_38901), 0, board_38870[chckIndx(addInt(am_38871.pos.Field0, i_38886), 0, board_38870.length+0-1)-0].length+0-1)-0] = b_38902;
-										}
-										
-										F.line = 2288;
-										i_38907 = addInt(i_38907, 1);
-									}
-							} while(false);
-						} while(false);
-						F.line = 2288;
-						i_38911 = addInt(i_38911, 1);
-					}
-			} while(false);
-		} while(false);
-		F.line = 380;
-		nimCopy(result_38869, board_38870, NTI35023);
-		break BeforeRet;
-	} while (false);
-	framePtr = F.prev;
-
-	return result_38869;
-
-}
-
-function getScore() {
-	var result_38914 = 0;
-
-	var F={procname:"tetris.getScore",prev:framePtr,filename:"tetris.nim",line:0};
-	framePtr = F;
-		F.line = 383;
-		result_38914 = F_38415[0].score;
-	framePtr = F.prev;
-
-	return result_38914;
-
-}
-
-function getClearLines() {
-	var result_38917 = 0;
-
-	var F={procname:"tetris.getClearLines",prev:framePtr,filename:"tetris.nim",line:0};
-	framePtr = F;
-		F.line = 386;
-		result_38917 = F_38415[0].clearlines;
-	framePtr = F.prev;
-
-	return result_38917;
-
-}
+var startMilsecs_62405 = [getTime_58433()];
 
 function slash__22207(x_22209, y_22210) {
 	var result_22211 = 0.0;
@@ -2168,119 +679,1771 @@ function slash__22207(x_22209, y_22210) {
 
 }
 
-function getNext() {
-										var Tmp14;
+function epochTime_62006() {
+	var result_62008 = 0.0;
 
-	var result_38920 = null;
-
-	var F={procname:"tetris.getNext",prev:framePtr,filename:"tetris.nim",line:0};
+	var F={procname:"times.epochTime",prev:framePtr,filename:"lib\\pure\\times.nim",line:0};
 	framePtr = F;
-		F.line = 390;
-		var m_38921 = F_38415[0].minos[chckIndx(0, 0, F_38415[0].minos.length+0-1)-0];
-		F.line = 391;
-		var p0_38929 = modInt(((slash__22207((m_38921.shape != null ? m_38921.shape.length : 0), 2))|0), 2);
-		F.line = 392;
-		result_38920 = nimCopy(null, [], NTI38944);
+		F.line = 1310;
+		result_62008 = slash__22207(new Date().getTime(), 1000);
+	framePtr = F.prev;
+
+	return result_62008;
+
+}
+
+function raiseRangeError() {
+		var e_14876 = null;
+		e_14876 = {m_type: NTI3660, parent: null, name: null, message: null, trace: null, up: null};
+		e_14876.message = nimCopy(null, makeNimstrLit("value out of range"), NTI138);
+		e_14876.parent = null;
+		raiseException(e_14876, "RangeError");
+
+	
+}
+
+function rotl_40802(x_40804, k_40805) {
+	var result_40806 = 0;
+
+	var F={procname:"random.rotl",prev:framePtr,filename:"lib\\pure\\random.nim",line:0};
+	framePtr = F;
+		F.line = 46;
+		result_40806 = ((x_40804 << k_40805) | ((x_40804 >>> 0) >>> ((64 - k_40805) >>> 0)));
+	framePtr = F.prev;
+
+	return result_40806;
+
+}
+
+function next_40842(r_40845) {
+	var result_40846 = 0;
+
+	var F={procname:"random.next",prev:framePtr,filename:"lib\\pure\\random.nim",line:0};
+	framePtr = F;
+		F.line = 50;
+		var s0_40847 = r_40845.a0;
+		F.line = 51;
+		var s1_40848 = r_40845.a1;
+		F.line = 52;
+		result_40846 = ((s0_40847 + s1_40848) >>> 0);
+		F.line = 53;
+		s1_40848 = (s1_40848 ^ s0_40847);
+		F.line = 54;
+		r_40845.a0 = ((rotl_40802(s0_40847, 55) ^ s1_40848) ^ (s1_40848 << 14));
+		F.line = 55;
+		r_40845.a1 = rotl_40802(s1_40848, 36);
+	framePtr = F.prev;
+
+	return result_40846;
+
+}
+
+function initRand_41465(seed_41467) {
+	var result_41468 = [{a0: 0, a1: 0}];
+
+	var F={procname:"random.initRand",prev:framePtr,filename:"lib\\pure\\random.nim",line:0};
+	framePtr = F;
+		F.line = 169;
+		result_41468[0].a0 = chckRange(((seed_41467 ) >>> 16), 0, 4294967295);
+		F.line = 170;
+		result_41468[0].a1 = chckRange((seed_41467 & 65535), 0, 4294967295);
+		F.line = 171;
+		next_40842(result_41468[0]);
+	framePtr = F.prev;
+
+	return result_41468[0];
+
+}
+
+function randomize_41479(seed_41481) {
+	var F={procname:"random.randomize",prev:framePtr,filename:"lib\\pure\\random.nim",line:0};
+	framePtr = F;
+		F.line = 176;
+		nimCopy(state_40605[0], initRand_41465(seed_41481), NTI40602);
+	framePtr = F.prev;
+
+	
+}
+
+function randomize_63001() {
+	var F={procname:"random.randomize",prev:framePtr,filename:"lib\\pure\\random.nim",line:0};
+	framePtr = F;
+		F.line = 194;
+		var time_63005 = (epochTime_62006() * 1.0000000000000000e+009);
+		F.line = 195;
+		randomize_41479(time_63005);
+	framePtr = F.prev;
+
+	
+}
+
+function raiseIndexError() {
+		var e_14894 = null;
+		e_14894 = {m_type: NTI3656, parent: null, name: null, message: null, trace: null, up: null};
+		e_14894.message = nimCopy(null, makeNimstrLit("index out of bounds"), NTI138);
+		e_14894.parent = null;
+		raiseException(e_14894, "IndexError");
+
+	
+}
+
+function posVerify_64677(m_64680, m_64680_Idx, board_64681) {
+	var result_64682 = false;
+
+	var F={procname:"tetris.posVerify",prev:framePtr,filename:"tetris_library.nim",line:0};
+	framePtr = F;
+	BeforeRet: do {
 		L1: do {
-			F.line = 393;
-			var __38953 = 0;
-			F.line = 2045;
-			var res_39045 = 0;
+			F.line = 150;
+			var i_64715 = 0;
+			F.line = 150;
+			var bs_64716 = null;
+			F.line = 2283;
+			var colontmp__64760 = null;
+			F.line = 150;
+			colontmp__64760 = m_64680[m_64680_Idx].boxs;
+			F.line = 2285;
+			var i_64763 = 0;
 			L2: do {
-				F.line = 2046;
+				F.line = 2286;
 					L3: while (true) {
-					if (!(res_39045 <= 3)) break L3;
-						F.line = 2047;
-						__38953 = res_39045;
-						F.line = 394;
-						var tmp_38970 = nimCopy(null, [], NTI38969);
+					if (!(i_64763 < (colontmp__64760 != null ? colontmp__64760.length : 0))) break L3;
+						F.line = 2287;
+						i_64715 = i_64763;
+						F.line = 2287;
+						bs_64716 = colontmp__64760[chckIndx(i_64763, 0, colontmp__64760.length+0-1)-0];
 						L4: do {
-							F.line = 395;
-							var __38979 = 0;
-							F.line = 2045;
-							var res_39039 = 0;
+							F.line = 151;
+							var j_64749 = 0;
+							F.line = 151;
+							var b_64750 = null;
+							F.line = 2285;
+							var i_64759 = 0;
 							L5: do {
-								F.line = 2046;
+								F.line = 2286;
 									L6: while (true) {
-									if (!(res_39039 <= 3)) break L6;
-										F.line = 2047;
-										__38979 = res_39039;
-										F.line = 396;
-										if (tmp_38970 != null) { tmp_38970.push({isFilled: false, color: 0}); } else { tmp_38970 = [{isFilled: false, color: 0}]; };
-										F.line = 2048;
-										res_39039 = addInt(res_39039, 1);
+									if (!(i_64759 < (bs_64716 != null ? bs_64716.length : 0))) break L6;
+										F.line = 2287;
+										j_64749 = i_64759;
+										F.line = 2287;
+										b_64750 = bs_64716[chckIndx(i_64759, 0, bs_64716.length+0-1)-0];
+										if (b_64750.isFilled) {
+										F.line = 154;
+										var xp_64751 = addInt(m_64680[m_64680_Idx].pos.Field0, i_64715);
+										F.line = 155;
+										var yp_64752 = addInt(m_64680[m_64680_Idx].pos.Field1, j_64749);
+										if (((((xp_64751 < 0) || (21 <= xp_64751)) || (yp_64752 <= 0)) || (11 <= yp_64752))) {
+										F.line = 158;
+										result_64682 = false;
+										break BeforeRet;
+										}
+										
+										if (board_64681[chckIndx(xp_64751, 0, board_64681.length+0-1)-0][chckIndx(yp_64752, 0, board_64681[chckIndx(xp_64751, 0, board_64681.length+0-1)-0].length+0-1)-0].isFilled) {
+										F.line = 160;
+										result_64682 = false;
+										break BeforeRet;
+										}
+										
+										}
+										
+										F.line = 2288;
+										i_64759 = addInt(i_64759, 1);
 									}
 							} while(false);
 						} while(false);
-						F.line = 397;
-						var Tmp7 = nimCopy(null, tmp_38970, NTI38954);
-						if (result_38920 != null) { result_38920.push(Tmp7); } else { result_38920 = [Tmp7]; };
-						F.line = 2048;
-						res_39045 = addInt(res_39045, 1);
+						F.line = 2288;
+						i_64763 = addInt(i_64763, 1);
 					}
 			} while(false);
 		} while(false);
-		L8: do {
-			F.line = 398;
-			var i_39015 = 0;
-			F.line = 3518;
-			var colontmp__39057 = 0;
-			F.line = 398;
-			colontmp__39057 = (m_38921.shape != null ? m_38921.shape.length : 0);
+		F.line = 161;
+		result_64682 = true;
+		break BeforeRet;
+	} while (false);
+	framePtr = F.prev;
+
+	return result_64682;
+
+}
+
+function move_64842(m_64845, m_64845_Idx, board_64846, d_64847) {
+	var result_64848 = false;
+
+	var F={procname:"tetris.move",prev:framePtr,filename:"tetris_library.nim",line:0};
+	framePtr = F;
+	BeforeRet: do {
+		F.line = 198;
+		switch (d_64847) {
+		case 2:
+			F.line = 200;
+			m_64845[m_64845_Idx].pos.Field1 = addInt(m_64845[m_64845_Idx].pos.Field1, 1);
+			if (!(posVerify_64677(m_64845, m_64845_Idx, board_64846))) {
+			F.line = 202;
+			m_64845[m_64845_Idx].pos.Field1 = subInt(m_64845[m_64845_Idx].pos.Field1, 1);
+			F.line = 203;
+			result_64848 = false;
+			break BeforeRet;
+			}
+			
+			break;
+		case 3:
+			F.line = 205;
+			m_64845[m_64845_Idx].pos.Field1 = subInt(m_64845[m_64845_Idx].pos.Field1, 1);
+			if (!(posVerify_64677(m_64845, m_64845_Idx, board_64846))) {
+			F.line = 207;
+			m_64845[m_64845_Idx].pos.Field1 = addInt(m_64845[m_64845_Idx].pos.Field1, 1);
+			F.line = 208;
+			result_64848 = false;
+			break BeforeRet;
+			}
+			
+			break;
+		case 1:
+			F.line = 210;
+			m_64845[m_64845_Idx].pos.Field0 = addInt(m_64845[m_64845_Idx].pos.Field0, 1);
+			if (!(posVerify_64677(m_64845, m_64845_Idx, board_64846))) {
+			F.line = 212;
+			m_64845[m_64845_Idx].pos.Field0 = subInt(m_64845[m_64845_Idx].pos.Field0, 1);
+			F.line = 213;
+			result_64848 = false;
+			break BeforeRet;
+			}
+			
+			break;
+		case 0:
+			F.line = 215;
+			result_64848 = false;
+			break BeforeRet;
+			break;
+		}
+		F.line = 216;
+		result_64848 = true;
+		break BeforeRet;
+	} while (false);
+	framePtr = F.prev;
+
+	return result_64848;
+
+}
+
+function newSeq_65630(len_65634) {
+	var result_65636 = null;
+
+	var F={procname:"newSeq.newSeq",prev:framePtr,filename:"lib\\system.nim",line:0};
+	framePtr = F;
+		F.line = 742;
+		result_65636 = new Array(len_65634); for (var i=0;i<len_65634;++i) {result_65636[i]=[null, null, null, null, null, null, null, null, null, null, null, null];}	framePtr = F.prev;
+
+	return result_65636;
+
+}
+
+function X5BX5D__65365(a_65373, x_65376) {
+	var result_65378 = null;
+
+	var F={procname:"[].[]",prev:framePtr,filename:"lib\\system.nim",line:0};
+	framePtr = F;
+		F.line = 3584;
+		var xa_65401 = x_65376.a;
+		F.line = 3585;
+		var L_65628 = addInt(subInt(subInt(22, x_65376.b), xa_65401), 1);
+		F.line = 3586;
+		result_65378 = nimCopy(null, newSeq_65630(chckRange(L_65628, 0, 2147483647)), NTI65635);
+		L1: do {
+			F.line = 3587;
+			var i_65655 = 0;
 			F.line = 3519;
-			var i_39060 = 0;
-			L9: do {
+			var i_65667 = 0;
+			L2: do {
 				F.line = 3520;
-					L10: while (true) {
-					if (!(i_39060 < colontmp__39057)) break L10;
+					L3: while (true) {
+					if (!(i_65667 < L_65628)) break L3;
 						F.line = 3521;
-						i_39015 = i_39060;
-						L11: do {
-							F.line = 399;
-							var j_39031 = 0;
-							F.line = 3518;
-							var colontmp__39052 = 0;
-							F.line = 399;
-							colontmp__39052 = (m_38921.shape != null ? m_38921.shape.length : 0);
-							F.line = 3519;
-							var i_39055 = 0;
-							L12: do {
-								F.line = 3520;
-									L13: while (true) {
-									if (!(i_39055 < colontmp__39052)) break L13;
-										F.line = 3521;
-										j_39031 = i_39055;
-										F.line = 400;
-										if (m_38921.shape[chckIndx(i_39015, 0, m_38921.shape.length+0-1)-0][chckIndx(j_39031, 0, m_38921.shape[chckIndx(i_39015, 0, m_38921.shape.length+0-1)-0].length+0-1)-0]) {
-										Tmp14 = m_38921.color;
-										}
-										else {
-										Tmp14 = 0;
-										}
-										
-										result_38920[chckIndx(addInt(p0_38929, i_39015), 0, result_38920.length+0-1)-0][chckIndx(addInt(p0_38929, j_39031), 0, result_38920[chckIndx(addInt(p0_38929, i_39015), 0, result_38920.length+0-1)-0].length+0-1)-0] = {isFilled: m_38921.shape[chckIndx(i_39015, 0, m_38921.shape.length+0-1)-0][chckIndx(j_39031, 0, m_38921.shape[chckIndx(i_39015, 0, m_38921.shape.length+0-1)-0].length+0-1)-0], color: Tmp14};
-										F.line = 3522;
-										i_39055 = addInt(i_39055, 1);
-									}
-							} while(false);
-						} while(false);
+						i_65655 = i_65667;
+						F.line = 3587;
+						nimCopy(result_65378[chckIndx(i_65655, 0, result_65378.length+0-1)-0], a_65373[chckIndx(addInt(i_65655, xa_65401), 0, a_65373.length+0-1)-0], NTI64063);
 						F.line = 3522;
-						i_39060 = addInt(i_39060, 1);
+						i_65667 = addInt(i_65667, 1);
 					}
 			} while(false);
 		} while(false);
 	framePtr = F.prev;
 
-	return result_38920;
+	return result_65378;
 
 }
 
-function gameOver_35924() {
+function dotdot__51023(a_51028, b_51030) {
+	var result_51038 = {a: 0, b: 0};
+
+	var F={procname:".....",prev:framePtr,filename:"lib\\system.nim",line:0};
+	framePtr = F;
+		F.line = 325;
+		result_51038.a = a_51028;
+		F.line = 326;
+		result_51038.b = b_51030;
+	framePtr = F.prev;
+
+	return result_51038;
+
+}
+
+function all_65712(s_65717, pred_65722) {
+	var result_65723 = false;
+
+	var F={procname:"all.all",prev:framePtr,filename:"lib\\pure\\collections\\sequtils.nim",line:0};
+	framePtr = F;
+	BeforeRet: do {
+		L1: do {
+			F.line = 434;
+			var i_65748 = null;
+			F.line = 2185;
+			var i_65752 = 0;
+			L2: do {
+				F.line = 2186;
+					L3: while (true) {
+					if (!(i_65752 < (s_65717 != null ? s_65717.length : 0))) break L3;
+						F.line = 2187;
+						i_65748 = s_65717[chckIndx(i_65752, 0, s_65717.length+0-1)-0];
+						if (!(pred_65722(i_65748))) {
+						F.line = 436;
+						result_65723 = false;
+						break BeforeRet;
+						}
+						
+						F.line = 2188;
+						i_65752 = addInt(i_65752, 1);
+					}
+			} while(false);
+		} while(false);
+		F.line = 437;
+		result_65723 = true;
+		break BeforeRet;
+	} while (false);
+	framePtr = F.prev;
+
+	return result_65723;
+
+}
+
+function X5BX5D__65842(a_65850, x_65853) {
+	var result_65855 = null;
+
+	var F={procname:"[].[]",prev:framePtr,filename:"lib\\system.nim",line:0};
+	framePtr = F;
+		F.line = 3584;
+		var xa_66001 = x_65853.a;
+		F.line = 3585;
+		var L_66201 = addInt(subInt(x_65853.b, xa_66001), 1);
+		F.line = 3586;
+		result_65855 = nimCopy(null, newSeq_65630(chckRange(L_66201, 0, 2147483647)), NTI65635);
+		L1: do {
+			F.line = 3587;
+			var i_66217 = 0;
+			F.line = 3519;
+			var i_66229 = 0;
+			L2: do {
+				F.line = 3520;
+					L3: while (true) {
+					if (!(i_66229 < L_66201)) break L3;
+						F.line = 3521;
+						i_66217 = i_66229;
+						F.line = 3587;
+						nimCopy(result_65855[chckIndx(i_66217, 0, result_65855.length+0-1)-0], a_65850[chckIndx(addInt(i_66217, xa_66001), 0, a_65850.length+0-1)-0], NTI64063);
+						F.line = 3522;
+						i_66229 = addInt(i_66229, 1);
+					}
+			} while(false);
+		} while(false);
+	framePtr = F.prev;
+
+	return result_65855;
+
+}
+
+function dotdot__50107(a_50112, b_50114) {
+	var result_50116 = {a: 0, b: 0};
+
+	var F={procname:".....",prev:framePtr,filename:"lib\\system.nim",line:0};
+	framePtr = F;
+		F.line = 325;
+		result_50116.a = a_50112;
+		F.line = 326;
+		result_50116.b = b_50114;
+	framePtr = F.prev;
+
+	return result_50116;
+
+}
+
+function sysFatal_67047(message_67053) {
+	var F={procname:"sysFatal.sysFatal",prev:framePtr,filename:"lib\\system.nim",line:0};
+	framePtr = F;
+		F.line = 2830;
+		var e_67055 = null;
+		F.line = 2831;
+		e_67055 = {m_type: NTI3660, parent: null, name: null, message: null, trace: null, up: null};
+		F.line = 2832;
+		e_67055.message = nimCopy(null, message_67053, NTI138);
+		F.line = 2833;
+		raiseException(e_67055, "RangeError");
+	framePtr = F.prev;
+
+	
+}
+
+function X5BX5Deq__66673(a_66682, x_66685, b_66688) {
+	var F={procname:"[]=.[]=",prev:framePtr,filename:"lib\\system.nim",line:0};
+	framePtr = F;
+		F.line = 3591;
+		var xa_66801 = x_66685.a;
+		F.line = 3592;
+		var L_67028 = addInt(subInt(subInt(12, x_66685.b), xa_66801), 1);
+		if ((L_67028 == (b_66688 != null ? b_66688.length : 0))) {
+		L1: do {
+			F.line = 3594;
+			var i_67043 = 0;
+			F.line = 3519;
+			var i_67069 = 0;
+			L2: do {
+				F.line = 3520;
+					L3: while (true) {
+					if (!(i_67069 < L_67028)) break L3;
+						F.line = 3521;
+						i_67043 = i_67069;
+						F.line = 3594;
+						a_66682[chckIndx(addInt(i_67043, xa_66801), 0, a_66682.length+0-1)-0] = b_66688[chckIndx(i_67043, 0, b_66688.length+0-1)-0];
+						F.line = 3522;
+						i_67069 = addInt(i_67069, 1);
+					}
+			} while(false);
+		} while(false);
+		}
+		else {
+			F.line = 3596;
+		sysFatal_67047(makeNimstrLit("different lengths for slice assignment"));
+		}
+		
+	framePtr = F.prev;
+
+	
+}
+
+function newSeq_66630(len_66634) {
+	var result_66636 = null;
+
+	var F={procname:"newSeq.newSeq",prev:framePtr,filename:"lib\\system.nim",line:0};
+	framePtr = F;
+		F.line = 742;
+		result_66636 = new Array(len_66634); for (var i=0;i<len_66634;++i) {result_66636[i]=null;}	framePtr = F.prev;
+
+	return result_66636;
+
+}
+
+function X5BX5D__66298(a_66306, x_66309) {
+	var result_66311 = null;
+
+	var F={procname:"[].[]",prev:framePtr,filename:"lib\\system.nim",line:0};
+	framePtr = F;
+		F.line = 3584;
+		var xa_66401 = x_66309.a;
+		F.line = 3585;
+		var L_66628 = addInt(subInt(subInt(12, x_66309.b), xa_66401), 1);
+		F.line = 3586;
+		result_66311 = nimCopy(null, newSeq_66630(chckRange(L_66628, 0, 2147483647)), NTI66635);
+		L1: do {
+			F.line = 3587;
+			var i_66655 = 0;
+			F.line = 3519;
+			var i_66667 = 0;
+			L2: do {
+				F.line = 3520;
+					L3: while (true) {
+					if (!(i_66667 < L_66628)) break L3;
+						F.line = 3521;
+						i_66655 = i_66667;
+						F.line = 3587;
+						result_66311[chckIndx(i_66655, 0, result_66311.length+0-1)-0] = a_66306[chckIndx(addInt(i_66655, xa_66401), 0, a_66306.length+0-1)-0];
+						F.line = 3522;
+						i_66667 = addInt(i_66667, 1);
+					}
+			} while(false);
+		} while(false);
+	framePtr = F.prev;
+
+	return result_66311;
+
+}
+
+function lineCheck_65327(f_65330, f_65330_Idx) {
+
+							function colonanonymous__65704(b_65706) {
+								var result_65707 = false;
+
+								var F={procname:"lineCheck.:anonymous",prev:framePtr,filename:"tetris_library.nim",line:0};
+								framePtr = F;
+								BeforeRet: do {
+									F.line = 275;
+									result_65707 = b_65706.isFilled;
+									break BeforeRet;
+								} while (false);
+								framePtr = F.prev;
+
+								return result_65707;
+
+							}
+
+	var result_65331 = 0;
+
+	var F={procname:"tetris.lineCheck",prev:framePtr,filename:"tetris_library.nim",line:0};
+	framePtr = F;
+		F.line = 273;
+		result_65331 = 0;
+		L1: do {
+			F.line = 274;
+			var i_65701 = 0;
+			F.line = 274;
+			var line_65702 = [null, null, null, null, null, null, null, null, null, null, null, null];
+			F.line = 2283;
+			var colontmp__67178 = null;
+			F.line = 274;
+			colontmp__67178 = X5BX5D__65365(f_65330[f_65330_Idx].board, dotdot__51023(0, 2));
+			F.line = 2285;
+			var i_67181 = 0;
+			L2: do {
+				F.line = 2286;
+					L3: while (true) {
+					if (!(i_67181 < (colontmp__67178 != null ? colontmp__67178.length : 0))) break L3;
+						F.line = 2287;
+						i_65701 = i_67181;
+						F.line = 2287;
+						nimCopy(line_65702, colontmp__67178[chckIndx(i_67181, 0, colontmp__67178.length+0-1)-0], NTI64063);
+						if (all_65712(line_65702, colonanonymous__65704)) {
+						F.line = 276;
+						result_65331 = addInt(result_65331, 1);
+						L4: do {
+							F.line = 277;
+							var t_66244 = 0;
+							F.line = 277;
+							var line_66245 = [null, null, null, null, null, null, null, null, null, null, null, null];
+							F.line = 2283;
+							var colontmp__67163 = null;
+							F.line = 277;
+							colontmp__67163 = X5BX5D__65842(f_65330[f_65330_Idx].board, dotdot__50107(0, subInt(i_65701, 1)));
+							F.line = 2285;
+							var i_67166 = 0;
+							L5: do {
+								F.line = 2286;
+									L6: while (true) {
+									if (!(i_67166 < (colontmp__67163 != null ? colontmp__67163.length : 0))) break L6;
+										F.line = 2287;
+										t_66244 = i_67166;
+										F.line = 2287;
+										nimCopy(line_66245, colontmp__67163[chckIndx(i_67166, 0, colontmp__67163.length+0-1)-0], NTI64063);
+										F.line = 278;
+										X5BX5Deq__66673(f_65330[f_65330_Idx].board[chckIndx(addInt(t_66244, 1), 0, f_65330[f_65330_Idx].board.length+0-1)-0], dotdot__51023(1, 2), X5BX5D__66298(line_66245, dotdot__51023(1, 2)));
+										F.line = 2288;
+										i_67166 = addInt(i_67166, 1);
+									}
+							} while(false);
+						} while(false);
+						F.line = 279;
+						F.line = 279;
+						var ln_67108 = nimCopy(null, [], NTI67107);
+						L7: do {
+							F.line = 279;
+							var __67117 = 0;
+							F.line = 2045;
+							var res_67173 = 0;
+							L8: do {
+								F.line = 2046;
+									L9: while (true) {
+									if (!(res_67173 <= 9)) break L9;
+										F.line = 2047;
+										__67117 = res_67173;
+										F.line = 279;
+										if (ln_67108 != null) { ln_67108.push({isFilled: false, color: 0}); } else { ln_67108 = [{isFilled: false, color: 0}]; };
+										F.line = 2048;
+										res_67173 = addInt(res_67173, 1);
+									}
+							} while(false);
+						} while(false);
+						X5BX5Deq__66673(f_65330[f_65330_Idx].board[chckIndx(0, 0, f_65330[f_65330_Idx].board.length+0-1)-0], dotdot__51023(1, 2), ln_67108);
+						}
+						
+						F.line = 2288;
+						i_67181 = addInt(i_67181, 1);
+					}
+			} while(false);
+		} while(false);
+	framePtr = F.prev;
+
+	return result_65331;
+
+}
+
+function X5BX5D__64984(s_64991, x_64994) {
+	var result_64996 = null;
+
+	var F={procname:"[].[]",prev:framePtr,filename:"lib\\system.nim",line:0};
+	framePtr = F;
+		F.line = 3605;
+		var a_65001 = x_64994.a;
+		F.line = 3606;
+		var L_65207 = addInt(subInt(subInt((s_64991 != null ? s_64991.length : 0), x_64994.b), a_65001), 1);
+		F.line = 3607;
+		result_64996 = new Array(chckRange(L_65207, 0, 2147483647)); for (var i=0;i<chckRange(L_65207, 0, 2147483647);++i) {result_64996[i]=null;}		L1: do {
+			F.line = 3608;
+			var i_65226 = 0;
+			F.line = 3519;
+			var i_65234 = 0;
+			L2: do {
+				F.line = 3520;
+					L3: while (true) {
+					if (!(i_65234 < L_65207)) break L3;
+						F.line = 3521;
+						i_65226 = i_65234;
+						F.line = 3608;
+						result_64996[chckIndx(i_65226, 0, result_64996.length+0-1)-0] = s_64991[chckIndx(addInt(i_65226, a_65001), 0, s_64991.length+0-1)-0];
+						F.line = 3522;
+						i_65234 = addInt(i_65234, 1);
+					}
+			} while(false);
+		} while(false);
+	framePtr = F.prev;
+
+	return result_64996;
+
+}
+
+function pop0_64954(ms_64958, ms_64958_Idx) {
+	var result_64959 = null;
+
+	var F={procname:"tetris.pop0",prev:framePtr,filename:"tetris_library.nim",line:0};
+	framePtr = F;
+		F.line = 261;
+		result_64959 = ms_64958[ms_64958_Idx][chckIndx(0, 0, ms_64958[ms_64958_Idx].length+0-1)-0];
+		F.line = 262;
+		ms_64958[ms_64958_Idx] = nimCopy(null, X5BX5D__64984(ms_64958[ms_64958_Idx], dotdot__51023(1, 1)), NTI64995);
+	framePtr = F.prev;
+
+	return result_64959;
+
+}
+
+function add_65264(x_65270, x_65270_Idx, y_65273) {
+	var F={procname:"add.add",prev:framePtr,filename:"lib\\system.nim",line:0};
+	framePtr = F;
+		F.line = 1528;
+		var xl_65281 = (x_65270[x_65270_Idx] != null ? x_65270[x_65270_Idx].length : 0);
+		F.line = 1529;
+		if (x_65270[x_65270_Idx].length < chckRange(addInt(xl_65281, (y_65273 != null ? y_65273.length : 0)), 0, 2147483647)) { for (var i=x_65270[x_65270_Idx].length;i<chckRange(addInt(xl_65281, (y_65273 != null ? y_65273.length : 0)), 0, 2147483647);++i) x_65270[x_65270_Idx].push(null); }
+               else { x_65270[x_65270_Idx].length = chckRange(addInt(xl_65281, (y_65273 != null ? y_65273.length : 0)), 0, 2147483647); };
+		L1: do {
+			F.line = 1530;
+			var i_65313 = 0;
+			F.line = 2042;
+			var colontmp__65315 = 0;
+			F.line = 1530;
+			colontmp__65315 = (y_65273 != null ? (y_65273.length-1) : -1);
+			F.line = 2045;
+			var res_65318 = 0;
+			L2: do {
+				F.line = 2046;
+					L3: while (true) {
+					if (!(res_65318 <= colontmp__65315)) break L3;
+						F.line = 2047;
+						i_65313 = res_65318;
+						F.line = 1530;
+						x_65270[x_65270_Idx][chckIndx(addInt(xl_65281, i_65313), 0, x_65270[x_65270_Idx].length+0-1)-0] = y_65273[chckIndx(i_65313, 0, y_65273.length+0-1)-0];
+						F.line = 2048;
+						res_65318 = addInt(res_65318, 1);
+					}
+			} while(false);
+		} while(false);
+	framePtr = F.prev;
+
+	
+}
+
+function random_41127(max_41129) {
+	var result_41130 = 0.0;
+
+	var F={procname:"random.random",prev:framePtr,filename:"lib\\pure\\random.nim",line:0};
+	framePtr = F;
+		F.line = 94;
+		var x_41132 = next_40842(state_40605[0]);
+		F.line = 96;
+		result_41130 = ((x_41132 / 4294967295) * max_41129);
+	framePtr = F.prev;
+
+	return result_41130;
+
+}
+
+function shuffle_64914(arr_64918, arr_64918_Idx) {
+	var F={procname:"tetris.shuffle",prev:framePtr,filename:"tetris_library.nim",line:0};
+	framePtr = F;
+		F.line = 244;
+		var n_64926 = (arr_64918[arr_64918_Idx] != null ? arr_64918[arr_64918_Idx].length : 0);
+		F.line = 245;
+		var t_64927 = 0;
+		F.line = 246;
+		var i_64928 = 0;
+		L1: do {
+			F.line = 248;
+				L2: while (true) {
+				if (!(0 < n_64926)) break L2;
+					F.line = 249;
+					i_64928 = ((Math.floor((random_41127(1.0000000000000000e+000) * n_64926)))|0);
+					F.line = 250;
+					n_64926 = subInt(n_64926, 1);
+					F.line = 251;
+					var __64938 = {Field0: arr_64918[arr_64918_Idx][chckIndx(i_64928, 0, arr_64918[arr_64918_Idx].length+0-1)-0], Field1: arr_64918[arr_64918_Idx][chckIndx(n_64926, 0, arr_64918[arr_64918_Idx].length+0-1)-0]};
+					F.line = 251;
+					arr_64918[arr_64918_Idx][chckIndx(n_64926, 0, arr_64918[arr_64918_Idx].length+0-1)-0] = __64938["Field0"];
+					F.line = 251;
+					arr_64918[arr_64918_Idx][chckIndx(i_64928, 0, arr_64918[arr_64918_Idx].length+0-1)-0] = __64938["Field1"];
+				}
+		} while(false);
+	framePtr = F.prev;
+
+	
+}
+
+function shuffled_64945(arr_64948) {
+	var result_64950 = [null];
+
+	var F={procname:"tetris.shuffled",prev:framePtr,filename:"tetris_library.nim",line:0};
+	framePtr = F;
+		F.line = 254;
+		result_64950[0] = nimCopy(null, arr_64948, NTI64947);
+		F.line = 255;
+		shuffle_64914(result_64950, 0);
+	framePtr = F.prev;
+
+	return result_64950[0];
+
+}
+
+function renderBox_64464(m_64467, m_64467_Idx) {
+
+											function setBox_64468(b_64471, b_64471_Idx, m_64472, i_64473, j_64474, t_64475, s_64476) {
+													var Tmp1;
+
+												var F={procname:"renderBox.setBox",prev:framePtr,filename:"tetris_library.nim",line:0};
+												framePtr = F;
+													F.line = 117;
+													if (m_64472.kind.shape[chckIndx(i_64473, 0, m_64472.kind.shape.length+0-1)-0][chckIndx(j_64474, 0, m_64472.kind.shape[chckIndx(i_64473, 0, m_64472.kind.shape.length+0-1)-0].length+0-1)-0]) {
+													Tmp1 = m_64472.kind.color;
+													}
+													else {
+													Tmp1 = 0;
+													}
+													
+													var itsColor_64477 = Tmp1;
+													F.line = 118;
+													b_64471[b_64471_Idx][chckIndx(t_64475, 0, b_64471[b_64471_Idx].length+0-1)-0][chckIndx(s_64476, 0, b_64471[b_64471_Idx][chckIndx(t_64475, 0, b_64471[b_64471_Idx].length+0-1)-0].length+0-1)-0] = {isFilled: m_64472.kind.shape[chckIndx(i_64473, 0, m_64472.kind.shape.length+0-1)-0][chckIndx(j_64474, 0, m_64472.kind.shape[chckIndx(i_64473, 0, m_64472.kind.shape.length+0-1)-0].length+0-1)-0], color: itsColor_64477};
+												framePtr = F.prev;
+
+												
+											}
+
+	var F={procname:"tetris.renderBox",prev:framePtr,filename:"tetris_library.nim",line:0};
+	framePtr = F;
+		F.line = 120;
+		var l_64486 = subInt((m_64467[m_64467_Idx].kind.shape != null ? m_64467[m_64467_Idx].kind.shape.length : 0), 1);
+		F.line = 122;
+		var b_64487 = [null];
+		F.line = 123;
+		var bb_64489 = null;
+		L1: do {
+			F.line = 124;
+			var i_64498 = 0;
+			F.line = 2045;
+			var res_64617 = 0;
+			L2: do {
+				F.line = 2046;
+					L3: while (true) {
+					if (!(res_64617 <= l_64486)) break L3;
+						F.line = 2047;
+						i_64498 = res_64617;
+						L4: do {
+							F.line = 125;
+							var j_64507 = 0;
+							F.line = 2045;
+							var res_64611 = 0;
+							L5: do {
+								F.line = 2046;
+									L6: while (true) {
+									if (!(res_64611 <= l_64486)) break L6;
+										F.line = 2047;
+										j_64507 = res_64611;
+										F.line = 126;
+										if (bb_64489 != null) { bb_64489.push({isFilled: false, color: 0}); } else { bb_64489 = [{isFilled: false, color: 0}]; };
+										F.line = 2048;
+										res_64611 = addInt(res_64611, 1);
+									}
+							} while(false);
+						} while(false);
+						F.line = 127;
+						var Tmp7 = nimCopy(null, bb_64489, NTI64488);
+						if (b_64487[0] != null) { b_64487[0].push(Tmp7); } else { b_64487[0] = [Tmp7]; };
+						F.line = 2048;
+						res_64617 = addInt(res_64617, 1);
+					}
+			} while(false);
+		} while(false);
+		F.line = 129;
+		switch (m_64467[m_64467_Idx].dir) {
+		case 0:
+			L8: do {
+				F.line = 131;
+				var i_64536 = 0;
+				F.line = 2045;
+				var res_64631 = 0;
+				L9: do {
+					F.line = 2046;
+						L10: while (true) {
+						if (!(res_64631 <= l_64486)) break L10;
+							F.line = 2047;
+							i_64536 = res_64631;
+							L11: do {
+								F.line = 132;
+								var j_64545 = 0;
+								F.line = 2045;
+								var res_64625 = 0;
+								L12: do {
+									F.line = 2046;
+										L13: while (true) {
+										if (!(res_64625 <= l_64486)) break L13;
+											F.line = 2047;
+											j_64545 = res_64625;
+											F.line = 133;
+											setBox_64468(b_64487, 0, m_64467[m_64467_Idx], i_64536, j_64545, i_64536, j_64545);
+											F.line = 2048;
+											res_64625 = addInt(res_64625, 1);
+										}
+								} while(false);
+							} while(false);
+							F.line = 2048;
+							res_64631 = addInt(res_64631, 1);
+						}
+				} while(false);
+			} while(false);
+			break;
+		case 1:
+			L14: do {
+				F.line = 135;
+				var i_64555 = 0;
+				F.line = 2045;
+				var res_64645 = 0;
+				L15: do {
+					F.line = 2046;
+						L16: while (true) {
+						if (!(res_64645 <= l_64486)) break L16;
+							F.line = 2047;
+							i_64555 = res_64645;
+							L17: do {
+								F.line = 136;
+								var j_64564 = 0;
+								F.line = 2045;
+								var res_64639 = 0;
+								L18: do {
+									F.line = 2046;
+										L19: while (true) {
+										if (!(res_64639 <= l_64486)) break L19;
+											F.line = 2047;
+											j_64564 = res_64639;
+											F.line = 137;
+											setBox_64468(b_64487, 0, m_64467[m_64467_Idx], i_64555, j_64564, j_64564, subInt(l_64486, i_64555));
+											F.line = 2048;
+											res_64639 = addInt(res_64639, 1);
+										}
+								} while(false);
+							} while(false);
+							F.line = 2048;
+							res_64645 = addInt(res_64645, 1);
+						}
+				} while(false);
+			} while(false);
+			break;
+		case 2:
+			L20: do {
+				F.line = 139;
+				var i_64574 = 0;
+				F.line = 2045;
+				var res_64659 = 0;
+				L21: do {
+					F.line = 2046;
+						L22: while (true) {
+						if (!(res_64659 <= l_64486)) break L22;
+							F.line = 2047;
+							i_64574 = res_64659;
+							L23: do {
+								F.line = 140;
+								var j_64583 = 0;
+								F.line = 2045;
+								var res_64653 = 0;
+								L24: do {
+									F.line = 2046;
+										L25: while (true) {
+										if (!(res_64653 <= l_64486)) break L25;
+											F.line = 2047;
+											j_64583 = res_64653;
+											F.line = 141;
+											setBox_64468(b_64487, 0, m_64467[m_64467_Idx], i_64574, j_64583, subInt(l_64486, i_64574), subInt(l_64486, j_64583));
+											F.line = 2048;
+											res_64653 = addInt(res_64653, 1);
+										}
+								} while(false);
+							} while(false);
+							F.line = 2048;
+							res_64659 = addInt(res_64659, 1);
+						}
+				} while(false);
+			} while(false);
+			break;
+		case 3:
+			L26: do {
+				F.line = 143;
+				var i_64593 = 0;
+				F.line = 2045;
+				var res_64673 = 0;
+				L27: do {
+					F.line = 2046;
+						L28: while (true) {
+						if (!(res_64673 <= l_64486)) break L28;
+							F.line = 2047;
+							i_64593 = res_64673;
+							L29: do {
+								F.line = 144;
+								var j_64602 = 0;
+								F.line = 2045;
+								var res_64667 = 0;
+								L30: do {
+									F.line = 2046;
+										L31: while (true) {
+										if (!(res_64667 <= l_64486)) break L31;
+											F.line = 2047;
+											j_64602 = res_64667;
+											F.line = 145;
+											setBox_64468(b_64487, 0, m_64467[m_64467_Idx], i_64593, j_64602, subInt(l_64486, j_64602), i_64593);
+											F.line = 2048;
+											res_64667 = addInt(res_64667, 1);
+										}
+								} while(false);
+							} while(false);
+							F.line = 2048;
+							res_64673 = addInt(res_64673, 1);
+						}
+				} while(false);
+			} while(false);
+			break;
+		}
+		F.line = 147;
+		m_64467[m_64467_Idx].boxs = nimCopy(null, b_64487[0], NTI64018);
+	framePtr = F.prev;
+
+	
+}
+
+function dropStart(f_65240, f_65240_Idx) {
+	var F={procname:"tetris.dropStart",prev:framePtr,filename:"tetris_library.nim",line:0};
+	framePtr = F;
+		F.line = 265;
+		var mino_65242 = pop0_64954(f_65240[f_65240_Idx], "minos");
+		if (((f_65240[f_65240_Idx].minos != null ? f_65240[f_65240_Idx].minos.length : 0) < 4)) {
+		F.line = 267;
+		add_65264(f_65240[f_65240_Idx], "minos", shuffled_64945([I_64175[0], O_64213[0], S_64263[0], Z_64313[0], J_64363[0], L_64413[0], T_64463[0]]));
+		}
+		
+		F.line = 268;
+		f_65240[f_65240_Idx].am = {pos: nimCopy(null, mino_65242.firstPos, NTI64014), kind: mino_65242, dir: 0, boxs: null};
+		F.line = 269;
+		renderBox_64464(f_65240[f_65240_Idx], "am");
+		if (!(posVerify_64677(f_65240[f_65240_Idx], "am", f_65240[f_65240_Idx].board))) {
+		F.line = 270;
+		gameOver_64912();
+		}
+		
+	framePtr = F.prev;
+
+	
+}
+
+function fixAM_64903(f_64906, f_64906_Idx) {
+	var F={procname:"tetris.fixAM",prev:framePtr,filename:"tetris_library.nim",line:0};
+	framePtr = F;
+	BeforeRet: do {
+		if (!(posVerify_64677(f_64906[f_64906_Idx], "am", f_64906[f_64906_Idx].board))) {
+		F.line = 282;
+		break BeforeRet;
+		}
+		
+		L1: do {
+			F.line = 283;
+			var i_67200 = 0;
+			F.line = 283;
+			var bs_67201 = null;
+			F.line = 2283;
+			var colontmp__67243 = null;
+			F.line = 283;
+			colontmp__67243 = f_64906[f_64906_Idx].am.boxs;
+			F.line = 2285;
+			var i_67246 = 0;
+			L2: do {
+				F.line = 2286;
+					L3: while (true) {
+					if (!(i_67246 < (colontmp__67243 != null ? colontmp__67243.length : 0))) break L3;
+						F.line = 2287;
+						i_67200 = i_67246;
+						F.line = 2287;
+						bs_67201 = colontmp__67243[chckIndx(i_67246, 0, colontmp__67243.length+0-1)-0];
+						L4: do {
+							F.line = 284;
+							var j_67215 = 0;
+							F.line = 284;
+							var b_67216 = null;
+							F.line = 2285;
+							var i_67242 = 0;
+							L5: do {
+								F.line = 2286;
+									L6: while (true) {
+									if (!(i_67242 < (bs_67201 != null ? bs_67201.length : 0))) break L6;
+										F.line = 2287;
+										j_67215 = i_67242;
+										F.line = 2287;
+										b_67216 = bs_67201[chckIndx(i_67242, 0, bs_67201.length+0-1)-0];
+										if (b_67216.isFilled) {
+										F.line = 286;
+										f_64906[f_64906_Idx].board[chckIndx(addInt(f_64906[f_64906_Idx].am.pos.Field0, i_67200), 0, f_64906[f_64906_Idx].board.length+0-1)-0][chckIndx(addInt(f_64906[f_64906_Idx].am.pos.Field1, j_67215), 0, f_64906[f_64906_Idx].board[chckIndx(addInt(f_64906[f_64906_Idx].am.pos.Field0, i_67200), 0, f_64906[f_64906_Idx].board.length+0-1)-0].length+0-1)-0] = b_67216;
+										}
+										
+										F.line = 2288;
+										i_67242 = addInt(i_67242, 1);
+									}
+							} while(false);
+						} while(false);
+						F.line = 2288;
+						i_67246 = addInt(i_67246, 1);
+					}
+			} while(false);
+		} while(false);
+		F.line = 288;
+		var cllines_67217 = lineCheck_65327(f_64906, f_64906_Idx);
+		F.line = 289;
+		f_64906[f_64906_Idx].clearlines = addInt(f_64906[f_64906_Idx].clearlines, cllines_67217);
+		F.line = 290;
+		f_64906[f_64906_Idx].score = addInt(f_64906[f_64906_Idx].score, [0, 1, 3, 6, 10][chckIndx(cllines_67217, 0, [0, 1, 3, 6, 10].length+0-1)-0]);
+		F.line = 291;
+		dropStart(f_64906, f_64906_Idx);
+	} while (false);
+	framePtr = F.prev;
+
+	
+}
+
+function dropStep(f_64910, f_64910_Idx) {
+	var F={procname:"tetris.dropStep",prev:framePtr,filename:"tetris_library.nim",line:0};
+	framePtr = F;
+		if ((modInt(f_64910[f_64910_Idx].frame, 180) == 0)) {
+		if (!(move_64842(f_64910[f_64910_Idx], "am", f_64910[f_64910_Idx].board, 1))) {
+		F.line = 225;
+		fixAM_64903(f_64910, f_64910_Idx);
+		}
+		
+		}
+		
+	framePtr = F.prev;
+
+	
+}
+randomize_63001();
+var I_64175 = [{shape: nimCopy(null, [[false, false, false, false], [true, true, true, true], [false, false, false, false], [false, false, false, false]], NTI64173), color: 1, firstPos: {Field0: 0, Field1: 4}}];
+var O_64213 = [{shape: nimCopy(null, [[true, true], [true, true]], NTI64211), color: 2, firstPos: {Field0: 0, Field1: 5}}];
+var S_64263 = [{shape: nimCopy(null, [[false, true, true], [true, true, false], [false, false, false]], NTI64261), color: 3, firstPos: {Field0: 0, Field1: 4}}];
+var Z_64313 = [{shape: nimCopy(null, [[true, true, false], [false, true, true], [false, false, false]], NTI64261), color: 4, firstPos: {Field0: 0, Field1: 4}}];
+var J_64363 = [{shape: nimCopy(null, [[true, false, false], [true, true, true], [false, false, false]], NTI64261), color: 5, firstPos: {Field0: 0, Field1: 4}}];
+var L_64413 = [{shape: nimCopy(null, [[false, false, true], [true, true, true], [false, false, false]], NTI64261), color: 6, firstPos: {Field0: 0, Field1: 4}}];
+var T_64463 = [{shape: nimCopy(null, [[false, true, false], [true, true, true], [false, false, false]], NTI64261), color: 7, firstPos: {Field0: 0, Field1: 4}}];
+var F_67424 = [null];
+
+function gameInit() {
+	var F={procname:"tetris.gameInit",prev:framePtr,filename:"tetris.nim",line:0};
+	framePtr = F;
+		F.line = 10;
+		var board_67432 = [[null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null]];
+		L1: do {
+			F.line = 12;
+			var i_67441 = 0;
+			F.line = 3519;
+			var i_67489 = 0;
+			L2: do {
+				F.line = 3520;
+					L3: while (true) {
+					if (!(i_67489 < 21)) break L3;
+						F.line = 3521;
+						i_67441 = i_67489;
+						F.line = 13;
+						board_67432[chckIndx(i_67441, 0, board_67432.length+0-1)-0][chckIndx(0, 0, board_67432[chckIndx(i_67441, 0, board_67432.length+0-1)-0].length+0-1)-0] = {isFilled: true, color: 0};
+						F.line = 15;
+						board_67432[chckIndx(i_67441, 0, board_67432.length+0-1)-0][chckIndx(11, 0, board_67432[chckIndx(i_67441, 0, board_67432.length+0-1)-0].length+0-1)-0] = {isFilled: true, color: 0};
+						L4: do {
+							F.line = 17;
+							var j_67450 = 0;
+							F.line = 3519;
+							var i_67485 = 1;
+							L5: do {
+								F.line = 3520;
+									L6: while (true) {
+									if (!(i_67485 < 11)) break L6;
+										F.line = 3521;
+										j_67450 = i_67485;
+										F.line = 18;
+										board_67432[chckIndx(i_67441, 0, board_67432.length+0-1)-0][chckIndx(j_67450, 0, board_67432[chckIndx(i_67441, 0, board_67432.length+0-1)-0].length+0-1)-0] = {isFilled: false, color: 0};
+										F.line = 3522;
+										i_67485 = addInt(i_67485, 1);
+									}
+							} while(false);
+						} while(false);
+						F.line = 3522;
+						i_67489 = addInt(i_67489, 1);
+					}
+			} while(false);
+		} while(false);
+		L7: do {
+			F.line = 20;
+			var i_67459 = 0;
+			F.line = 3519;
+			var i_67495 = 0;
+			L8: do {
+				F.line = 3520;
+					L9: while (true) {
+					if (!(i_67495 < 12)) break L9;
+						F.line = 3521;
+						i_67459 = i_67495;
+						F.line = 22;
+						board_67432[chckIndx(21, 0, board_67432.length+0-1)-0][chckIndx(i_67459, 0, board_67432[chckIndx(21, 0, board_67432.length+0-1)-0].length+0-1)-0] = {isFilled: true, color: 0};
+						F.line = 3522;
+						i_67495 = addInt(i_67495, 1);
+					}
+			} while(false);
+		} while(false);
+		F.line = 25;
+		var mns_67472 = [[I_64175[0], O_64213[0], S_64263[0], Z_64313[0], J_64363[0], L_64413[0], T_64463[0]]];
+		F.line = 26;
+		shuffle_64914(mns_67472, 0);
+		F.line = 27;
+		F_67424[0] = {board: nimCopy(null, board_67432, NTI67431), frame: 0, minos: nimCopy(null, mns_67472[0], NTI65261), score: 0, clearlines: 0, am: null, gm: null};
+		F.line = 28;
+		dropStart(F_67424, 0);
+	framePtr = F.prev;
+
+	
+}
+var gameOverFlag_67498 = [false];
+var buttons_67538 = [nimCopy(null, [], NTI67537)];
+L2: do {
+	var b_67621 = [0];
+	L3: do {
+		var v_67638 = 0;
+		var res_67640 = 0;
+		L4: do {
+				L5: while (true) {
+				if (!(res_67640 <= 8)) break L5;
+					v_67638 = res_67640;
+					b_67621[0] = v_67638;
+					if (buttons_67538[0] != null) { buttons_67538[0].push({kind: b_67621[0], isPushed: false, contFlames: 0}); } else { buttons_67538[0] = [{kind: b_67621[0], isPushed: false, contFlames: 0}]; };
+					res_67640 += 1;
+				}
+		} while(false);
+	} while(false);
+} while(false);
+
+function posCorrect_64764(m_64767, m_64767_Idx, board_64768) {
+	var result_64769 = false;
+
+	var F={procname:"tetris.posCorrect",prev:framePtr,filename:"tetris_library.nim",line:0};
+	framePtr = F;
+	BeforeRet: do {
+		L1: do {
+			F.line = 164;
+			var i_64785 = 0;
+			F.line = 3518;
+			var colontmp__64805 = 0;
+			F.line = 164;
+			colontmp__64805 = (m_64767[m_64767_Idx].boxs != null ? m_64767[m_64767_Idx].boxs.length : 0);
+			F.line = 3519;
+			var i_64808 = 0;
+			L2: do {
+				F.line = 3520;
+					L3: while (true) {
+					if (!(i_64808 < colontmp__64805)) break L3;
+						F.line = 3521;
+						i_64785 = i_64808;
+						F.line = 165;
+						m_64767[m_64767_Idx].pos.Field1 = addInt(m_64767[m_64767_Idx].pos.Field1, i_64785);
+						if (posVerify_64677(m_64767, m_64767_Idx, board_64768)) {
+						F.line = 167;
+						result_64769 = true;
+						break BeforeRet;
+						}
+						
+						F.line = 168;
+						m_64767[m_64767_Idx].pos.Field1 = subInt(m_64767[m_64767_Idx].pos.Field1, mulInt(2, i_64785));
+						if (posVerify_64677(m_64767, m_64767_Idx, board_64768)) {
+						F.line = 170;
+						result_64769 = true;
+						break BeforeRet;
+						}
+						
+						F.line = 3522;
+						i_64808 = addInt(i_64808, 1);
+					}
+			} while(false);
+		} while(false);
+		F.line = 177;
+		result_64769 = false;
+		break BeforeRet;
+	} while (false);
+	framePtr = F.prev;
+
+	return result_64769;
+
+}
+
+function spin_64810(m_64813, m_64813_Idx, a_64816, board_64817) {
+	var F={procname:"tetris.spin",prev:framePtr,filename:"tetris_library.nim",line:0};
+	framePtr = F;
+		F.line = 180;
+		var pre_dir_64818 = m_64813[m_64813_Idx].dir;
+		F.line = 181;
+		m_64813[m_64813_Idx].dir = a_64816[chckIndx(m_64813[m_64813_Idx].dir, 0, a_64816.length+0-1)-0];
+		F.line = 182;
+		renderBox_64464(m_64813, m_64813_Idx);
+		if (!(posVerify_64677(m_64813, m_64813_Idx, board_64817))) {
+		F.line = 185;
+		var pre_pos_64826 = {Field0: m_64813[m_64813_Idx].pos.Field0, Field1: m_64813[m_64813_Idx].pos.Field1};
+		if (!(posCorrect_64764(m_64813, m_64813_Idx, board_64817))) {
+		F.line = 187;
+		var __64827 = nimCopy(null, pre_pos_64826, NTI64825);
+		F.line = 187;
+		m_64813[m_64813_Idx].pos.Field0 = __64827["Field0"];
+		F.line = 187;
+		m_64813[m_64813_Idx].pos.Field1 = __64827["Field1"];
+		F.line = 188;
+		m_64813[m_64813_Idx].dir = pre_dir_64818;
+		}
+		
+		F.line = 189;
+		renderBox_64464(m_64813, m_64813_Idx);
+		}
+		
+	framePtr = F.prev;
+
+	
+}
+
+function rightSpin_64828(m_64831, m_64831_Idx, board_64832) {
+	var F={procname:"tetris.rightSpin",prev:framePtr,filename:"tetris_library.nim",line:0};
+	framePtr = F;
+		F.line = 192;
+		spin_64810(m_64831, m_64831_Idx, [1, 2, 3, 0], board_64832);
+	framePtr = F.prev;
+
+	
+}
+
+function leftSpin_64835(m_64838, m_64838_Idx, board_64839) {
+	var F={procname:"tetris.leftSpin",prev:framePtr,filename:"tetris_library.nim",line:0};
+	framePtr = F;
+		F.line = 195;
+		spin_64810(m_64838, m_64838_Idx, [3, 0, 1, 2], board_64839);
+	framePtr = F.prev;
+
+	
+}
+
+function buttonCheck_67641(c_67645) {
+			var Tmp4;
+			var Tmp5;
+
+	var F={procname:"tetris.buttonCheck",prev:framePtr,filename:"tetris.nim",line:0};
+	framePtr = F;
+		L1: do {
+			F.line = 48;
+			var i_67699 = 0;
+			F.line = 48;
+			var b_67700 = false;
+			F.line = 2266;
+			var i_67849 = 0;
+			if ((i_67849 <= 7)) {
+			L2: do {
+				F.line = 2268;
+					L3: while (true) {
+					if (!true) break L3;
+						F.line = 2269;
+						i_67699 = i_67849;
+						F.line = 2269;
+						b_67700 = c_67645[chckIndx(i_67849, 0, c_67645.length+0-1)-0];
+						if (!(b_67700)) {
+						F.line = 50;
+						buttons_67538[0][chckIndx(i_67699, 0, buttons_67538[0].length+0-1)-0].isPushed = false;
+						F.line = 51;
+						buttons_67538[0][chckIndx(i_67699, 0, buttons_67538[0].length+0-1)-0].contFlames = 0;
+						}
+						
+						if ((7 <= i_67849)) {
+						F.line = 2270;
+						break L2;
+						}
+						
+						F.line = 2271;
+						i_67849 = addInt(i_67849, 1);
+					}
+			} while(false);
+			}
+			
+		} while(false);
+		if (c_67645[chckIndx(1, 0, c_67645.length+0-1)-0]) {
+		if (!(buttons_67538[0][chckIndx(1, 0, buttons_67538[0].length+0-1)-0].isPushed)) {
+		F.line = 55;
+		rightSpin_64828(F_67424[0], "am", F_67424[0].board);
+		F.line = 56;
+		buttons_67538[0][chckIndx(1, 0, buttons_67538[0].length+0-1)-0].isPushed = true;
+		}
+		
+		}
+		else {
+		if (c_67645[chckIndx(2, 0, c_67645.length+0-1)-0]) {
+		if (!(buttons_67538[0][chckIndx(2, 0, buttons_67538[0].length+0-1)-0].isPushed)) {
+		F.line = 59;
+		leftSpin_64835(F_67424[0], "am", F_67424[0].board);
+		F.line = 60;
+		buttons_67538[0][chckIndx(2, 0, buttons_67538[0].length+0-1)-0].isPushed = true;
+		}
+		
+		}
+		}
+		if (c_67645[chckIndx(6, 0, c_67645.length+0-1)-0]) {
+			if (!(buttons_67538[0][chckIndx(6, 0, buttons_67538[0].length+0-1)-0].isPushed)) Tmp4 = true; else {				Tmp4 = (30 < buttons_67538[0][chckIndx(6, 0, buttons_67538[0].length+0-1)-0].contFlames);			}		if (Tmp4) {
+		F.line = 64;
+		move_64842(F_67424[0], "am", F_67424[0].board, 2);
+		F.line = 65;
+		buttons_67538[0][chckIndx(6, 0, buttons_67538[0].length+0-1)-0].isPushed = true;
+		}
+		else {
+			F.line = 67;
+		buttons_67538[0][chckIndx(6, 0, buttons_67538[0].length+0-1)-0].contFlames = addInt(buttons_67538[0][chckIndx(6, 0, buttons_67538[0].length+0-1)-0].contFlames, 1);
+		}
+		
+		}
+		else {
+		if (c_67645[chckIndx(7, 0, c_67645.length+0-1)-0]) {
+			if (!(buttons_67538[0][chckIndx(7, 0, buttons_67538[0].length+0-1)-0].isPushed)) Tmp5 = true; else {				Tmp5 = (30 < buttons_67538[0][chckIndx(7, 0, buttons_67538[0].length+0-1)-0].contFlames);			}		if (Tmp5) {
+		F.line = 70;
+		move_64842(F_67424[0], "am", F_67424[0].board, 3);
+		F.line = 71;
+		buttons_67538[0][chckIndx(7, 0, buttons_67538[0].length+0-1)-0].isPushed = true;
+		}
+		else {
+			F.line = 73;
+		buttons_67538[0][chckIndx(7, 0, buttons_67538[0].length+0-1)-0].contFlames = addInt(buttons_67538[0][chckIndx(7, 0, buttons_67538[0].length+0-1)-0].contFlames, 1);
+		}
+		
+		}
+		}
+		if (c_67645[chckIndx(5, 0, c_67645.length+0-1)-0]) {
+		F.line = 76;
+		move_64842(F_67424[0], "am", F_67424[0].board, 1);
+		}
+		
+		if (c_67645[chckIndx(3, 0, c_67645.length+0-1)-0]) {
+		if (!(buttons_67538[0][chckIndx(3, 0, buttons_67538[0].length+0-1)-0].isPushed)) {
+		L6: do {
+			F.line = 80;
+				L7: while (true) {
+				if (!move_64842(F_67424[0], "am", F_67424[0].board, 1)) break L7;
+				}
+		} while(false);
+		F.line = 81;
+		fixAM_64903(F_67424, 0);
+		F.line = 82;
+		buttons_67538[0][chckIndx(3, 0, buttons_67538[0].length+0-1)-0].isPushed = true;
+		}
+		
+		}
+		
+	framePtr = F.prev;
+
+	
+}
+
+function gameStep(c_67855) {
+	var F={procname:"tetris.gameStep",prev:framePtr,filename:"tetris.nim",line:0};
+	framePtr = F;
+	BeforeRet: do {
+		if (gameOverFlag_67498[0]) {
+		F.line = 85;
+		break BeforeRet;
+		}
+		
+		F.line = 87;
+		buttonCheck_67641(c_67855);
+		F.line = 88;
+		F_67424[0].frame = addInt(F_67424[0].frame, 1);
+		F.line = 89;
+		dropStep(F_67424, 0);
+	} while (false);
+	framePtr = F.prev;
+
+	
+}
+
+function fixGhost_67247(f_67250, f_67250_Idx) {
+	var F={procname:"tetris.fixGhost",prev:framePtr,filename:"tetris_library.nim",line:0};
+	framePtr = F;
+		L1: do {
+			F.line = 294;
+			var i_67304 = 0;
+			F.line = 294;
+			var line_67305 = [null, null, null, null, null, null, null, null, null, null, null, null];
+			F.line = 2264;
+			var colontmp__67399 = [[null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null]];
+			F.line = 294;
+			nimCopy(colontmp__67399, f_67250[f_67250_Idx].board, NTI64020);
+			F.line = 2266;
+			var i_67402 = 0;
+			if ((i_67402 <= 21)) {
+			L2: do {
+				F.line = 2268;
+					L3: while (true) {
+					if (!true) break L3;
+						F.line = 2269;
+						i_67304 = i_67402;
+						F.line = 2269;
+						nimCopy(line_67305, colontmp__67399[chckIndx(i_67402, 0, colontmp__67399.length+0-1)-0], NTI64063);
+						L4: do {
+							F.line = 295;
+							var j_67359 = 0;
+							F.line = 295;
+							var b_67360 = null;
+							F.line = 2266;
+							var i_67398 = 0;
+							if ((i_67398 <= 11)) {
+							L5: do {
+								F.line = 2268;
+									L6: while (true) {
+									if (!true) break L6;
+										F.line = 2269;
+										j_67359 = i_67398;
+										F.line = 2269;
+										b_67360 = line_67305[chckIndx(i_67398, 0, line_67305.length+0-1)-0];
+										if (!(b_67360.isFilled)) {
+										F.line = 297;
+										f_67250[f_67250_Idx].board[chckIndx(i_67304, 0, f_67250[f_67250_Idx].board.length+0-1)-0][chckIndx(j_67359, 0, f_67250[f_67250_Idx].board[chckIndx(i_67304, 0, f_67250[f_67250_Idx].board.length+0-1)-0].length+0-1)-0] = {isFilled: false, color: 0};
+										}
+										
+										if ((11 <= i_67398)) {
+										F.line = 2270;
+										break L5;
+										}
+										
+										F.line = 2271;
+										i_67398 = addInt(i_67398, 1);
+									}
+							} while(false);
+							}
+							
+						} while(false);
+						if ((21 <= i_67402)) {
+						F.line = 2270;
+						break L2;
+						}
+						
+						F.line = 2271;
+						i_67402 = addInt(i_67402, 1);
+					}
+			} while(false);
+			}
+			
+		} while(false);
+		F.line = 298;
+		var x_67361 = f_67250[f_67250_Idx].am.pos.Field0;
+		L7: do {
+			F.line = 299;
+				L8: while (true) {
+				if (!move_64842(f_67250[f_67250_Idx], "am", f_67250[f_67250_Idx].board, 1)) break L8;
+				}
+		} while(false);
+		L9: do {
+			F.line = 300;
+			var i_67376 = 0;
+			F.line = 300;
+			var bs_67377 = null;
+			F.line = 2283;
+			var colontmp__67410 = null;
+			F.line = 300;
+			colontmp__67410 = f_67250[f_67250_Idx].am.boxs;
+			F.line = 2285;
+			var i_67413 = 0;
+			L10: do {
+				F.line = 2286;
+					L11: while (true) {
+					if (!(i_67413 < (colontmp__67410 != null ? colontmp__67410.length : 0))) break L11;
+						F.line = 2287;
+						i_67376 = i_67413;
+						F.line = 2287;
+						bs_67377 = colontmp__67410[chckIndx(i_67413, 0, colontmp__67410.length+0-1)-0];
+						L12: do {
+							F.line = 301;
+							var j_67391 = 0;
+							F.line = 301;
+							var b_67392 = null;
+							F.line = 2285;
+							var i_67409 = 0;
+							L13: do {
+								F.line = 2286;
+									L14: while (true) {
+									if (!(i_67409 < (bs_67377 != null ? bs_67377.length : 0))) break L14;
+										F.line = 2287;
+										j_67391 = i_67409;
+										F.line = 2287;
+										b_67392 = bs_67377[chckIndx(i_67409, 0, bs_67377.length+0-1)-0];
+										if (b_67392.isFilled) {
+										F.line = 303;
+										f_67250[f_67250_Idx].board[chckIndx(addInt(f_67250[f_67250_Idx].am.pos.Field0, i_67376), 0, f_67250[f_67250_Idx].board.length+0-1)-0][chckIndx(addInt(f_67250[f_67250_Idx].am.pos.Field1, j_67391), 0, f_67250[f_67250_Idx].board[chckIndx(addInt(f_67250[f_67250_Idx].am.pos.Field0, i_67376), 0, f_67250[f_67250_Idx].board.length+0-1)-0].length+0-1)-0] = {isFilled: false, color: 8};
+										}
+										
+										F.line = 2288;
+										i_67409 = addInt(i_67409, 1);
+									}
+							} while(false);
+						} while(false);
+						F.line = 2288;
+						i_67413 = addInt(i_67413, 1);
+					}
+			} while(false);
+		} while(false);
+		F.line = 304;
+		f_67250[f_67250_Idx].am.pos.Field0 = x_67361;
+	framePtr = F.prev;
+
+	
+}
+
+function getBoard() {
+	var result_67868 = [[null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null]];
+
+	var F={procname:"tetris.getBoard",prev:framePtr,filename:"tetris.nim",line:0};
+	framePtr = F;
+	BeforeRet: do {
+		F.line = 93;
+		var board_67869 = nimCopy(null, F_67424[0].board, NTI64020);
+		F.line = 94;
+		var am_67870 = F_67424[0].am;
+		F.line = 96;
+		fixGhost_67247(F_67424, 0);
+		L1: do {
+			F.line = 97;
+			var i_67885 = 0;
+			F.line = 97;
+			var bs_67886 = null;
+			F.line = 2283;
+			var colontmp__67907 = null;
+			F.line = 97;
+			colontmp__67907 = am_67870.boxs;
+			F.line = 2285;
+			var i_67910 = 0;
+			L2: do {
+				F.line = 2286;
+					L3: while (true) {
+					if (!(i_67910 < (colontmp__67907 != null ? colontmp__67907.length : 0))) break L3;
+						F.line = 2287;
+						i_67885 = i_67910;
+						F.line = 2287;
+						bs_67886 = colontmp__67907[chckIndx(i_67910, 0, colontmp__67907.length+0-1)-0];
+						L4: do {
+							F.line = 98;
+							var j_67900 = 0;
+							F.line = 98;
+							var b_67901 = null;
+							F.line = 2285;
+							var i_67906 = 0;
+							L5: do {
+								F.line = 2286;
+									L6: while (true) {
+									if (!(i_67906 < (bs_67886 != null ? bs_67886.length : 0))) break L6;
+										F.line = 2287;
+										j_67900 = i_67906;
+										F.line = 2287;
+										b_67901 = bs_67886[chckIndx(i_67906, 0, bs_67886.length+0-1)-0];
+										if (b_67901.isFilled) {
+										F.line = 100;
+										board_67869[chckIndx(addInt(am_67870.pos.Field0, i_67885), 0, board_67869.length+0-1)-0][chckIndx(addInt(am_67870.pos.Field1, j_67900), 0, board_67869[chckIndx(addInt(am_67870.pos.Field0, i_67885), 0, board_67869.length+0-1)-0].length+0-1)-0] = b_67901;
+										}
+										
+										F.line = 2288;
+										i_67906 = addInt(i_67906, 1);
+									}
+							} while(false);
+						} while(false);
+						F.line = 2288;
+						i_67910 = addInt(i_67910, 1);
+					}
+			} while(false);
+		} while(false);
+		F.line = 101;
+		nimCopy(result_67868, board_67869, NTI64020);
+		break BeforeRet;
+	} while (false);
+	framePtr = F.prev;
+
+	return result_67868;
+
+}
+
+function getScore() {
+	var result_67913 = 0;
+
+	var F={procname:"tetris.getScore",prev:framePtr,filename:"tetris.nim",line:0};
+	framePtr = F;
+		F.line = 104;
+		result_67913 = F_67424[0].score;
+	framePtr = F.prev;
+
+	return result_67913;
+
+}
+
+function getClearLines() {
+	var result_67916 = 0;
+
+	var F={procname:"tetris.getClearLines",prev:framePtr,filename:"tetris.nim",line:0};
+	framePtr = F;
+		F.line = 107;
+		result_67916 = F_67424[0].clearlines;
+	framePtr = F.prev;
+
+	return result_67916;
+
+}
+
+function getNext() {
+										var Tmp14;
+
+	var result_67919 = null;
+
+	var F={procname:"tetris.getNext",prev:framePtr,filename:"tetris.nim",line:0};
+	framePtr = F;
+		F.line = 111;
+		var m_67920 = F_67424[0].minos[chckIndx(0, 0, F_67424[0].minos.length+0-1)-0];
+		F.line = 112;
+		var p0_67928 = modInt(((slash__22207((m_67920.shape != null ? m_67920.shape.length : 0), 2))|0), 2);
+		F.line = 113;
+		result_67919 = nimCopy(null, [], NTI67943);
+		L1: do {
+			F.line = 114;
+			var __67952 = 0;
+			F.line = 2045;
+			var res_68044 = 0;
+			L2: do {
+				F.line = 2046;
+					L3: while (true) {
+					if (!(res_68044 <= 3)) break L3;
+						F.line = 2047;
+						__67952 = res_68044;
+						F.line = 115;
+						var tmp_67969 = nimCopy(null, [], NTI67968);
+						L4: do {
+							F.line = 116;
+							var __67978 = 0;
+							F.line = 2045;
+							var res_68038 = 0;
+							L5: do {
+								F.line = 2046;
+									L6: while (true) {
+									if (!(res_68038 <= 3)) break L6;
+										F.line = 2047;
+										__67978 = res_68038;
+										F.line = 117;
+										if (tmp_67969 != null) { tmp_67969.push({isFilled: false, color: 0}); } else { tmp_67969 = [{isFilled: false, color: 0}]; };
+										F.line = 2048;
+										res_68038 = addInt(res_68038, 1);
+									}
+							} while(false);
+						} while(false);
+						F.line = 118;
+						var Tmp7 = nimCopy(null, tmp_67969, NTI67953);
+						if (result_67919 != null) { result_67919.push(Tmp7); } else { result_67919 = [Tmp7]; };
+						F.line = 2048;
+						res_68044 = addInt(res_68044, 1);
+					}
+			} while(false);
+		} while(false);
+		L8: do {
+			F.line = 119;
+			var i_68014 = 0;
+			F.line = 3518;
+			var colontmp__68056 = 0;
+			F.line = 119;
+			colontmp__68056 = (m_67920.shape != null ? m_67920.shape.length : 0);
+			F.line = 3519;
+			var i_68059 = 0;
+			L9: do {
+				F.line = 3520;
+					L10: while (true) {
+					if (!(i_68059 < colontmp__68056)) break L10;
+						F.line = 3521;
+						i_68014 = i_68059;
+						L11: do {
+							F.line = 120;
+							var j_68030 = 0;
+							F.line = 3518;
+							var colontmp__68051 = 0;
+							F.line = 120;
+							colontmp__68051 = (m_67920.shape != null ? m_67920.shape.length : 0);
+							F.line = 3519;
+							var i_68054 = 0;
+							L12: do {
+								F.line = 3520;
+									L13: while (true) {
+									if (!(i_68054 < colontmp__68051)) break L13;
+										F.line = 3521;
+										j_68030 = i_68054;
+										F.line = 121;
+										if (m_67920.shape[chckIndx(i_68014, 0, m_67920.shape.length+0-1)-0][chckIndx(j_68030, 0, m_67920.shape[chckIndx(i_68014, 0, m_67920.shape.length+0-1)-0].length+0-1)-0]) {
+										Tmp14 = m_67920.color;
+										}
+										else {
+										Tmp14 = 0;
+										}
+										
+										result_67919[chckIndx(addInt(p0_67928, i_68014), 0, result_67919.length+0-1)-0][chckIndx(addInt(p0_67928, j_68030), 0, result_67919[chckIndx(addInt(p0_67928, i_68014), 0, result_67919.length+0-1)-0].length+0-1)-0] = {isFilled: m_67920.shape[chckIndx(i_68014, 0, m_67920.shape.length+0-1)-0][chckIndx(j_68030, 0, m_67920.shape[chckIndx(i_68014, 0, m_67920.shape.length+0-1)-0].length+0-1)-0], color: Tmp14};
+										F.line = 3522;
+										i_68054 = addInt(i_68054, 1);
+									}
+							} while(false);
+						} while(false);
+						F.line = 3522;
+						i_68059 = addInt(i_68059, 1);
+					}
+			} while(false);
+		} while(false);
+	framePtr = F.prev;
+
+	return result_67919;
+
+}
+
+function gameOver_64912() {
 	var F={procname:"tetris.gameOver",prev:framePtr,filename:"tetris.nim",line:0};
 	framePtr = F;
-		F.line = 403;
-		gameOverFlag_38486[0] = true;
-		F.line = 404;
+		F.line = 124;
+		gameOverFlag_67498[0] = true;
+		F.line = 125;
 		alert("gameOver!");
 	framePtr = F.prev;
 
