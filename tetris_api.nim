@@ -54,6 +54,8 @@ proc observer(): string =
 #   return parseInt(res)
 
 proc reset(): cstring {.cdecl, exportc, dynlib.} =
+  F = nil # dealloc(F)
+  pre_F = nil # dealloc(pre_F)
   gameInit()
   return observer()
 

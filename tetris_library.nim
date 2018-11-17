@@ -17,11 +17,13 @@ type
     up, down, right, left
 
   Mino = ref object
+  # Mino = object
     shape: seq[seq[bool]]
     color: MinoColor
     firstPos: Pos
   
   ActiveMino = ref object
+  # ActiveMino = object
     pos: Pos
     kind: Mino
     dir: Direction
@@ -30,6 +32,7 @@ type
   Pos = tuple[x, y: int]
 
   Box = ref object
+  # Box = object
     isFilled: bool
     color: MinoColor
   
@@ -37,7 +40,8 @@ type
 
   Board = array[22, array[12, Box]]
 
-  Field = object
+  Field = ref object
+  # Field = object
     board: Board
     frame: int
     am: ActiveMino

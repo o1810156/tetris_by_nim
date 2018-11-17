@@ -1,4 +1,5 @@
 from ctypes import cdll, c_char_p, c_int
+# from ctypes import windll, c_char_p, c_int
 import ctypes
 
 # init_flag = False
@@ -55,7 +56,6 @@ class Tetris(object):
                 am, field, _, _ = self._str_to_arr(self._reset().decode())
                 break
             except OSError:
-                # print("reset retry")
                 continue
 
         return am, field

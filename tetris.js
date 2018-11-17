@@ -827,13 +827,13 @@ function posVerify_64693(m_64696, m_64696_Idx, board_64697) {
 	framePtr = F;
 	BeforeRet: do {
 		L1: do {
-			F.line = 150;
+			F.line = 154;
 			var i_64731 = 0;
-			F.line = 150;
+			F.line = 154;
 			var bs_64732 = null;
 			F.line = 2283;
 			var colontmp__64776 = null;
-			F.line = 150;
+			F.line = 154;
 			colontmp__64776 = m_64696[m_64696_Idx].boxs;
 			F.line = 2285;
 			var i_64779 = 0;
@@ -846,9 +846,9 @@ function posVerify_64693(m_64696, m_64696_Idx, board_64697) {
 						F.line = 2287;
 						bs_64732 = colontmp__64776[chckIndx(i_64779, 0, colontmp__64776.length+0-1)-0];
 						L4: do {
-							F.line = 151;
+							F.line = 155;
 							var j_64765 = 0;
-							F.line = 151;
+							F.line = 155;
 							var b_64766 = null;
 							F.line = 2285;
 							var i_64775 = 0;
@@ -861,18 +861,18 @@ function posVerify_64693(m_64696, m_64696_Idx, board_64697) {
 										F.line = 2287;
 										b_64766 = bs_64732[chckIndx(i_64775, 0, bs_64732.length+0-1)-0];
 										if (b_64766.isFilled) {
-										F.line = 154;
+										F.line = 158;
 										var xp_64767 = addInt(m_64696[m_64696_Idx].pos.Field0, i_64731);
-										F.line = 155;
+										F.line = 159;
 										var yp_64768 = addInt(m_64696[m_64696_Idx].pos.Field1, j_64765);
 										if (((((xp_64767 < 0) || (21 <= xp_64767)) || (yp_64768 <= 0)) || (11 <= yp_64768))) {
-										F.line = 158;
+										F.line = 162;
 										result_64698 = false;
 										break BeforeRet;
 										}
 										
 										if (board_64697[chckIndx(xp_64767, 0, board_64697.length+0-1)-0][chckIndx(yp_64768, 0, board_64697[chckIndx(xp_64767, 0, board_64697.length+0-1)-0].length+0-1)-0].isFilled) {
-										F.line = 160;
+										F.line = 164;
 										result_64698 = false;
 										break BeforeRet;
 										}
@@ -889,7 +889,7 @@ function posVerify_64693(m_64696, m_64696_Idx, board_64697) {
 					}
 			} while(false);
 		} while(false);
-		F.line = 161;
+		F.line = 165;
 		result_64698 = true;
 		break BeforeRet;
 	} while (false);
@@ -905,51 +905,51 @@ function move_64858(m_64861, m_64861_Idx, board_64862, d_64863) {
 	var F={procname:"tetris.move",prev:framePtr,filename:"tetris_library.nim",line:0};
 	framePtr = F;
 	BeforeRet: do {
-		F.line = 198;
+		F.line = 202;
 		switch (d_64863) {
 		case 2:
-			F.line = 200;
+			F.line = 204;
 			m_64861[m_64861_Idx].pos.Field1 = addInt(m_64861[m_64861_Idx].pos.Field1, 1);
 			if (!(posVerify_64693(m_64861, m_64861_Idx, board_64862))) {
-			F.line = 202;
+			F.line = 206;
 			m_64861[m_64861_Idx].pos.Field1 = subInt(m_64861[m_64861_Idx].pos.Field1, 1);
-			F.line = 203;
+			F.line = 207;
 			result_64864 = false;
 			break BeforeRet;
 			}
 			
 			break;
 		case 3:
-			F.line = 205;
+			F.line = 209;
 			m_64861[m_64861_Idx].pos.Field1 = subInt(m_64861[m_64861_Idx].pos.Field1, 1);
 			if (!(posVerify_64693(m_64861, m_64861_Idx, board_64862))) {
-			F.line = 207;
+			F.line = 211;
 			m_64861[m_64861_Idx].pos.Field1 = addInt(m_64861[m_64861_Idx].pos.Field1, 1);
-			F.line = 208;
+			F.line = 212;
 			result_64864 = false;
 			break BeforeRet;
 			}
 			
 			break;
 		case 1:
-			F.line = 210;
+			F.line = 214;
 			m_64861[m_64861_Idx].pos.Field0 = addInt(m_64861[m_64861_Idx].pos.Field0, 1);
 			if (!(posVerify_64693(m_64861, m_64861_Idx, board_64862))) {
-			F.line = 212;
+			F.line = 216;
 			m_64861[m_64861_Idx].pos.Field0 = subInt(m_64861[m_64861_Idx].pos.Field0, 1);
-			F.line = 213;
+			F.line = 217;
 			result_64864 = false;
 			break BeforeRet;
 			}
 			
 			break;
 		case 0:
-			F.line = 215;
+			F.line = 219;
 			result_64864 = false;
 			break BeforeRet;
 			break;
 		}
-		F.line = 216;
+		F.line = 220;
 		result_64864 = true;
 		break BeforeRet;
 	} while (false);
@@ -1217,7 +1217,7 @@ function lineCheck_65527(f_65530) {
 								var F={procname:"lineCheck.:anonymous",prev:framePtr,filename:"tetris_library.nim",line:0};
 								framePtr = F;
 								BeforeRet: do {
-									F.line = 275;
+									F.line = 279;
 									result_65907 = b_65906.isFilled;
 									break BeforeRet;
 								} while (false);
@@ -1231,16 +1231,16 @@ function lineCheck_65527(f_65530) {
 
 	var F={procname:"tetris.lineCheck",prev:framePtr,filename:"tetris_library.nim",line:0};
 	framePtr = F;
-		F.line = 273;
+		F.line = 277;
 		result_65531 = 0;
 		L1: do {
-			F.line = 274;
+			F.line = 278;
 			var i_65901 = 0;
-			F.line = 274;
+			F.line = 278;
 			var line_65902 = [null, null, null, null, null, null, null, null, null, null, null, null];
 			F.line = 2283;
 			var colontmp__67378 = null;
-			F.line = 274;
+			F.line = 278;
 			colontmp__67378 = X5BX5D__65565(f_65530.board, dotdot__51023(0, 2));
 			F.line = 2285;
 			var i_67381 = 0;
@@ -1253,16 +1253,16 @@ function lineCheck_65527(f_65530) {
 						F.line = 2287;
 						nimCopy(line_65902, colontmp__67378[chckIndx(i_67381, 0, colontmp__67378.length+0-1)-0], NTI64063);
 						if (all_65912(line_65902, colonanonymous__65904)) {
-						F.line = 276;
+						F.line = 280;
 						result_65531 = addInt(result_65531, 1);
 						L4: do {
-							F.line = 277;
+							F.line = 281;
 							var t_66444 = 0;
-							F.line = 277;
+							F.line = 281;
 							var line_66445 = [null, null, null, null, null, null, null, null, null, null, null, null];
 							F.line = 2283;
 							var colontmp__67363 = null;
-							F.line = 277;
+							F.line = 281;
 							colontmp__67363 = X5BX5D__66042(f_65530.board, dotdot__50107(0, subInt(i_65901, 1)));
 							F.line = 2285;
 							var i_67366 = 0;
@@ -1274,18 +1274,18 @@ function lineCheck_65527(f_65530) {
 										t_66444 = i_67366;
 										F.line = 2287;
 										nimCopy(line_66445, colontmp__67363[chckIndx(i_67366, 0, colontmp__67363.length+0-1)-0], NTI64063);
-										F.line = 278;
+										F.line = 282;
 										X5BX5Deq__66873(f_65530.board[chckIndx(addInt(t_66444, 1), 0, f_65530.board.length+0-1)-0], dotdot__51023(1, 2), X5BX5D__66498(line_66445, dotdot__51023(1, 2)));
 										F.line = 2288;
 										i_67366 = addInt(i_67366, 1);
 									}
 							} while(false);
 						} while(false);
-						F.line = 279;
-						F.line = 279;
+						F.line = 283;
+						F.line = 283;
 						var ln_67308 = nimCopy(null, [], NTI67307);
 						L7: do {
-							F.line = 279;
+							F.line = 283;
 							var __67317 = 0;
 							F.line = 2045;
 							var res_67373 = 0;
@@ -1295,7 +1295,7 @@ function lineCheck_65527(f_65530) {
 									if (!(res_67373 <= 9)) break L9;
 										F.line = 2047;
 										__67317 = res_67373;
-										F.line = 279;
+										F.line = 283;
 										if (ln_67308 != null) { ln_67308.push({isFilled: false, color: 0}); } else { ln_67308 = [{isFilled: false, color: 0}]; };
 										F.line = 2048;
 										res_67373 = addInt(res_67373, 1);
@@ -1355,9 +1355,9 @@ function pop0_64970(ms_64974, ms_64974_Idx) {
 
 	var F={procname:"tetris.pop0",prev:framePtr,filename:"tetris_library.nim",line:0};
 	framePtr = F;
-		F.line = 261;
+		F.line = 265;
 		result_64975 = ms_64974[ms_64974_Idx][chckIndx(0, 0, ms_64974[ms_64974_Idx].length+0-1)-0];
-		F.line = 262;
+		F.line = 266;
 		ms_64974[ms_64974_Idx] = nimCopy(null, X5BX5D__65000(ms_64974[ms_64974_Idx], dotdot__51023(1, 1)), NTI65011);
 	framePtr = F.prev;
 
@@ -1418,25 +1418,25 @@ function random_41127(max_41129) {
 function shuffle_64930(arr_64934, arr_64934_Idx) {
 	var F={procname:"tetris.shuffle",prev:framePtr,filename:"tetris_library.nim",line:0};
 	framePtr = F;
-		F.line = 244;
+		F.line = 248;
 		var n_64942 = (arr_64934[arr_64934_Idx] != null ? arr_64934[arr_64934_Idx].length : 0);
-		F.line = 245;
+		F.line = 249;
 		var t_64943 = 0;
-		F.line = 246;
+		F.line = 250;
 		var i_64944 = 0;
 		L1: do {
-			F.line = 248;
+			F.line = 252;
 				L2: while (true) {
 				if (!(0 < n_64942)) break L2;
-					F.line = 249;
+					F.line = 253;
 					i_64944 = ((Math.floor((random_41127(1.0000000000000000e+000) * n_64942)))|0);
-					F.line = 250;
+					F.line = 254;
 					n_64942 = subInt(n_64942, 1);
-					F.line = 251;
+					F.line = 255;
 					var __64954 = {Field0: arr_64934[arr_64934_Idx][chckIndx(i_64944, 0, arr_64934[arr_64934_Idx].length+0-1)-0], Field1: arr_64934[arr_64934_Idx][chckIndx(n_64942, 0, arr_64934[arr_64934_Idx].length+0-1)-0]};
-					F.line = 251;
+					F.line = 255;
 					arr_64934[arr_64934_Idx][chckIndx(n_64942, 0, arr_64934[arr_64934_Idx].length+0-1)-0] = __64954["Field0"];
-					F.line = 251;
+					F.line = 255;
 					arr_64934[arr_64934_Idx][chckIndx(i_64944, 0, arr_64934[arr_64934_Idx].length+0-1)-0] = __64954["Field1"];
 				}
 		} while(false);
@@ -1450,9 +1450,9 @@ function shuffled_64961(arr_64964) {
 
 	var F={procname:"tetris.shuffled",prev:framePtr,filename:"tetris_library.nim",line:0};
 	framePtr = F;
-		F.line = 254;
+		F.line = 258;
 		result_64966[0] = nimCopy(null, arr_64964, NTI64963);
-		F.line = 255;
+		F.line = 259;
 		shuffle_64930(result_64966, 0);
 	framePtr = F.prev;
 
@@ -1467,7 +1467,7 @@ function renderBox_64450(m_64453, m_64453_Idx) {
 
 												var F={procname:"renderBox.setBox",prev:framePtr,filename:"tetris_library.nim",line:0};
 												framePtr = F;
-													F.line = 117;
+													F.line = 121;
 													if (m_64458.kind.shape[chckIndx(i_64459, 0, m_64458.kind.shape.length+0-1)-0][chckIndx(j_64460, 0, m_64458.kind.shape[chckIndx(i_64459, 0, m_64458.kind.shape.length+0-1)-0].length+0-1)-0]) {
 													Tmp1 = m_64458.kind.color;
 													}
@@ -1476,7 +1476,7 @@ function renderBox_64450(m_64453, m_64453_Idx) {
 													}
 													
 													var itsColor_64463 = Tmp1;
-													F.line = 118;
+													F.line = 122;
 													b_64457[b_64457_Idx][chckIndx(t_64461, 0, b_64457[b_64457_Idx].length+0-1)-0][chckIndx(s_64462, 0, b_64457[b_64457_Idx][chckIndx(t_64461, 0, b_64457[b_64457_Idx].length+0-1)-0].length+0-1)-0] = {isFilled: m_64458.kind.shape[chckIndx(i_64459, 0, m_64458.kind.shape.length+0-1)-0][chckIndx(j_64460, 0, m_64458.kind.shape[chckIndx(i_64459, 0, m_64458.kind.shape.length+0-1)-0].length+0-1)-0], color: itsColor_64463};
 												framePtr = F.prev;
 
@@ -1485,14 +1485,14 @@ function renderBox_64450(m_64453, m_64453_Idx) {
 
 	var F={procname:"tetris.renderBox",prev:framePtr,filename:"tetris_library.nim",line:0};
 	framePtr = F;
-		F.line = 120;
+		F.line = 124;
 		var l_64472 = subInt((m_64453[m_64453_Idx].kind.shape != null ? m_64453[m_64453_Idx].kind.shape.length : 0), 1);
-		F.line = 122;
+		F.line = 126;
 		var b_64488 = [nimCopy(null, [], NTI64487)];
-		F.line = 123;
+		F.line = 127;
 		var bb_64505 = nimCopy(null, [], NTI64504);
 		L1: do {
-			F.line = 124;
+			F.line = 128;
 			var i_64514 = 0;
 			F.line = 2045;
 			var res_64633 = 0;
@@ -1503,7 +1503,7 @@ function renderBox_64450(m_64453, m_64453_Idx) {
 						F.line = 2047;
 						i_64514 = res_64633;
 						L4: do {
-							F.line = 125;
+							F.line = 129;
 							var j_64523 = 0;
 							F.line = 2045;
 							var res_64627 = 0;
@@ -1513,14 +1513,14 @@ function renderBox_64450(m_64453, m_64453_Idx) {
 									if (!(res_64627 <= l_64472)) break L6;
 										F.line = 2047;
 										j_64523 = res_64627;
-										F.line = 126;
+										F.line = 130;
 										if (bb_64505 != null) { bb_64505.push({isFilled: false, color: 0}); } else { bb_64505 = [{isFilled: false, color: 0}]; };
 										F.line = 2048;
 										res_64627 = addInt(res_64627, 1);
 									}
 							} while(false);
 						} while(false);
-						F.line = 127;
+						F.line = 131;
 						var Tmp7 = nimCopy(null, bb_64505, NTI64489);
 						if (b_64488[0] != null) { b_64488[0].push(Tmp7); } else { b_64488[0] = [Tmp7]; };
 						F.line = 2048;
@@ -1528,11 +1528,11 @@ function renderBox_64450(m_64453, m_64453_Idx) {
 					}
 			} while(false);
 		} while(false);
-		F.line = 129;
+		F.line = 133;
 		switch (m_64453[m_64453_Idx].dir) {
 		case 0:
 			L8: do {
-				F.line = 131;
+				F.line = 135;
 				var i_64552 = 0;
 				F.line = 2045;
 				var res_64647 = 0;
@@ -1543,7 +1543,7 @@ function renderBox_64450(m_64453, m_64453_Idx) {
 							F.line = 2047;
 							i_64552 = res_64647;
 							L11: do {
-								F.line = 132;
+								F.line = 136;
 								var j_64561 = 0;
 								F.line = 2045;
 								var res_64641 = 0;
@@ -1553,7 +1553,7 @@ function renderBox_64450(m_64453, m_64453_Idx) {
 										if (!(res_64641 <= l_64472)) break L13;
 											F.line = 2047;
 											j_64561 = res_64641;
-											F.line = 133;
+											F.line = 137;
 											setBox_64454(b_64488, 0, m_64453[m_64453_Idx], i_64552, j_64561, i_64552, j_64561);
 											F.line = 2048;
 											res_64641 = addInt(res_64641, 1);
@@ -1568,7 +1568,7 @@ function renderBox_64450(m_64453, m_64453_Idx) {
 			break;
 		case 1:
 			L14: do {
-				F.line = 135;
+				F.line = 139;
 				var i_64571 = 0;
 				F.line = 2045;
 				var res_64661 = 0;
@@ -1579,7 +1579,7 @@ function renderBox_64450(m_64453, m_64453_Idx) {
 							F.line = 2047;
 							i_64571 = res_64661;
 							L17: do {
-								F.line = 136;
+								F.line = 140;
 								var j_64580 = 0;
 								F.line = 2045;
 								var res_64655 = 0;
@@ -1589,7 +1589,7 @@ function renderBox_64450(m_64453, m_64453_Idx) {
 										if (!(res_64655 <= l_64472)) break L19;
 											F.line = 2047;
 											j_64580 = res_64655;
-											F.line = 137;
+											F.line = 141;
 											setBox_64454(b_64488, 0, m_64453[m_64453_Idx], i_64571, j_64580, j_64580, subInt(l_64472, i_64571));
 											F.line = 2048;
 											res_64655 = addInt(res_64655, 1);
@@ -1604,7 +1604,7 @@ function renderBox_64450(m_64453, m_64453_Idx) {
 			break;
 		case 2:
 			L20: do {
-				F.line = 139;
+				F.line = 143;
 				var i_64590 = 0;
 				F.line = 2045;
 				var res_64675 = 0;
@@ -1615,7 +1615,7 @@ function renderBox_64450(m_64453, m_64453_Idx) {
 							F.line = 2047;
 							i_64590 = res_64675;
 							L23: do {
-								F.line = 140;
+								F.line = 144;
 								var j_64599 = 0;
 								F.line = 2045;
 								var res_64669 = 0;
@@ -1625,7 +1625,7 @@ function renderBox_64450(m_64453, m_64453_Idx) {
 										if (!(res_64669 <= l_64472)) break L25;
 											F.line = 2047;
 											j_64599 = res_64669;
-											F.line = 141;
+											F.line = 145;
 											setBox_64454(b_64488, 0, m_64453[m_64453_Idx], i_64590, j_64599, subInt(l_64472, i_64590), subInt(l_64472, j_64599));
 											F.line = 2048;
 											res_64669 = addInt(res_64669, 1);
@@ -1640,7 +1640,7 @@ function renderBox_64450(m_64453, m_64453_Idx) {
 			break;
 		case 3:
 			L26: do {
-				F.line = 143;
+				F.line = 147;
 				var i_64609 = 0;
 				F.line = 2045;
 				var res_64689 = 0;
@@ -1651,7 +1651,7 @@ function renderBox_64450(m_64453, m_64453_Idx) {
 							F.line = 2047;
 							i_64609 = res_64689;
 							L29: do {
-								F.line = 144;
+								F.line = 148;
 								var j_64618 = 0;
 								F.line = 2045;
 								var res_64683 = 0;
@@ -1661,7 +1661,7 @@ function renderBox_64450(m_64453, m_64453_Idx) {
 										if (!(res_64683 <= l_64472)) break L31;
 											F.line = 2047;
 											j_64618 = res_64683;
-											F.line = 145;
+											F.line = 149;
 											setBox_64454(b_64488, 0, m_64453[m_64453_Idx], i_64609, j_64618, subInt(l_64472, j_64618), i_64609);
 											F.line = 2048;
 											res_64683 = addInt(res_64683, 1);
@@ -1675,7 +1675,7 @@ function renderBox_64450(m_64453, m_64453_Idx) {
 			} while(false);
 			break;
 		}
-		F.line = 147;
+		F.line = 151;
 		m_64453[m_64453_Idx].boxs = nimCopy(null, b_64488[0], NTI64018);
 	framePtr = F.prev;
 
@@ -1685,19 +1685,19 @@ function renderBox_64450(m_64453, m_64453_Idx) {
 function dropStart(f_65440) {
 	var F={procname:"tetris.dropStart",prev:framePtr,filename:"tetris_library.nim",line:0};
 	framePtr = F;
-		F.line = 265;
+		F.line = 269;
 		var mino_65442 = pop0_64970(f_65440, "minos");
 		if (((f_65440.minos != null ? f_65440.minos.length : 0) < 4)) {
-		F.line = 267;
+		F.line = 271;
 		add_65464(f_65440, "minos", shuffled_64961([I_64161[0], O_64199[0], S_64249[0], Z_64299[0], J_64349[0], L_64399[0], T_64449[0]]));
 		}
 		
-		F.line = 268;
+		F.line = 272;
 		f_65440.am = {pos: nimCopy(null, mino_65442.firstPos, NTI64014), kind: mino_65442, dir: 0, boxs: null};
-		F.line = 269;
+		F.line = 273;
 		renderBox_64450(f_65440, "am");
 		if (!(posVerify_64693(f_65440, "am", f_65440.board))) {
-		F.line = 270;
+		F.line = 274;
 		gameOver_64928();
 		}
 		
@@ -1711,18 +1711,18 @@ function fixAM_64919(f_64922) {
 	framePtr = F;
 	BeforeRet: do {
 		if (!(posVerify_64693(f_64922, "am", f_64922.board))) {
-		F.line = 282;
+		F.line = 286;
 		break BeforeRet;
 		}
 		
 		L1: do {
-			F.line = 283;
+			F.line = 287;
 			var i_67400 = 0;
-			F.line = 283;
+			F.line = 287;
 			var bs_67401 = null;
 			F.line = 2283;
 			var colontmp__67443 = null;
-			F.line = 283;
+			F.line = 287;
 			colontmp__67443 = f_64922.am.boxs;
 			F.line = 2285;
 			var i_67446 = 0;
@@ -1735,9 +1735,9 @@ function fixAM_64919(f_64922) {
 						F.line = 2287;
 						bs_67401 = colontmp__67443[chckIndx(i_67446, 0, colontmp__67443.length+0-1)-0];
 						L4: do {
-							F.line = 284;
+							F.line = 288;
 							var j_67415 = 0;
-							F.line = 284;
+							F.line = 288;
 							var b_67416 = null;
 							F.line = 2285;
 							var i_67442 = 0;
@@ -1750,7 +1750,7 @@ function fixAM_64919(f_64922) {
 										F.line = 2287;
 										b_67416 = bs_67401[chckIndx(i_67442, 0, bs_67401.length+0-1)-0];
 										if (b_67416.isFilled) {
-										F.line = 286;
+										F.line = 290;
 										f_64922.board[chckIndx(addInt(f_64922.am.pos.Field0, i_67400), 0, f_64922.board.length+0-1)-0][chckIndx(addInt(f_64922.am.pos.Field1, j_67415), 0, f_64922.board[chckIndx(addInt(f_64922.am.pos.Field0, i_67400), 0, f_64922.board.length+0-1)-0].length+0-1)-0] = b_67416;
 										}
 										
@@ -1764,13 +1764,13 @@ function fixAM_64919(f_64922) {
 					}
 			} while(false);
 		} while(false);
-		F.line = 288;
-		var cllines_67417 = lineCheck_65527(f_64922);
-		F.line = 289;
-		f_64922.clearlines = addInt(f_64922.clearlines, cllines_67417);
-		F.line = 291;
-		f_64922.score = addInt(f_64922.score, [0, 1, 3, 6, 9][chckIndx(cllines_67417, 0, [0, 1, 3, 6, 9].length+0-1)-0]);
 		F.line = 292;
+		var cllines_67417 = lineCheck_65527(f_64922);
+		F.line = 293;
+		f_64922.clearlines = addInt(f_64922.clearlines, cllines_67417);
+		F.line = 295;
+		f_64922.score = addInt(f_64922.score, [0, 1, 3, 6, 9][chckIndx(cllines_67417, 0, [0, 1, 3, 6, 9].length+0-1)-0]);
+		F.line = 296;
 		dropStart(f_64922);
 	} while (false);
 	framePtr = F.prev;
@@ -1783,7 +1783,7 @@ function dropStep(f_64926) {
 	framePtr = F;
 		if ((modInt(f_64926.frame, 180) == 0)) {
 		if (!(move_64858(f_64926, "am", f_64926.board, 1))) {
-		F.line = 225;
+		F.line = 229;
 		fixAM_64919(f_64926);
 		}
 		
@@ -1902,11 +1902,11 @@ function posCorrect_64780(m_64783, m_64783_Idx, board_64784) {
 	framePtr = F;
 	BeforeRet: do {
 		L1: do {
-			F.line = 164;
+			F.line = 168;
 			var i_64801 = 0;
 			F.line = 3518;
 			var colontmp__64821 = 0;
-			F.line = 164;
+			F.line = 168;
 			colontmp__64821 = (m_64783[m_64783_Idx].boxs != null ? m_64783[m_64783_Idx].boxs.length : 0);
 			F.line = 3519;
 			var i_64824 = 0;
@@ -1916,18 +1916,18 @@ function posCorrect_64780(m_64783, m_64783_Idx, board_64784) {
 					if (!(i_64824 < colontmp__64821)) break L3;
 						F.line = 3521;
 						i_64801 = i_64824;
-						F.line = 165;
+						F.line = 169;
 						m_64783[m_64783_Idx].pos.Field1 = addInt(m_64783[m_64783_Idx].pos.Field1, i_64801);
 						if (posVerify_64693(m_64783, m_64783_Idx, board_64784)) {
-						F.line = 167;
+						F.line = 171;
 						result_64785 = true;
 						break BeforeRet;
 						}
 						
-						F.line = 168;
+						F.line = 172;
 						m_64783[m_64783_Idx].pos.Field1 = subInt(m_64783[m_64783_Idx].pos.Field1, mulInt(2, i_64801));
 						if (posVerify_64693(m_64783, m_64783_Idx, board_64784)) {
-						F.line = 170;
+						F.line = 174;
 						result_64785 = true;
 						break BeforeRet;
 						}
@@ -1937,7 +1937,7 @@ function posCorrect_64780(m_64783, m_64783_Idx, board_64784) {
 					}
 			} while(false);
 		} while(false);
-		F.line = 177;
+		F.line = 181;
 		result_64785 = false;
 		break BeforeRet;
 	} while (false);
@@ -1950,27 +1950,27 @@ function posCorrect_64780(m_64783, m_64783_Idx, board_64784) {
 function spin_64826(m_64829, m_64829_Idx, a_64832, board_64833) {
 	var F={procname:"tetris.spin",prev:framePtr,filename:"tetris_library.nim",line:0};
 	framePtr = F;
-		F.line = 180;
+		F.line = 184;
 		var pre_dir_64834 = m_64829[m_64829_Idx].dir;
-		F.line = 181;
+		F.line = 185;
 		m_64829[m_64829_Idx].dir = a_64832[chckIndx(m_64829[m_64829_Idx].dir, 0, a_64832.length+0-1)-0];
-		F.line = 182;
+		F.line = 186;
 		renderBox_64450(m_64829, m_64829_Idx);
 		if (!(posVerify_64693(m_64829, m_64829_Idx, board_64833))) {
-		F.line = 185;
+		F.line = 189;
 		var pre_pos_64842 = {Field0: m_64829[m_64829_Idx].pos.Field0, Field1: m_64829[m_64829_Idx].pos.Field1};
 		if (!(posCorrect_64780(m_64829, m_64829_Idx, board_64833))) {
-		F.line = 187;
+		F.line = 191;
 		var __64843 = nimCopy(null, pre_pos_64842, NTI64841);
-		F.line = 187;
+		F.line = 191;
 		m_64829[m_64829_Idx].pos.Field0 = __64843["Field0"];
-		F.line = 187;
+		F.line = 191;
 		m_64829[m_64829_Idx].pos.Field1 = __64843["Field1"];
-		F.line = 188;
+		F.line = 192;
 		m_64829[m_64829_Idx].dir = pre_dir_64834;
 		}
 		
-		F.line = 189;
+		F.line = 193;
 		renderBox_64450(m_64829, m_64829_Idx);
 		}
 		
@@ -1982,7 +1982,7 @@ function spin_64826(m_64829, m_64829_Idx, a_64832, board_64833) {
 function rightSpin_64844(m_64847, m_64847_Idx, board_64848) {
 	var F={procname:"tetris.rightSpin",prev:framePtr,filename:"tetris_library.nim",line:0};
 	framePtr = F;
-		F.line = 192;
+		F.line = 196;
 		spin_64826(m_64847, m_64847_Idx, [1, 2, 3, 0], board_64848);
 	framePtr = F.prev;
 
@@ -1992,7 +1992,7 @@ function rightSpin_64844(m_64847, m_64847_Idx, board_64848) {
 function leftSpin_64851(m_64854, m_64854_Idx, board_64855) {
 	var F={procname:"tetris.leftSpin",prev:framePtr,filename:"tetris_library.nim",line:0};
 	framePtr = F;
-		F.line = 195;
+		F.line = 199;
 		spin_64826(m_64854, m_64854_Idx, [3, 0, 1, 2], board_64855);
 	framePtr = F.prev;
 
@@ -2139,13 +2139,13 @@ function fixGhost_67447(f_67450) {
 	var F={procname:"tetris.fixGhost",prev:framePtr,filename:"tetris_library.nim",line:0};
 	framePtr = F;
 		L1: do {
-			F.line = 295;
+			F.line = 299;
 			var i_67504 = 0;
-			F.line = 295;
+			F.line = 299;
 			var line_67505 = [null, null, null, null, null, null, null, null, null, null, null, null];
 			F.line = 2264;
 			var colontmp__67599 = [[null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null, null, null, null, null]];
-			F.line = 295;
+			F.line = 299;
 			nimCopy(colontmp__67599, f_67450.board, NTI64020);
 			F.line = 2266;
 			var i_67602 = 0;
@@ -2159,9 +2159,9 @@ function fixGhost_67447(f_67450) {
 						F.line = 2269;
 						nimCopy(line_67505, colontmp__67599[chckIndx(i_67602, 0, colontmp__67599.length+0-1)-0], NTI64063);
 						L4: do {
-							F.line = 296;
+							F.line = 300;
 							var j_67559 = 0;
-							F.line = 296;
+							F.line = 300;
 							var b_67560 = null;
 							F.line = 2266;
 							var i_67598 = 0;
@@ -2175,7 +2175,7 @@ function fixGhost_67447(f_67450) {
 										F.line = 2269;
 										b_67560 = line_67505[chckIndx(i_67598, 0, line_67505.length+0-1)-0];
 										if (!(b_67560.isFilled)) {
-										F.line = 298;
+										F.line = 302;
 										f_67450.board[chckIndx(i_67504, 0, f_67450.board.length+0-1)-0][chckIndx(j_67559, 0, f_67450.board[chckIndx(i_67504, 0, f_67450.board.length+0-1)-0].length+0-1)-0] = {isFilled: false, color: 0};
 										}
 										
@@ -2203,22 +2203,22 @@ function fixGhost_67447(f_67450) {
 			}
 			
 		} while(false);
-		F.line = 299;
+		F.line = 303;
 		var x_67561 = f_67450.am.pos.Field0;
 		L7: do {
-			F.line = 300;
+			F.line = 304;
 				L8: while (true) {
 				if (!move_64858(f_67450, "am", f_67450.board, 1)) break L8;
 				}
 		} while(false);
 		L9: do {
-			F.line = 301;
+			F.line = 305;
 			var i_67576 = 0;
-			F.line = 301;
+			F.line = 305;
 			var bs_67577 = null;
 			F.line = 2283;
 			var colontmp__67610 = null;
-			F.line = 301;
+			F.line = 305;
 			colontmp__67610 = f_67450.am.boxs;
 			F.line = 2285;
 			var i_67613 = 0;
@@ -2231,9 +2231,9 @@ function fixGhost_67447(f_67450) {
 						F.line = 2287;
 						bs_67577 = colontmp__67610[chckIndx(i_67613, 0, colontmp__67610.length+0-1)-0];
 						L12: do {
-							F.line = 302;
+							F.line = 306;
 							var j_67591 = 0;
-							F.line = 302;
+							F.line = 306;
 							var b_67592 = null;
 							F.line = 2285;
 							var i_67609 = 0;
@@ -2246,7 +2246,7 @@ function fixGhost_67447(f_67450) {
 										F.line = 2287;
 										b_67592 = bs_67577[chckIndx(i_67609, 0, bs_67577.length+0-1)-0];
 										if (b_67592.isFilled) {
-										F.line = 304;
+										F.line = 308;
 										f_67450.board[chckIndx(addInt(f_67450.am.pos.Field0, i_67576), 0, f_67450.board.length+0-1)-0][chckIndx(addInt(f_67450.am.pos.Field1, j_67591), 0, f_67450.board[chckIndx(addInt(f_67450.am.pos.Field0, i_67576), 0, f_67450.board.length+0-1)-0].length+0-1)-0] = {isFilled: false, color: 8};
 										}
 										
@@ -2260,7 +2260,7 @@ function fixGhost_67447(f_67450) {
 					}
 			} while(false);
 		} while(false);
-		F.line = 305;
+		F.line = 309;
 		f_67450.am.pos.Field0 = x_67561;
 	framePtr = F.prev;
 
