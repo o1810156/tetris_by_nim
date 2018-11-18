@@ -124,12 +124,16 @@ proc renderBox(m: var ActiveMino) = # 回転後テトリミノを描写
 
   let l = len(m.kind.shape)-1
   var
-    b: Boxs = @[]
-    bb: seq[Box] = @[]
+    b: Boxs = @[@[Box()]]
+    bb: seq[Box] = @[Box()]
+
   for i in 0..l:
-    for j in 0..l:
+    bb = @[Box()]
+    for j in 1..l:
       bb.add(Box())
     b.add(bb)
+  
+  b = b[1..^1]
 
   case m.dir:
   of north:
