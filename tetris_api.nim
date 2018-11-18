@@ -24,7 +24,9 @@ proc gameInit() =
   # var mns = [I, O, S, Z, J, L, T, I, O, S, Z, J, L, T]
   mns.shuffle()
   F = Field(board: board, frame: 0, minos: mns, score: 0, clearlines: 0)
-  # pre_F = Field(board: board, frame: 0, minos: mns, score: 0, clearlines: 0) # メモリ領域確保目的
+  var sub_board: array[22, array[12, Box]]
+  sub_board.deepCopy(board)
+  # pre_F = Field(board: sub_board, frame: 0, minos: @[I, O, S, Z, J, L, T], score: 0, clearlines: 0) # メモリ領域確保目的
   pre_F.deepCopy(F)
   F.dropStart()
   # echo "check point"
@@ -56,8 +58,8 @@ proc observer(): string =
 #   return parseInt(res)
 
 proc reset(): cstring {.cdecl, exportc, dynlib.} =
-  F = nil # dealloc(F)
-  pre_F = nil # dealloc(pre_F)
+  new(F) # dealloc(F)
+  new(pre_F) # dealloc(pre_F)
   gameInit()
   return observer()
 
