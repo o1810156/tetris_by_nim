@@ -59,7 +59,7 @@ class Tetris(object):
                 continue
 
         return am, field
-    
+
     def step(self, i):
         for _ in range(3):
             try:
@@ -82,7 +82,7 @@ class Tetris(object):
                     blocks_sum += 1
         
         density = blocks_sum / (line_num * 10)
-        if density >= 1: print("計算式見直せ")
+        # if density >= 1: print("計算式見直せ")
         reward += density
 
         done = (done == 1.0)

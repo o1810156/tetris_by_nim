@@ -20,9 +20,11 @@ proc gameInit() =
   for i in 0..<12:
     board[21][i] = Box(isFilled: true, color: dfColor)
 
-  var mns = @[I, O, S, Z, J, L, T]
+  # var mns = @[I, O, S, Z, J, L, T]
+  var mns = [I, O, S, Z, J, L, T, I, O, S, Z, J, L, T]
   mns.shuffle()
   F = Field(board: board, frame: 0, minos: mns, score: 0, clearlines: 0)
+  # pre_F = Field(board: board, frame: 0, minos: mns, score: 0, clearlines: 0) # メモリ領域確保目的
   pre_F.deepCopy(F)
   F.dropStart()
   # echo "check point"
@@ -61,6 +63,8 @@ proc reset(): cstring {.cdecl, exportc, dynlib.} =
 
 proc step(action: int): cstring {.cdecl, exportc, dynlib.} =
   pre_F.deepCopy(F)
+  # echo repr(pre_F)
+  # echo repr(F)
   # if done: return "gameover"
   if (action < 0) or (40 <= action):
     gameOver()

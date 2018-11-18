@@ -46,7 +46,8 @@ type
     frame: int
     am: ActiveMino
     gm: seq[seq[Box]]
-    minos: seq[Mino]
+    # minos: seq[Mino]
+    minos: array[14, Mino]
     score: int
     clearlines: int
 
@@ -243,7 +244,8 @@ function shuffle(array) {
 }
 </script> ]#
 
-proc shuffle(arr: var seq[Mino]) =
+# proc shuffle(arr: var seq[Mino]) =
+proc shuffle(arr: var array[14, Mino]) =
   var
     n = len(arr)
     t: int
@@ -254,21 +256,39 @@ proc shuffle(arr: var seq[Mino]) =
     n -= 1
     (arr[n], arr[i]) = (arr[i], arr[n])
 
-proc shuffled(arr: seq[Mino]): seq[Mino] =
+# proc shuffled(arr: seq[Mino]): seq[Mino] =
+proc shuffled(arr: array[14, Mino]): array[14, Mino] =
   result = arr
   result.shuffle()
 
 # var minos = @[I, O, S, Z, J, L, T]
 # minos.shuffle()
 
-proc pop0(ms: var seq[Mino]): Mino =
+# proc pop0(ms: var seq[Mino]): Mino =
+#   result = ms[0]
+#   ms = ms[1..^1]
+
+proc pop0(ms: var array[14, Mino]): Mino =
   result = ms[0]
-  ms = ms[1..^1]
+  for i in 0..12:
+    ms[i] = ms[i+1]
+  ms[13] = nil
 
 proc dropStart(f: var Field) {. exportc .} =
   var mino: Mino = f.minos.pop0()
-  if len(f.minos) < 4:
-    f.minos.add(shuffled(@[I, O, S, Z, J, L, T]))
+  # if len(f.minos) < 4:
+    # f.minos.add(shuffled(@[I, O, S, Z, J, L, T]))
+  var nil_num = 0
+  for mi in f.minos:
+    if mi == nil:
+      nil_num += 1
+  
+  if nil_num >= 11:
+    var add_minos = [I, O, S, Z, J, L, T]
+    add_minos.shuffle()
+    for i in (14-nil_num)..(20-nil_num):
+      f.minos[i] = add_minos[i+nil_num-14]
+
   f.am = ActiveMino(pos: mino.firstPos, kind: mino, dir: north)
   f.am.renderBox()
   if not f.am.posVerify(f.board): gameOver()

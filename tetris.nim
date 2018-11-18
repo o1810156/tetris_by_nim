@@ -22,7 +22,8 @@ proc gameInit() {. exportc .} =
     board[21][i] = Box(isFilled: true, color: dfColor)
 
   # result = Field(board: board, frame: 0)
-  var mns = @[I, O, S, Z, J, L, T]
+  # var mns = @[I, O, S, Z, J, L, T]
+  var mns = [I, O, S, Z, J, L, T, I, O, S, Z, J, L, T]
   mns.shuffle()
   F = Field(board: board, frame: 0, minos: mns, score: 0, clearlines: 0)
   F.dropStart()
