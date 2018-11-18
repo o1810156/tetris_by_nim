@@ -20,8 +20,8 @@ proc gameInit() =
   for i in 0..<12:
     board[21][i] = Box(isFilled: true, color: dfColor)
 
-  # var mns = @[I, O, S, Z, J, L, T]
-  var mns = [I, O, S, Z, J, L, T, I, O, S, Z, J, L, T]
+  var mns = @[I, O, S, Z, J, L, T]
+  # var mns = [I, O, S, Z, J, L, T, I, O, S, Z, J, L, T]
   mns.shuffle()
   F = Field(board: board, frame: 0, minos: mns, score: 0, clearlines: 0)
   # pre_F = Field(board: board, frame: 0, minos: mns, score: 0, clearlines: 0) # メモリ領域確保目的
