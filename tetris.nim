@@ -124,3 +124,36 @@ proc getNext(): Boxs {. exportc .} =
 proc gameOver() =
   gameOverFlag = true
   alert("gameOver!")
+
+# api操作
+
+proc getGameOverFlag(): bool {. exportc .} =
+  return gameOverFlag
+
+proc apiSpin(d: int) {. exportc .} =
+  if d < 0 or 3 < d:
+    return
+  
+  directSpin(F.am, [north, east, south, west][d], F.board)
+
+proc apiMove(target_y: int) {. exportc .} =
+  var flag = true
+  while flag:
+    if F.am.pos.y < target_y:
+      flag = F.am.move(F.board, right)
+    elif target_y < F.am.pos.y:
+      flag = F.am.move(F.board, left)
+    else:
+      flag = false
+
+proc apiHardDrop() {. exportc .} =
+  while F.am.move(F.board, down): discard
+  F.fixAM()
+
+proc getActiveMino(): int {. exportc .} =
+  return ord(F.am.kind.color)-1
+
+proc getRawBoard(): array[22, array[12, bool]] {. exportc .} =
+  for i, line in F.board:
+    for j, b in line:
+      result[i][j] = b.isFilled

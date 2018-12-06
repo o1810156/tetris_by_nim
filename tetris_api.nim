@@ -8,6 +8,21 @@ var
   reward: int
   done: bool
 
+# proc field_copy(targ: var Field, frm: Field) =
+#   for line_i, line in frm.board:
+#     for b_i, box in line:
+#       targ.board[line_i][b_i] = box
+
+#   targ.minos = @[Mino()]
+#   for mn in frm.minos:
+#     targ.minos.add(mn)
+  
+#   targ.minos = targ.minos[1..^1]
+
+#   targ.frame = frm.frame
+#   targ.score = frm.score
+#   targ.clearlines = frm.clearlines
+
 proc gameInit() =
   reward = 0
   done = false
@@ -24,10 +39,11 @@ proc gameInit() =
   # var mns = [I, O, S, Z, J, L, T, I, O, S, Z, J, L, T]
   mns.shuffle()
   F = Field(board: board, frame: 0, minos: mns, score: 0, clearlines: 0)
-  var sub_board: array[22, array[12, Box]]
-  sub_board.deepCopy(board)
+  # var sub_board: array[22, array[12, Box]]
+  # sub_board.deepCopy(board)
   # pre_F = Field(board: sub_board, frame: 0, minos: @[I, O, S, Z, J, L, T], score: 0, clearlines: 0) # メモリ領域確保目的
   pre_F.deepCopy(F)
+  # pre_F.field_copy(F)
   F.dropStart()
   # echo "check point"
 
@@ -65,6 +81,7 @@ proc reset(): cstring {.cdecl, exportc, dynlib.} =
 
 proc step(action: int): cstring {.cdecl, exportc, dynlib.} =
   pre_F.deepCopy(F)
+  # pre_F.field_copy(F)
   # echo repr(pre_F)
   # echo repr(F)
   # if done: return "gameover"
@@ -92,6 +109,7 @@ proc step(action: int): cstring {.cdecl, exportc, dynlib.} =
 
 proc revert() {.cdecl, exportc, dynlib.} =
   F.deepCopy(pre_F)
+  # F.field_copy(pre_F)
 
 proc gameOver() =
   done = true

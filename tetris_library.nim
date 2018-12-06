@@ -197,6 +197,17 @@ proc spin(m: var ActiveMino, a: array[4, Direction], board: Board) =
       m.dir = pre_dir
     m.renderBox()
 
+proc directSpin(m: var ActiveMino, target_dir: Direction, board: Board) =
+  let pre_dir = m.dir
+  m.dir = target_dir
+  m.renderBox()
+  if not m.posVerify(board):
+    var pre_pos = (m.pos.x, m.pos.y)
+    if not m.posCorrect(board):
+      (m.pos.x, m.pos.y) = pre_pos
+      m.dir = pre_dir
+    m.renderBox()
+
 proc rightSpin(m: var ActiveMino, board: Board) =
   spin(m, [east, south, west, north], board)
 
