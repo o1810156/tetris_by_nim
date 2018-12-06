@@ -1,2 +1,3 @@
 nimcache/
+__pycache__/
 *.net
