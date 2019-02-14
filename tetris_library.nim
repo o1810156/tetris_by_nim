@@ -133,7 +133,7 @@ proc renderBox(m: var ActiveMino) = # 回転後テトリミノを描写
       bb.add(Box())
     b.add(bb)
   
-  b = b[1..^1]
+  b = b[1..^1] # ...?
 
   case m.dir:
   of north:
@@ -177,6 +177,9 @@ proc posCorrect(m: var ActiveMino, board: Board): bool =
     m.pos.y -= 2*i
     if m.posVerify(board):
       return true
+
+    m.pos.y += i # 仕様変更！！
+
     # m.pos.x -= i
     # if m.posVerify(board):
     #   return true

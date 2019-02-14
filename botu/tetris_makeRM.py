@@ -1,3 +1,6 @@
+# 録画用htmlを起動する...?
+# いらないかも
+
 # coding: utf-8
 
 import re
@@ -41,13 +44,12 @@ model = Net(211, 211, 40)
 # model.load_state_dict(torch.load("./n_mid211/dueqn_8999.net"))
 # model.load_state_dict(torch.load("./n_mid211/dueqn_11999.net"))
 
-# model.load_state_dict(torch.load("./dueqn_2999.net"))
+model.load_state_dict(torch.load("./dueqn_2999.net"))
 # model.load_state_dict(torch.load("./n_mid211_alp/dueqn_2999.net"))
 # model.load_state_dict(torch.load("./n_mid211_alp/dueqn_5999.net"))
 # model.load_state_dict(torch.load("./n_mid211_alp/dueqn_8999.net"))
 # model.load_state_dict(torch.load("./n_mid211_alp/dueqn_11999.net"))
 # model.load_state_dict(torch.load("./dueqn_11999.net"))
-model.load_state_dict(torch.load("./dueqn_3024.net"))
 model.eval()
 
 def make_state(am, field):

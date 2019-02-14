@@ -1,0 +1,137 @@
+<!-- 人のプレイ録画用ページ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris Studio</title>
+    <script src="tetris.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="game-stage">
+        <div id="field">
+            <script>
+for(var i = 0; i < 20; i++){
+document.write(`<div class="box-row">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>`);}
+            </script>
+        </div>
+        <div id="score">score: 0</div>
+        <div id="lines">lines: 0</div>
+        <div id="next">
+            next:
+            <script>
+            for(var i = 0; i < 4; i++) {
+                document.write(`
+                <div class="next-box-row">
+                    <div class="next-box"></div>
+                    <div class="next-box"></div>
+                    <div class="next-box"></div>
+                    <div class="next-box"></div>
+                </div>
+                `);
+            }
+            </script>
+        </div>
+        <div class="btn btn-down" data-idx="5"></div>
+        <div class="btn btn-right" data-idx="6"></div>
+        <div class="btn btn-left" data-idx="7"></div>
+        <div class="btn btn-A" data-idx="1"></div>
+        <div class="btn btn-B" data-idx="2"></div>
+        <div class="btn btn-HD" data-idx="3"></div>
+    </div>
+    <script>
+    var box_rows = document.querySelectorAll("div.box-row"),
+        score_elm = document.querySelector("div#score"),
+        lines_elm = document.querySelector("div#lines"),
+        next_box_elms = document.querySelectorAll("div.next-box"),        
+        boxElms = [],
+        COLORS = [
+            "empty",
+            "i-mino",
+            "o-mino",
+            "s-mino",
+            "z-mino",
+            "j-mino",
+            "l-mino",
+            "t-mino",
+            "ghost"
+        ];
+    box_rows.forEach(function(e){
+        boxElms.push(e.getElementsByClassName("box"));
+    });
+    gameInit();
+
+    function display() {
+        var boxs_arr = getBoard();
+        for(var i = 1;i < 21;i++){
+            for(var j = 1;j < 11;j++){
+                // boxElms[i-1][j-1].setAttribute("class", COLORS[boxs_arr[i][j].color]);
+                boxElms[i-1][j-1].setAttribute("class", "box "+COLORS[boxs_arr[i][j].color]);
+            }
+        }
+        score_elm.innerHTML = "score: " + getScore();
+        lines_elm.innerHTML = "lines: " + getClearLines();
+        var nextBoxs = getNext();
+        for(var i = 0;i < 4;i++) {
+            for(var j = 0;j < 4;j++) {
+                var t = j+i*4;
+                next_box_elms[t].setAttribute("class", "next-box "+COLORS[nextBoxs[i][j].color]);
+            }
+        }
+    }
+
+    var btnBoolArr = Array(8).fill(false);
+    var btnTable = ["key-none", 32, 13, 38, "key-up", 40, 39, 37, "key-hld"];
+
+    document.addEventListener("keydown", function(e){
+        var idx = btnTable.indexOf(e.keyCode);
+        if(idx != -1) btnBoolArr[idx] = true;
+    }, false);
+
+    document.addEventListener("keyup", function(e){
+        var idx = btnTable.indexOf(e.keyCode);
+        if(idx != -1) btnBoolArr[idx] = false;
+    }, false);
+
+    document.querySelectorAll("div.btn").forEach(function(e){
+        var idx = parseInt(e.getAttribute("data-idx"));
+        e.addEventListener("touchstart", function(elm){
+            btnBoolArr[idx] = true;
+            e.classList.add("pushed");
+        }, false);
+        e.addEventListener("mousedown", function(elm){
+            btnBoolArr[idx] = true;
+            e.classList.add("pushed");
+        }, false);
+        e.addEventListener("touchend", function(elm){
+            btnBoolArr[idx] = false;
+            e.classList.remove("pushed");
+        }, false);
+        e.addEventListener("mouseup", function(elm){
+            btnBoolArr[idx] = false;
+            e.classList.remove("pushed");
+        }, false);
+    });
+
+    var game_timer = setInterval(function(){
+        // gameStep([false, false, false, false, false, false, false, false]);
+        gameStep(btnBoolArr);
+        display();
+    // }, 16);
+    }, 6);
+    </script>
+</body>
+</html>

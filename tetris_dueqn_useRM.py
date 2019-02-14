@@ -1,3 +1,5 @@
+# 予め人が操作した履歴を使用して学習
+
 import numpy as np
 from collections import namedtuple
 import random
@@ -5,7 +7,7 @@ import torch
 from torch import nn, optim
 import torch.nn.functional as F
 
-from tetris_env_2 import Tetris
+from tetris_env_api2 import Tetris_role_model
 
 BATCH_SIZE = 32
 CAPACITY = 10000
@@ -15,7 +17,7 @@ Transition = namedtuple("Transition", ("state", "action", "next_state", "reward"
 GAMMA = 0.99
 MAX_STEPS = 14
 # NUM_EPISODES = 5000 # メモリの都合で5000もできなかった
-NUM_EPISODES = 3000
+# NUM_EPISODES = 3000
 TARGET_SCORE = 4
 
 class ReplayMemory:
@@ -169,7 +171,8 @@ def make_observation(am, field):
 
 class Environment:
     def __init__(self):
-        self.env = Tetris()
+        # self.env = Tetris()
+        self.env = Tetris_role_model(input("role model?: "))
         # self.num_states = self.env.observation_space.shape[0]
         self.num_states = 211 # <= 20 * 11 + 1(降ってきているブロック)
         # self.num_actions = self.env.action_space.n
@@ -185,7 +188,8 @@ class Environment:
         # frames = []
         last_episode_num = 0
 
-        for episode in range(NUM_EPISODES):
+        # for episode in range(NUM_EPISODES):
+        for episode in range(self.env.episodes_num):
             am, field = self.env.reset()
             observation = make_observation(am, field)
             state = torch.from_numpy(observation).type(torch.FloatTensor)
@@ -195,8 +199,11 @@ class Environment:
             sum_density_reward = 0
 
             for step in range(MAX_STEPS):
-                action = self.agent.get_action(state, episode)
-                am, field, step_reward, done = self.env.step(action.item())
+                # action = self.agent.get_action(state, episode)
+                
+                # _act, am, field, step_reward, done = self.env.step(action.item())
+                _act, am, field, step_reward, done = self.env.step()
+                action = torch.LongTensor([[_act]])
                 observation_next = make_observation(am, field)
 
                 real_score = step_reward // 1
@@ -228,7 +235,7 @@ class Environment:
                 state = state_next
                     
                 if done:
-                    print(f"{episode} Episode: Finished with score {sum_reward} ; density_score {sum_density_reward / 14} : 10_ave_SCORE = {episode_10_list.mean():.1f}")
+                    print(f"{episode} Episode: Finished with score {sum_reward} ; density_score {sum_density_reward / 14} : 10試行の平均SCORE = {episode_10_list.mean():.1f}")
                     if(episode % 2 == 0):
                         self.agent.update_target_q_function()
                     break
@@ -237,9 +244,9 @@ class Environment:
                 print("episode final's score:", sum_reward)
                 break
 
-            if complete_episodes >= 10:
-                print(f"10回連続{TARGET_SCORE}点越え")
-                episode_final = True
+            # if complete_episodes >= 10:
+            #     print(f"10回連続{TARGET_SCORE}点越え")
+            #     episode_final = True
 
             last_episode_num = episode
 

@@ -1,3 +1,4 @@
+import re, sys
 import numpy as np
 from collections import namedtuple
 import random
@@ -5,7 +6,7 @@ import torch
 from torch import nn, optim
 import torch.nn.functional as F
 
-from tetris_env_2 import Tetris
+from tetris_env_api2 import Tetris
 
 BATCH_SIZE = 32
 CAPACITY = 10000
@@ -67,6 +68,14 @@ class Brain:
         n_in, n_out = num_states, num_actions
         self.main_q_network = Net(n_in, n_mid, n_out)
         self.target_q_network = Net(n_in, n_mid, n_out)
+
+        # !! nexts で追加 !!
+
+        net_name = sys.argv[1] if len(sys.argv) > 1 else input("filename?: ")
+        self.main_q_network.load_state_dict(torch.load(f"./{net_name}"))
+        self.target_q_network.load_state_dict(torch.load(f"./{net_name}"))
+
+        self.cont_episode_num = int(re.findall(r"dueqn_(\d+).net", net_name)[0])
 
         # print(self.main_q_network)
 
@@ -136,9 +145,12 @@ class Brain:
         self.target_q_network.load_state_dict(self.main_q_network.state_dict())
     
     def save_network(self, episode):
-        torch.save(self.main_q_network.state_dict(), f"./dueqn_{episode}.net")
-        # torch.save(self.target_q_network.state_dict(), "./dueqn_target.net")
-        print("network was saved")
+        if input("save[y/n]? ") in ["Y", "y"]:
+            torch.save(self.main_q_network.state_dict(), f"./dueqn_{episode}.net")
+            # torch.save(self.target_q_network.state_dict(), "./dueqn_target.net")
+            print("network was saved")
+        else:
+            print("network was not saved")        
 
 class Agent:
     def __init__(self, num_states, num_actions):
@@ -159,6 +171,9 @@ class Agent:
     
     def save_brain_network(self, episode):
         self.brain.save_network(episode)
+    
+    def get_cont_episode_num(self):
+        return self.brain.cont_episode_num
 
 ## ここから要注意
 
@@ -182,9 +197,12 @@ class Environment:
 
         complete_episodes = 0 # scoreがTARGET_SCORE以上になった試行数
         episode_final = False
-        # frames = []
         last_episode_num = 0
+        # frames = []
 
+        cont_episode_num = self.agent.get_cont_episode_num() + 1
+
+        # for episode in range(cont_episode_num, (cont_episode_num + NUM_EPISODES)):
         for episode in range(NUM_EPISODES):
             am, field = self.env.reset()
             observation = make_observation(am, field)
@@ -240,11 +258,11 @@ class Environment:
             if complete_episodes >= 10:
                 print(f"10回連続{TARGET_SCORE}点越え")
                 episode_final = True
-
+            
             last_episode_num = episode
 
         # torch.save(self..state_dict(), "./")
-        self.agent.save_brain_network(last_episode_num)
+        self.agent.save_brain_network(last_episode_num+cont_episode_num)
 
 tetris_envi = Environment()
 tetris_envi.run()
