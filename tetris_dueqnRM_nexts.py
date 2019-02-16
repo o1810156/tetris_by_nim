@@ -6,7 +6,7 @@ import torch
 from torch import nn, optim
 import torch.nn.functional as F
 
-from tetris_env_api2 import Tetris
+from tetris_env import Tetris
 
 BATCH_SIZE = 32
 CAPACITY = 10000
